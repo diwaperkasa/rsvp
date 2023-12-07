@@ -33,4 +33,4 @@ a.forEach(item => {
   item.addEventListener('mouseleave', () => {
     cursor.classList.remove('hover');
   });
-})
+});

@@ -207,6 +207,11 @@ a .post-title:hover {
   }
 }
 
+@media only screen and (max-width: 576px) {
+  .PopupMenu a.display-1 {
+    font-size: calc(3rem + 2vw);
+  }
+}
 
 .btn-big-round:hover {
   color: white;
@@ -253,7 +258,7 @@ footer .input-group>button {
   left: 0;
   top: 0;
   transform: translate(calc(-50% + 15px), -50%);
-  z-index: 9999;
+  z-index: 999999;
 }
 
 .cursor2 {
@@ -266,7 +271,7 @@ footer .input-group>button {
   transform: translate(-50%, -50%);
   pointer-events: none;
   transition: width .3s, height .3s, opacity .3s;
-  z-index: 9999;
+  z-index: 999999;
 }
 
 .hover {
@@ -293,4 +298,14 @@ footer .input-group>button {
   top: 300px;
   right: 200px;
   transform: rotate(-90deg) scale(3);
+}
+
+/* Override */
+
+.menupop {
+  opacity: 1;
+}
+
+.offcanvas.show {
+  z-index: 999999;
 }
