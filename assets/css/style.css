@@ -1,0 +1,296 @@
+:root {
+  --black: #1B1B1B;
+  --darkgrey: #B8B8B8;
+  --grey: #F2F1F0;
+  --yellow: #F2BE3F;
+}
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: left;
+  color: var(--black);
+  overflow-x: hidden;
+}
+
+.logo {
+  font-family: "Times New Roman", Sans-serif;
+  font-size: 2.25rem;
+}
+
+.bg-tgrey {
+  background-color: var(--grey);
+}
+
+.bg-tblack {
+  background-color: var(--black);
+}
+
+.form-control:focus {
+  border-color: var(--yellow);
+  box-shadow: 0 0 0 0.25rem rgb(255 193 7 / 20%);
+}
+
+.rem7 {
+  font-size: 7rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .rem7 {
+    font-size: 2.5rem;
+  }
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Bodoni 72';
+  margin: 0;
+  font-weight: 600;
+}
+
+a {
+  color: hsl(var(--primary), var(--pl));
+  text-decoration: none;
+}
+
+a:hover,
+a .post-title:hover {
+  color: var(--yellow);
+}
+
+.dotdec::before {
+  position: absolute;
+  content: "";
+  left: -20px;
+  bottom: 2px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+}
+
+/* Style Nav */
+
+.navbar-nav .nav-item {
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: var(--black);
+  text-transform: uppercase;
+  position: relative;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: var(--yellow);
+}
+
+.navbar-nav .nav-item .nav-link::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  background: var(--yellow);
+  box-shadow: 5px 5px 14px 0px rgb(255 128 8);
+  transition: all 0.5s ease;
+  transform: scale(0);
+}
+
+.navbar-nav .nav-item .nav-link:hover:before {
+  transform: scale(1);
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  color: var(--yellow);
+}
+
+.navbar-nav .nav-item .nav-link.active:before {
+  transform: scale(1);
+}
+
+/* End Style Nav */
+
+.PopupMenu {
+  background-color: #151515;
+  color: white;
+  font-family: 'Bodoni 72';
+}
+
+.PopupMenu a.display-1 {
+  font-size: calc(3rem + 4.5vw);
+}
+
+.PopupMenu a.display-1:hover {
+  font-style: italic;
+}
+
+/* Hero section */
+.img-hero {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+
+.marquee p {
+  text-transform: uppercase;
+  font-size: 9rem;
+  font-weight: normal;
+  will-change: transform;
+  transform: translateX(0);
+  white-space: nowrap;
+  animation: marquee 12s linear infinite;
+}
+
+/* End Hero section */
+
+.btn-big-round {
+  font-family: "Bodoni 72";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  display: flex;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  align-items: center;
+  border-radius: 50%;
+  fill: #151515;
+  color: #151515;
+  background-color: var(--yellow);
+}
+
+.btn-big-round span {
+  transform: rotate(-45deg);
+}
+
+.testi-carousel img {
+  width: 120px !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .testi-carousel .item>div {
+    margin: 0 10rem;
+  }
+}
+
+
+.btn-big-round:hover {
+  color: white;
+  transform: rotate(45deg);
+}
+
+.video-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Footer section */
+footer {
+  background-color: var(--black);
+  color: white;
+}
+
+footer .input-group>input,
+footer .input-group>button {
+  border: none;
+  border-radius: 0;
+}
+
+/* End Footer section */
+
+
+/* Cursor */
+* {
+  cursor: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid var(--darkgrey);
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+  z-index: 9999;
+}
+
+.cursor2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: var(--black);
+  opacity: .3;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+  z-index: 9999;
+}
+
+.hover {
+  background-color: var(--yellow);
+  opacity: 0.5;
+}
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: .5;
+}
+
+/* End Cursor */
+
+.img-culture {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.text-about {
+  position: absolute;
+  top: 300px;
+  right: 200px;
+  transform: rotate(-90deg) scale(3);
+}

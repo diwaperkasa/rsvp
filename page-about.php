@@ -1,0 +1,1 @@
+<?php get_layout("about.php"); ?>
