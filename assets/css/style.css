@@ -207,12 +207,6 @@ a .post-title:hover {
   }
 }
 
-@media only screen and (max-width: 576px) {
-  .PopupMenu a.display-1 {
-    font-size: calc(3rem + 2vw);
-  }
-}
-
 .btn-big-round:hover {
   color: white;
   transform: rotate(45deg);
@@ -302,10 +296,20 @@ footer .input-group>button {
 
 /* Override */
 
+@media only screen and (max-width: 576px) {
+  .PopupMenu a.display-1 {
+    font-size: calc(3rem + 2vw);
+  }
+}
+
 .menupop {
   opacity: 1;
 }
 
 .offcanvas.show {
   z-index: 999999;
+}
+
+.h-80 {
+  height: 80%!important;
 }

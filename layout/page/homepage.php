@@ -121,7 +121,7 @@
                 </div>
             </div>
             <div class="col align-self-stretch">
-                <div class="card rounded-0 border-0 h-75">
+                <div class="card rounded-0 border-0 h-80">
                     <div class="card-body p-0">
                         <p class="mb-0">03</p>
                         <video autoplay muted loop class="video-cover">
