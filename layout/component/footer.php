@@ -48,11 +48,11 @@
                     <div class="col-4">
                         <p class="h4 mb-4">About</p>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><a href="index.html">Home</a></li>
-                            <li class="mb-2"><a href="about.html">About</a></li>
-                            <li class="mb-2"><a href="service.html">Services</a></li>
-                            <li class="mb-2"><a href="project.html">Portfolio</a></li>
-                            <li class="mb-2"><a href="culture.html">Culture</a></li>
+                            <li class="mb-2"><a href="/">Home</a></li>
+                            <li class="mb-2"><a href="/about">About</a></li>
+                            <li class="mb-2"><a href="/service">Services</a></li>
+                            <li class="mb-2"><a href="/projects">Portfolio</a></li>
+                            <li class="mb-2"><a href="/culture">Culture</a></li>
                         </ul>
                     </div>
                     <div class="col-4">

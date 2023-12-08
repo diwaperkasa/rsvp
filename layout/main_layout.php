@@ -13,14 +13,17 @@
     <div class="cursor"></div>
     <div class="cursor2"></div>
     <!-- Header -->
-    <?php include "component/header.php" ?>
+    <?php include_once "component/header.php" ?>
+    <!-- End of header -->
     <main>
         <!-- Content -->
-        <?php include $layout_name ?>
+        <?php include_once $layout_name ?>
+        <!-- End of content -->
     </main>
     <!-- Footer -->
-    <?php include "component/footer.php" ?>
+    <?php include_once "component/footer.php" ?>
     <?php wp_footer() ?>
+    <!-- End of footer -->
 </body>
 
 </html>
