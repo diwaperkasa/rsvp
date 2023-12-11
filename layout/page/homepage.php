@@ -4,8 +4,8 @@
 ?>
 
 <section id="section-hero">
-    <div class="container-fluid">
-        <div class="px-4">
+    <div>
+        <div class="px-4h5">
             <img src="<?= get_stylesheet_directory_uri() . "/assets/img/Hero-1.jpg" ?>" class="img-hero" alt="...">
         </div>
         <div class="marquee">
@@ -15,8 +15,8 @@
             <p class="h1 mx-5">WE <span class="fst-italic">INNOVATE</span> YOUR <span class="fst-italic">STORY</span> </p>
         </div>
         <div class="d-flex justify-content-between px-4">
-            <a class="fw-normal h5" href="#" role="button">+ CONNECT</a>
-            <a class="fw-normal h5" href="#" role="button"><span class="dotdec h5 position-relative"></span> EXPLORE</a>
+            <a class="fw-normal h5 fs-16pt" href="#" role="button">+ CONNECT</a>
+            <a class="fw-normal h5 fs-16pt" href="#" role="button"><span class="dotdec h5 position-relative"></span> EXPLORE</a>
         </div>
     </div>
 </section>
@@ -49,10 +49,10 @@
         <div class="row bg-tblack">
             <div class="col-md-6 px-0">
                 <div class="justify-content-center">
-                    <div class="text-white text-center py-5 my-5 px-3">
+                    <div class="text-white text-center py-5 my-5 px-5">
                         <p>ABOUT R.S.V.P</p>
                         <h1 class="display-4 mb-5">The <span class="fst-italic">Innovation</span> <br> Agency</h1>
-                        <p class="h4 fw-normal mb-5">With over 20 years of experience in different emerging markets, we
+                        <p class="h4 fw-normal mb-5 fs-16pt lh-160">With over 20 years of experience in different emerging markets, we
                             specialise in a variety of online and offline service in PR, social, media and digital space to
                             create impactful and engaging campaigns. Our communication strategies are innovative, based on
                             shifting trends and technologies, including AI, AR and VR to effectively communicate and connect
@@ -84,13 +84,15 @@
         </h1>
         <div class="row my-3 align-items-end">
             <div class="col-md-8">
-                <p>We are passionate about telling stories, and creating holistic campaigns that build connections and bring
+                <p class="fs-16pt">
+                    We are passionate about telling stories, and creating holistic campaigns that build connections and bring
                     about growth for the brands we work with. We strive to create and execute strategies that exceed our
-                    clients’ expectations and are committed to providing exceptional service with a personal touch.</p>
+                    clients’ expectations and are committed to providing exceptional service with a personal touch.
+                </p>
             </div>
             <div class="col-md-4">
                 <div class="d-flex justify-content-center justify-content-md-end">
-                    <a href="#" class="btn-big-round"> <span>CONNECT <span>with</span> US</span></a>
+                    <a href="/contact" class="btn-big-round"> <span>CONNECT <span>with</span> US</span></a>
                 </div>
             </div>
         </div>
@@ -99,57 +101,59 @@
 
 <section id="section-services" class="py-5">
     <div class="container-fluid p-3 p-md-5">
-        <p class="text-center fs-5">OUR SERVICES</p>
-        <h1 class="display-4 text-center mb-5">Our Creative <br> <span class="fst-italic">Solutions</span></h1>
+        <p class="text-center fs-16pt">OUR SERVICES</p>
+        <h1 class="display-4 text-center mb-5 lh-1">Our Creative <br> <span class="fst-italic">Solutions</span></h1>
+        <!-- Desktop View -->
         <div class="row align-items-center d-none d-md-flex">
             <div class="col">
-                <div class="card rounded-0 border-0">
+                <div class="card rounded-0 border-0 px-md-2">
                     <div class="card-body p-0">
                         <p class="mb-0">01</p>
                         <img src=" <?= get_stylesheet_directory_uri() . "/assets/img/pr.png" ?>" class="img-fluid" alt="...">
-                        <h5 class="card-title mt-3 mb-0">PUBLIC <br> RELATIONS</h5>
+                        <h5 class="card-title mt-3 mb-0 fw-normal lh-1">PUBLIC <br> RELATIONS</h5>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card rounded-0 border-0">
+                <div class="card rounded-0 border-0 px-md-2">
                     <div class="card-body p-0">
                         <p class="mb-0">02</p>
                         <img src="<?= get_stylesheet_directory_uri() . "/assets/img/cc.png" ?>" class="img-fluid" alt="...">
-                        <h5 class="card-title mt-3 mb-0">CONTENT <br> CREATION</h5>
+                        <h5 class="card-title mt-3 mb-0 fw-normal lh-1">CONTENT <br> CREATION</h5>
                     </div>
                 </div>
             </div>
             <div class="col align-self-stretch">
-                <div class="card rounded-0 border-0 h-80">
+                <div class="card rounded-0 border-0 px-md-2 h-80">
                     <div class="card-body p-0">
                         <p class="mb-0">03</p>
                         <video autoplay muted loop class="video-cover">
                             <source src="<?= get_stylesheet_directory_uri() . '/assets/img/Runway-Video.webm' ?>" type="video/webm">
                         </video>
-                        <h5 class="card-title mt-3 mb-0">EVENT <br> MANAGEMENT</h5>
+                        <h5 class="card-title mt-3 mb-0 fw-normal lh-1">EVENT <br> MANAGEMENT</h5>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card rounded-0 border-0">
+                <div class="card rounded-0 border-0 px-md-2">
                     <div class="card-body p-0">
                         <p class="mb-0">04</p>
                         <img src="<?= get_stylesheet_directory_uri() . '/assets/img/sm.png' ?>" class="img-fluid" alt="...">
-                        <h5 class="card-title mt-3 mb-0">SOCIAL MEDIA <br> MANAGEMENT</h5>
+                        <h5 class="card-title mt-3 mb-0 fw-normal lh-1">SOCIAL MEDIA <br> MANAGEMENT</h5>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card rounded-0 border-0">
+                <div class="card rounded-0 border-0 px-md-2">
                     <div class="card-body p-0">
                         <p class="mb-0">05</p>
                         <img src="<?= get_stylesheet_directory_uri() . "/assets/img/in.png" ?>" class="img-fluid" alt="...">
-                        <h5 class="card-title mt-3 mb-0">INNOVATION</h5>
+                        <h5 class="card-title mt-3 mb-0 fw-normal lh-1">INNOVATION</h5>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Mobile View -->
         <div class="mt-4 d-block d-md-none">
             <div class="owl-carousel service-carousel owl-theme">
                 <div class="item">
@@ -157,7 +161,7 @@
                         <div class="card-body p-0">
                             <p class="mb-0">01</p>
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/pr.png' ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0">PUBLIC <br> RELATIONS</h5>
+                            <h5 class="card-title mt-3 mb-0 fw-normal lh-1">PUBLIC <br> RELATIONS</h5>
                         </div>
                     </div>
                 </div>
@@ -166,7 +170,7 @@
                         <div class="card-body p-0">
                             <p class="mb-0">02</p>
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/cc.png' ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0">CONTENT <br> CREATION</h5>
+                            <h5 class="card-title mt-3 mb-0 fw-normal lh-1">CONTENT <br> CREATION</h5>
                         </div>
                     </div>
                 </div>
@@ -177,7 +181,7 @@
                             <video autoplay muted loop class="video-cover">
                                 <source src="<?= get_stylesheet_directory_uri() . '/assets/img/Runway-Video.webm' ?>" type="video/webm">
                             </video>
-                            <h5 class="card-title mt-3 mb-0">EVENT <br> MANAGEMENT</h5>
+                            <h5 class="card-title mt-3 mb-0 fw-normal lh-1">EVENT <br> MANAGEMENT</h5>
                         </div>
                     </div>
                 </div>
@@ -186,7 +190,7 @@
                         <div class="card-body p-0">
                             <p class="mb-0">04</p>
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/sm.png' ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0">SOCIAL MEDIA <br> MANAGEMENT</h5>
+                            <h5 class="card-title mt-3 mb-0 fw-normal lh-1">SOCIAL MEDIA <br> MANAGEMENT</h5>
                         </div>
                     </div>
                 </div>
@@ -195,7 +199,7 @@
                         <div class="card-body p-0">
                             <p class="mb-0">05</p>
                             <img src="<?= get_stylesheet_directory_uri() . "/assets/img/in.png" ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0">INNOVATION</h5>
+                            <h5 class="card-title mt-3 mb-0 fw-normal lh-1">INNOVATION</h5>
                         </div>
                     </div>
                 </div>
@@ -215,12 +219,12 @@
 
 <section id="section-projects" class="py-5 bg-tgrey">
     <div class="container-fluid">
-        <p class="text-center fs-5">OUR PROJECTS</p>
-        <h1 class="display-4 text-center">Our Selected <br> <span class="fst-italic">Works</span></h1>
+        <p class="text-center fs-5 fs-16pt">OUR PROJECTS</p>
+        <h1 class="display-4 text-center lh-1">Our Selected <br> <span class="fst-italic">Works</span></h1>
         <div class="mt-4">
             <div class="owl-carousel work-carousel owl-theme">
                 <div class="item">
-                    <div class="card rounded-0">
+                    <div class="card rounded-0 px-md-2">
                         <div class="card-body">
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/BIRKENSTOCK.jpg' ?>" class="img-fluid" alt="...">
                             <h5 class="card-title mt-3 mb-0">Birkenstock</h5>
@@ -229,7 +233,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="card rounded-0">
+                    <div class="card rounded-0 px-md-2">
                         <div class="card-body">
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/YTL-Hotels.jpg' ?>" class="img-fluid" alt="...">
                             <h5 class="card-title mt-3 mb-0">YTL Hotels</h5>
@@ -238,7 +242,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="card rounded-0">
+                    <div class="card rounded-0 px-md-2">
                         <div class="card-body">
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/AMAFFI.jpg' ?>" class="img-fluid" alt="...">
                             <h5 class="card-title mt-3 mb-0">AMAFFI Asia Boutique</h5>
@@ -247,7 +251,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="card rounded-0">
+                    <div class="card rounded-0 px-md-2">
                         <div class="card-body">
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/Brytehall.jpg' ?>" class="img-fluid" alt="...">
                             <h5 class="card-title mt-3 mb-0">Brytehall</h5>
@@ -256,7 +260,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="card rounded-0">
+                    <div class="card rounded-0 px-md-2">
                         <div class="card-body">
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/Clique-La-Prairie.jpg' ?>" class="img-fluid" alt="...">
                             <h5 class="card-title mt-3 mb-0">Clinique La Prairie</h5>
@@ -294,12 +298,8 @@
             </div>
         </div>
         <div class="d-flex">
-            <a class="fw-normal h5 fst-italic text-decoration-underline" href="/projects" role="button">Explore All Projects
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" viewBox="0 0 54 30" fill="none">
-                    <path d="M0.394531 14.9975L53.6048 14.9976" stroke="#F2BE3F" stroke-width="3"></path>
-                    <path d="M53.3119 15.3929C50.364 16.2454 45.2012 17.3076 41.5353 20.5209C38.4559 23.2202 37.6553 27.385 37.9149 28.889" stroke="#F2BE3F" stroke-width="3" stroke-linejoin="round"></path>
-                    <path d="M53.3119 14.6066C50.364 13.7542 45.2012 12.6919 41.5353 9.47857C38.4559 6.77935 37.6553 2.61453 37.9149 1.11053" stroke="#F2BE3F" stroke-width="3" stroke-linejoin="round"></path>
-                </svg>
+            <a class="fw-normal h5 fst-italic text-decoration-underline" href="/projects" role="button">
+                Explore All
             </a>
         </div>
     </div>
@@ -307,29 +307,35 @@
 
 <section id="section-culture" class="py-5">
     <div class="container-fluid p-md-4">
-        <h1 class="h4 text-center fw-normal mb-5">A CULTURE <span class="fst-italic">to </span>CREATE <span class="fst-italic">and </span>ELEVATE</h1>
+        <h1 class="h4 text-center fw-normal mb-5 fs-16pt">A CULTURE <span class="fst-italic">to </span>CREATE <span class="fst-italic">and </span>ELEVATE</h1>
         <div class="row py-4 align-items-center">
-            <div class="col-md-6">
-                <h1 class="display-2 text-center">BUILDING <br> <span class="fst-italic">COMMUNITY </span></h1>
+            <div class="col-md-8">
+                <h1 class="display-1 text-center">BUILDING <br> <span class="fst-italic">COMMUNITY </span></h1>
             </div>
-            <div class="col-md-6">
-                <img src="<?= get_stylesheet_directory_uri() . '/assets/img/culture1.png' ?>" class="img-culture" alt="...">
+            <div class="col-md-4">
+                <div class="text-center text-md-start">
+                    <img src="<?= get_stylesheet_directory_uri() . '/assets/img/culture1.png' ?>" class="img-culture" alt="...">
+                </div>
             </div>
         </div>
         <div class="row py-4 align-items-center">
-            <div class="col-md-6 order-2">
-                <img src="<?= get_stylesheet_directory_uri() . '/assets/img/culture2.png' ?>" class="img-culture" alt="...">
+            <div class="col-md-4 order-2">
+                <div class="text-center text-md-end">
+                    <img src="<?= get_stylesheet_directory_uri() . '/assets/img/culture2.png' ?>" class="img-culture" alt="...">
+                </div>
             </div>
-            <div class="col-md-6 order-1 order-md-2">
-                <h1 class="display-2 text-center">INSPIRING <br> <span class="fst-italic">CREATIVITY </span></h1>
+            <div class="col-md-8 order-1 order-md-2">
+                <h1 class="display-1 text-center">INSPIRING <br> <span class="fst-italic">CREATIVITY </span></h1>
             </div>
         </div>
         <div class="row py-4 align-items-center">
-            <div class="col-lg">
-                <h1 class="display-2 text-center">FOSTERING <br> <span class="fst-italic">COLLABORATION </span></h1>
+            <div class="col-md-8">
+                <h1 class="display-1 text-center">FOSTERING <br> <span class="fst-italic">COLLABORATION </span></h1>
             </div>
-            <div class="col-lg">
-                <img src="<?= get_stylesheet_directory_uri() . '/assets/img/culture3.png' ?>" class="img-culture" alt="...">
+            <div class="col-md-4">
+                <div class="text-center text-md-start">
+                    <img src="<?= get_stylesheet_directory_uri() . '/assets/img/culture3.png' ?>" class="img-culture" alt="...">
+                </div>
             </div>
         </div>
     </div>
@@ -339,14 +345,14 @@
     <div class="container-fluid">
         <div class="row bg-tblack">
             <div class="col-md-6  px-0">
-                <img src="<?= get_stylesheet_directory_uri() . '/assets/img/architectural-details-1.png' ?>" class="img-fluid h-100" alt="...">
+                <img src="http://rsvp-v2-local.co/wp-content/themes/rsvp/assets/img/architectural-details-1.png" class="img-fluid h-100" alt="...">
             </div>
-            <div class="col-md-6 px-0">
-                <div class="justify-content-center">
-                    <div class="text-white text-center py-5 my-5 px-3">
-                        <p class="fs-5">OUR TEAM </p>
-                        <h1 class="display-4 mb-5">Meet <br> <span class="fst-italic">The Team</span></h1>
-                        <p class="h4 fw-normal mb-5">Our team consists of talented and dynamic professionals, who are
+            <div class="col-md-6 p-lg-5">
+                <div class="justify-content-center px-lg-5">
+                    <div class="text-white text-center py-5 my-5 px-lg-4">
+                        <p class="fs-5 fs-16pt mb-lg-4">OUR TEAM</p>
+                        <h1 class="display-4 mb-5 lh-1">Meet <br> <span class="fst-italic">The Team</span></h1>
+                        <p class="h4 fw-normal mb-5 fs-16pt lh-160">Our team consists of talented and dynamic professionals, who are
                             well-versed in the ever-changing landscape of the communications industry to provide excellent
                             service that suits the needs of our clients.</p>
                         <a class="fw-normal h5 fst-italic text-decoration-underline" href="/contact" role="button">Learn More

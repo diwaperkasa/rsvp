@@ -10,7 +10,7 @@ $('.work-carousel').owlCarousel({
     loop: true,
     autoplay: true,
     lazyLoad: true,
-    margin: 16,
+    margin: 30,
     nav: true,
     dots: false,
     responsive: {

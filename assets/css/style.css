@@ -337,3 +337,48 @@ footer .input-group>input, footer .input-group>button{
 .h-80 {
   height: 80%!important;
 }
+
+.px-4h5 {
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+}
+
+.fs-10pt {
+  font-size: 10pt;
+}
+
+.fs-11pt {
+  font-size: 11pt;
+}
+
+.fs-12pt {
+  font-size: 12pt;
+}
+
+.fs-13pt {
+  font-size: 13pt;
+}
+
+.fs-14pt {
+  font-size: 14pt;
+}
+
+.fs-15pt {
+  font-size: 15pt;
+}
+
+.fs-16pt {
+  font-size: 16pt;
+}
+
+.lh-160 {
+  line-height: 160%;
+}
+
+.text-decoration-underline {
+  text-underline-offset: 5px;
+}
+
+.img-culture {
+  width: auto;
+}
