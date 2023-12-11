@@ -7,7 +7,7 @@
         <div class="row align-items-center py-5 border-bottom">
             <div class="col-md-6">
                 <div>
-                    <h1 class="display-4 fw-normal my-3">PUBLIC <br>RELATIONS </h1>
+                    <h1 class="display-4 fw-normal my-3 position-relative">PUBLIC <br>RELATIONS <span class="numbering-dec">01</span> </h1>
                     <p class="fs-5">Strong relationships are everything, and we have grown a loyal
                         pool of media contacts for our communications strategies.
                         Through leveraging this vast network, we develop engaging
@@ -16,19 +16,19 @@
             </div>
             <div class="col-md-6">
                 <div class="text-center text-md-end">
-                    <img src="<?= get_stylesheet_directory_uri() . '/assets/img/ser1.png' ?>" class="img-fluid w-75" alt="...">
+                    <img src="<?= get_stylesheet_directory_uri() . "/assets/img/ser1.png" ?>" class="img-fluid w-75" alt="...">
                 </div>
             </div>
         </div>
         <div class="row align-items-center py-5 border-bottom">
-            <div class="col-md-6">
+            <div class="col-md-6  order-2">
                 <div class="text-center text-md-start">
-                    <img src="<?= get_stylesheet_directory_uri() . '/assets/img/ser2.jpg' ?>" class="img-fluid w-75" alt="...">
+                    <img src="<?= get_stylesheet_directory_uri() . "/assets/img/ser2.jpg" ?>" class="img-fluid w-75" alt="...">
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 order-1 order-md-2">
                 <div>
-                    <h1 class="display-4 fw-normal my-3">CONTENT <br>CREATION </h1>
+                    <h1 class="display-4 fw-normal my-3 position-relative">CONTENT <br>CREATION <span class="numbering-dec">02</span></h1>
                     <p class="fs-5">Our content creation services are insightful, original and
                         strategic to amplify our client’s voices. We focus on the
                         smallest of details and provide highly-tailored approaches
@@ -40,7 +40,7 @@
         <div class="row align-items-center py-5 border-bottom">
             <div class="col-md-6">
                 <div>
-                    <h1 class="display-4 fw-normal my-3">EVENT <br>MANAGEMENT </h1>
+                    <h1 class="display-4 fw-normal my-3 position-relative">EVENT <br>MANAGEMENT <span class="numbering-dec">03</span></h1>
                     <p class="fs-5">Our event portfolio is diverse, from intimate presentations to large-scale openings
                         and product launches. With a strong network of event partners and key opinion leaders,
                         we brainstorm, design, conceptualise, fabricate, set up and dismantle – and secure celebrity attendance in the process.</p>
@@ -48,21 +48,21 @@
             </div>
             <div class="col-md-6">
                 <div class="text-center text-md-end">
-                    <video autoplay muted loop class="video-cover">
-                        <source src="<?= get_stylesheet_directory_uri() . '/assets/img/Runway-Video.webm' ?>" type="video/webm">
+                    <video autoplay muted class="video-cover">
+                        <source src="<?= get_stylesheet_directory_uri() . "/assets/img/Runway-Video.webm" ?>" type="video/webm">
                     </video>
                 </div>
             </div>
         </div>
         <div class="row align-items-center py-5 border-bottom">
-            <div class="col-md-6">
+            <div class="col-md-6 order-2">
                 <div class="text-center text-md-start">
-                    <img src="<?= get_stylesheet_directory_uri() . '/assets/img/ser4.jpg' ?>" class="img-fluid w-75" alt="...">
+                    <img src="<?= get_stylesheet_directory_uri() . "/assets/img/ser4.jpg" ?>" class="img-fluid w-75" alt="...">
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 order-1 order-md-2">
                 <div>
-                    <h1 class="display-4 fw-normal my-3">SOCIAL MEDIA <br>MANAGEMENT </h1>
+                    <h1 class="display-4 fw-normal my-3 position-relative">SOCIAL MEDIA <br>MANAGEMENT <span class="numbering-dec">04</span></h1>
                     <p class="fs-5">We enhance the visibility of the brands we work with in the
                         digital sphere through creating vibrant and powerful social
                         media campaigns to build a social media presence across different platforms.</p>
@@ -72,7 +72,7 @@
         <div class="row align-items-center py-5">
             <div class="col-md-6">
                 <div>
-                    <h1 class="display-4 fw-normal my-3">INNOVATION</h1>
+                    <h1 class="display-4 fw-normal my-3 position-relative">INNOVATION <span class="numbering-dec">05</span></h1>
                     <p class="fs-5 mb-3">We see a changing world of communication as new technologies continue to be developed. AI, VR and AR enable new ways of immersive engagement, interaction and storytelling. We apply AI, VR and AR to optimise processes and to create new experiences for your target audiences.</p>
                     <p class="fs-5">In a new decentralised virtual world, community-building is important for brands and we have successfully created Web3 communities from scratch, leveraging Discord technology and Twitter spaces management.</p class="fs-5">
                     </p>
@@ -80,7 +80,7 @@
             </div>
             <div class="col-md-6">
                 <div class="text-center text-md-end">
-                    <img src="<?= get_stylesheet_directory_uri() . '/assets/img/ser5.jpg' ?>" class="img-fluid w-75" alt="...">
+                    <img src="<?= get_stylesheet_directory_uri() . "/assets/img/ser5.jpg" ?>" class="img-fluid w-75" alt="...">
                 </div>
             </div>
         </div>
