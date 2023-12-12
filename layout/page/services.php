@@ -48,7 +48,7 @@
             </div>
             <div class="col-md-6">
                 <div class="text-center text-md-end">
-                    <video autoplay muted class="video-cover">
+                    <video autoplay muted loop class="video-cover">
                         <source src="<?= get_stylesheet_directory_uri() . "/assets/img/Runway-Video.webm" ?>" type="video/webm">
                     </video>
                 </div>
