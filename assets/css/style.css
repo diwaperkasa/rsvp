@@ -368,6 +368,12 @@ footer .input-group>button {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  * {
+    cursor: auto;
+  }
+}
+
 .menupop {
   opacity: 1;
 }
