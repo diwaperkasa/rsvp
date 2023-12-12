@@ -1,6 +1,6 @@
 <section id="section-culture" class="py-5">
     <div class="container-fluid p-3 p-md-5">
-        <h1 class="display-4 text-center mb-5">
+        <h1 class="display-4 text-center mb-5 lh-1">
             Curated <span class="fst-italic">Selection</span><br>
             of <span class="fst-italic">Projects</span>
         </h1>

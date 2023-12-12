@@ -382,3 +382,11 @@ footer .input-group>input, footer .input-group>button{
 .img-culture {
   width: auto;
 }
+
+.cursor {
+  z-index: 9999999;
+}
+
+.cursor2 {
+  z-index: 9999999;
+}
