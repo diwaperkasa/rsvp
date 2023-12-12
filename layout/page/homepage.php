@@ -18,8 +18,8 @@
     <div class="container-fluid">
         <div class="px-4">
             <div class="d-flex justify-content-between px-4">
-                <a class="fw-normal h5 fs-16pt" href="#" role="button">+ CONNECT</a>
-                <a class="fw-normal h5 fs-16pt" href="#" role="button"><span class="dotdec h5 position-relative"></span> EXPLORE</a>
+                <a class="fw-normal h5 fs-16pt" href="#section-contactus" role="button">+ CONNECT</a>
+                <a class="fw-normal h5 fs-16pt" href="#section-newera" role="button"><span class="dotdec h5 position-relative"></span> EXPLORE</a>
             </div>
         </div>
     </div>

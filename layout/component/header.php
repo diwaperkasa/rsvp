@@ -86,7 +86,7 @@
                         <a class="nav-link <?= get_current_url() === "services" ? "active" : null ?>" href="/services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?= get_current_url() === "projects" ? "active" : null ?>"" href="/projects">Projects</a>
+                        <a class="nav-link <?= get_current_url() === "projects" ? "active" : null ?>" href="/projects">Projects</a>
                     </li>
                 </ul>
                 <a class="navbar-brand m-0 p-0" href="/">
