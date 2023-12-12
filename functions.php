@@ -25,3 +25,11 @@ function get_layout(string $path)
     $layout_name = "page/{$path}";
     include "layout/main_layout.php";
 }
+
+function get_current_url()
+{
+    global $wp;
+    $current_url = add_query_arg( array(), $wp->request );
+
+    return $current_url;
+}

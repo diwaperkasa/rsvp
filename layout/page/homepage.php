@@ -4,20 +4,25 @@
 ?>
 
 <section id="section-hero">
-    <div>
-        <div class="px-4h5">
+    <div class="container-fluid">
+        <div class="px-4">
             <img src="<?= get_stylesheet_directory_uri() . "/assets/img/Hero-1.jpg" ?>" class="img-hero" alt="...">
         </div>
-        <div class="marquee">
-            <p class="h1 mx-5">WE <span class="fst-italic">INNOVATE</span> YOUR <span class="fst-italic">STORY</span> </p>
-            <p class="h1 mx-5">WE <span class="fst-italic">INNOVATE</span> YOUR <span class="fst-italic">STORY</span> </p>
-            <p class="h1 mx-5">WE <span class="fst-italic">INNOVATE</span> YOUR <span class="fst-italic">STORY</span> </p>
-            <p class="h1 mx-5">WE <span class="fst-italic">INNOVATE</span> YOUR <span class="fst-italic">STORY</span> </p>
+    </div>
+    <div class="marquee">
+        <p class="h1 mx-5">WE <span class="fst-italic">INNOVATE</span> YOUR <span class="fst-italic">STORY</span> </p>
+        <p class="h1 mx-5">WE <span class="fst-italic">INNOVATE</span> YOUR <span class="fst-italic">STORY</span> </p>
+        <p class="h1 mx-5">WE <span class="fst-italic">INNOVATE</span> YOUR <span class="fst-italic">STORY</span> </p>
+        <p class="h1 mx-5">WE <span class="fst-italic">INNOVATE</span> YOUR <span class="fst-italic">STORY</span> </p>
+    </div>
+    <div class="container-fluid">
+        <div class="px-4">
+            <div class="d-flex justify-content-between px-4">
+                <a class="fw-normal h5 fs-16pt" href="#" role="button">+ CONNECT</a>
+                <a class="fw-normal h5 fs-16pt" href="#" role="button"><span class="dotdec h5 position-relative"></span> EXPLORE</a>
+            </div>
         </div>
-        <div class="d-flex justify-content-between px-4">
-            <a class="fw-normal h5 fs-16pt" href="#" role="button">+ CONNECT</a>
-            <a class="fw-normal h5 fs-16pt" href="#" role="button"><span class="dotdec h5 position-relative"></span> EXPLORE</a>
-        </div>
+    </div>
     </div>
 </section>
 
@@ -25,8 +30,8 @@
     <div class="container">
         <div class="text-center my-5 py-5">
             <h3 class="fw-normal my-3">WELCOME <span class="fst-italic">to</span> R.S.V.P</h3>
-            <h1 class="rem7 fw-normal text-center text-break">A NEW ERA
-                <span class="fst-italic">of</span> <br> COMMUNICATION
+            <h1 class="rem7 fw-normal text-center text-break lh-1">
+                A NEW ERA<span class="fst-italic">of</span> <br> COMMUNICATION
             </h1>
             <div class="row justify-content-center my-5">
                 <div class="col-md-6">
@@ -51,7 +56,7 @@
                 <div class="justify-content-center">
                     <div class="text-white text-center py-5 my-5 px-5">
                         <p>ABOUT R.S.V.P</p>
-                        <h1 class="display-4 mb-5">The <span class="fst-italic">Innovation</span> <br> Agency</h1>
+                        <h1 class="display-4 mb-5 lh-1">The <span class="fst-italic">Innovation</span> <br> Agency</h1>
                         <p class="h4 fw-normal mb-5 fs-16pt lh-160">With over 20 years of experience in different emerging markets, we
                             specialise in a variety of online and offline service in PR, social, media and digital space to
                             create impactful and engaging campaigns. Our communication strategies are innovative, based on

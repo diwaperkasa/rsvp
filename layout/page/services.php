@@ -95,13 +95,12 @@
                 </svg>
             </a>
         </div>
-
-        <div class="marquee mt-5">
-            <p class="h1 mx-5"><a href="/contact">WORK WITH US</a></p>
-            <p class="h1 mx-5"><a href="/contact">WORK WITH US</a></p>
-            <p class="h1 mx-5"><a href="/contact">WORK WITH US</a></p>
-            <p class="h1 mx-5"><a href="/contact">WORK WITH US</a></p>
-            <p class="h1 mx-5"><a href="/contact">WORK WITH US</a></p>
-        </div>
+    </div>
+    <div class="marquee mt-5">
+        <p class="h1 mx-5"><a href="/contact">WORK WITH US</a></p>
+        <p class="h1 mx-5"><a href="/contact">WORK WITH US</a></p>
+        <p class="h1 mx-5"><a href="/contact">WORK WITH US</a></p>
+        <p class="h1 mx-5"><a href="/contact">WORK WITH US</a></p>
+        <p class="h1 mx-5"><a href="/contact">WORK WITH US</a></p>
     </div>
 </section>

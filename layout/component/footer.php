@@ -40,7 +40,7 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="input-group mb-5">
-                        <input type="email" class="form-control bg-transparent border-bottom" placeholder="Email Address" aria-label="Email Address" aria-describedby="button-addon2">
+                        <input type="email" class="form-control bg-transparent border-bottom text-white" placeholder="Email Address" aria-label="Email Address" aria-describedby="button-addon2">
                         <button class="btn btn-outline-secondary border-bottom" type="button" id="button-addon2">SUBSCRIBE</button>
                     </div>
                 </div>

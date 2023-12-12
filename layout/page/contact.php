@@ -1,7 +1,8 @@
 <section id="section-future">
     <div class="container">
         <div class="text-center my-5 py-5">
-            <h1 class="display-1 fw-normal text-center text-break">THE FUTURE
+            <h1 class="display-1 fw-normal text-center text-break lh-1">
+                THE FUTURE
                 <span class="fst-italic">of</span> <br> COMMUNICATION <br>
                 <span class="fst-italic">is</span> Here
             </h1>
