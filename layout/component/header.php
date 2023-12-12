@@ -94,13 +94,13 @@
                 </a>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link <?= get_current_url() === "culture" ? "active" : null ?>"" href="/culture">Culture</a>
+                        <a class="nav-link <?= get_current_url() === "culture" ? "active" : null ?>" href="/culture">Culture</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?= get_current_url() === "about" ? "active" : null ?>"" href="/about">About</a>
+                        <a class="nav-link <?= get_current_url() === "about" ? "active" : null ?>" href="/about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?= get_current_url() === "contact" ? "active" : null ?>"" href="/contact">Contact</a>
+                        <a class="nav-link <?= get_current_url() === "contact" ? "active" : null ?>" href="/contact">Contact</a>
                     </li>
                     <li>
                         <a class="btn" type="button" data-bs-toggle="offcanvas" href="#PopupMenu" role="button" aria-controls="PopupMenuLabel">
