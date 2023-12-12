@@ -1,5 +1,4 @@
-
-:root{
+:root {
   --black: #1B1B1B;
   --darkgrey: #B8B8B8;
   --grey: #F2F1F0;
@@ -7,48 +6,72 @@
 }
 
 body {
-    margin: 0;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.6;
-    text-align: left;
-    color: var(--black);
-    overflow-x: hidden;
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: left;
+  color: var(--black);
+  overflow-x: hidden;
 }
 
-.logo{
+.logo {
   font-family: "Times New Roman", Sans-serif;
   font-size: 2.25rem;
 }
 
-.bg-tgrey {background-color: var(--grey);}
-.bg-tblack {background-color: var(--black);}
+.bg-tgrey {
+  background-color: var(--grey);
+}
+
+.bg-tblack {
+  background-color: var(--black);
+}
+
 .form-control:focus {
   border-color: var(--yellow);
   box-shadow: 0 0 0 0.25rem rgb(255 193 7 / 20%);
 }
 
-.rem7{font-size: 7rem;}
-@media only screen and (max-width: 768px){
-  .rem7{font-size: 2.5rem;}
+.rem7 {
+  font-size: 7rem;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    font-family: 'Bodoni 72';
-    margin: 0;
-    font-weight: 600;
+@media only screen and (max-width: 768px) {
+  .rem7 {
+    font-size: 2.5rem;
+  }
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Bodoni Seventytwo ITC';
+  margin: 0;
+  font-weight: 600;
 }
 
 a {
-  color: hsl(var(--primary),var(--pl));
+  color: hsl(var(--primary), var(--pl));
   text-decoration: none;
 }
-a:hover, a .post-title:hover {
+
+a:hover,
+a .post-title:hover {
   color: var(--yellow);
 }
 
-.dotdec::before{
+.dotdec::before {
   position: absolute;
   content: "";
   left: -20px;
@@ -65,15 +88,18 @@ a:hover, a .post-title:hover {
   margin-left: 1rem;
   font-size: 1rem;
 }
-.navbar-nav .nav-item .nav-link{
+
+.navbar-nav .nav-item .nav-link {
   color: var(--black);
   text-transform: uppercase;
   position: relative;
 }
-.navbar-nav .nav-item .nav-link:hover{
+
+.navbar-nav .nav-item .nav-link:hover {
   color: var(--yellow);
 }
-.navbar-nav .nav-item .nav-link::before{
+
+.navbar-nav .nav-item .nav-link::before {
   position: absolute;
   content: "";
   left: 0;
@@ -85,48 +111,53 @@ a:hover, a .post-title:hover {
   transition: all 0.5s ease;
   transform: scale(0);
 }
-.navbar-nav .nav-item .nav-link:hover:before{
+
+.navbar-nav .nav-item .nav-link:hover:before {
   transform: scale(1);
 }
-.navbar-nav .nav-item .nav-link.active{
+
+.navbar-nav .nav-item .nav-link.active {
   color: var(--yellow);
 }
-.navbar-nav .nav-item .nav-link.active:before{
+
+.navbar-nav .nav-item .nav-link.active:before {
   transform: scale(1);
 }
 
 /* End Style Nav */
 
-.PopupMenu{
+.PopupMenu {
   background-color: #151515;
   color: white;
-  font-family: 'Bodoni 72';
+  font-family: 'Bodoni Seventytwo ITC';
 }
 
-.PopupMenu a.display-1{
+.PopupMenu a.display-1 {
   font-size: calc(3rem + 4.5vw);
 }
 
-.PopupMenu a.display-1:hover{
+.PopupMenu a.display-1:hover {
   font-style: italic;
 }
 
 /* Hero section */
-.img-hero{
+.img-hero {
   width: 100%;
   height: 600px;
   object-fit: cover;
 }
+
 @keyframes marquee {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-100%);
   }
 }
 
-.marquee{
+.marquee {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -134,7 +165,7 @@ a:hover, a .post-title:hover {
 }
 
 
-.marquee p{
+.marquee p {
   text-transform: uppercase;
   font-size: 9rem;
   font-weight: normal;
@@ -143,10 +174,11 @@ a:hover, a .post-title:hover {
   white-space: nowrap;
   animation: marquee 12s linear infinite;
 }
+
 /* End Hero section */
 
-.btn-big-round{
-  font-family: "Bodoni 72";
+.btn-big-round {
+  font-family: "Bodoni Seventytwo ITC";
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
@@ -160,40 +192,46 @@ a:hover, a .post-title:hover {
   color: #151515;
   background-color: var(--yellow);
 }
-.btn-big-round span{
+
+.btn-big-round span {
   transform: rotate(-45deg);
 }
 
-.testi-carousel img{
+.testi-carousel img {
   width: 120px !important;
 }
-@media only screen and (min-width: 768px){
-  .testi-carousel .item>div{
+
+@media only screen and (min-width: 768px) {
+  .testi-carousel .item>div {
     margin: 0 10rem;
   }
-  
+
 }
 
 
-.btn-big-round:hover{
+.btn-big-round:hover {
   color: white;
   transform: rotate(45deg);
 }
-.video-cover{
+
+.video-cover {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
+
 /* Footer section */
-footer{
+footer {
   background-color: var(--black);
   color: white;
 }
 
-footer .input-group>input, footer .input-group>button{
+footer .input-group>input,
+footer .input-group>button {
   border: none;
   border-radius: 0;
 }
+
 /* End Footer section */
 
 
@@ -204,6 +242,7 @@ footer .input-group>input, footer .input-group>button{
   padding: 0;
   box-sizing: border-box;
 }
+
 .cursor {
   width: 50px;
   height: 50px;
@@ -241,29 +280,31 @@ footer .input-group>input, footer .input-group>button{
   height: 50px;
   opacity: .5;
 }
+
 /* End Cursor */
 
-.img-culture{
+.img-culture {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-.text-about{
+.text-about {
   position: absolute;
   top: 300px;
   right: 200px;
   transform: rotate(-90deg) scale(3);
 }
-@media only screen and (max-width: 768px){
-  .text-about{
+
+@media only screen and (max-width: 768px) {
+  .text-about {
     position: unset;
     text-align: center;
     transform: rotate(0deg) scale(1);
   }
 }
 
-.numbering-dec{
+.numbering-dec {
   position: absolute;
   font-style: italic;
   font-weight: bold;
@@ -275,28 +316,28 @@ footer .input-group>input, footer .input-group>button{
   opacity: .3;
 }
 
-.top-header-fixed{
+.top-header-fixed {
   position: fixed;
   width: 100%;
   z-index: 1;
 }
 
-.project-slide img{
+.project-slide img {
   height: 350px;
   width: auto !important;
   margin: auto;
   object-fit: cover;
 }
 
-.dots li a:before{
+.dots li a:before {
   background: #D6D6D6;
 }
 
-.dots li a.active:before{
+.dots li a.active:before {
   background: #869791;
 }
 
-.elipsisp{
+.elipsisp {
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 0;
@@ -305,12 +346,13 @@ footer .input-group>input, footer .input-group>button{
   -webkit-line-clamp: 7;
 }
 
-@media only screen and (max-height: 600px){
-  .elipsisp{
+@media only screen and (max-height: 600px) {
+  .elipsisp {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
   }
-  .project-slide img{
+
+  .project-slide img {
     height: 175px;
     width: auto !important;
     margin: auto;
@@ -335,7 +377,7 @@ footer .input-group>input, footer .input-group>button{
 }
 
 .h-80 {
-  height: 80%!important;
+  height: 80% !important;
 }
 
 .px-4h5 {
@@ -389,4 +431,17 @@ footer .input-group>input, footer .input-group>button{
 
 .cursor2 {
   z-index: 9999999;
+}
+
+.logo {
+  font-family: 'Bodoni Seventytwo ITC';
+}
+
+.list-unstyled a {
+  font-family: 'Bodoni Seventytwo ITC';
+}
+
+footer .form-control::placeholder {
+  color: white;
+  /* font-family: 'Bodoni Seventytwo ITC'; */
 }

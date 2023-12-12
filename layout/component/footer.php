@@ -6,10 +6,10 @@
                     <div>
                         <div class="row align-items-end">
                             <div class="col-md-3">
-                                <span class="logo">R.S.P.V</span>
+                                <span class="logo fw-normal">R.S.V.P</span>
                             </div>
                             <div class="col-md-9">
-                                <h5>Don’t miss out. Subscribe to news from R.S.V.P</h5>
+                                <h5 class="fw-normal">Don’t miss out. Subscribe to news from R.S.V.P</h5>
                             </div>
                         </div>
                         <div class="my-5">
@@ -41,12 +41,12 @@
                 <div class="row">
                     <div class="input-group mb-5">
                         <input type="email" class="form-control bg-transparent border-bottom text-white" placeholder="Email Address" aria-label="Email Address" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-secondary border-bottom" type="button" id="button-addon2">SUBSCRIBE</button>
+                        <button class="btn btn-outline-secondary border-bottom text-white" type="button" id="button-addon2">SUBSCRIBE</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-4">
-                        <p class="h4 mb-4">About</p>
+                        <p class="h4 mb-4 fw-normal">About</p>
                         <ul class="list-unstyled">
                             <li class="mb-2"><a href="/">Home</a></li>
                             <li class="mb-2"><a href="/about">About</a></li>
@@ -56,7 +56,7 @@
                         </ul>
                     </div>
                     <div class="col-4">
-                        <p class="h4 mb-4">Contact</p>
+                        <p class="h4 mb-4 fw-normal">Contact</p>
                         <ul class="list-unstyled">
                             <li class="mb-2"><a href="#">Email</a></li>
                             <li class="mb-2"><a href="#">Facebook</a></li>
