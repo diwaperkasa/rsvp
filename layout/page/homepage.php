@@ -350,7 +350,7 @@
     <div class="container-fluid">
         <div class="row bg-tblack">
             <div class="col-md-6  px-0">
-                <img src="http://rsvp-v2-local.co/wp-content/themes/rsvp/assets/img/architectural-details-1.png" class="img-fluid h-100" alt="...">
+                <img src="<?= get_stylesheet_directory_uri() . "/assets/img/architectural-details-1.png" ?>" class="img-fluid h-100" alt="...">
             </div>
             <div class="col-md-6 p-lg-5">
                 <div class="justify-content-center px-lg-5">
