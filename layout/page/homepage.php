@@ -35,16 +35,16 @@
             </h1>
             <div class="row justify-content-center my-5">
                 <div class="col-md-6">
-                    <img src="<?= get_stylesheet_directory_uri() . "/assets/img/alina-bordunova1.png" ?>" class="img-fluid" alt="...">
+                    <div class="px-4">
+                        <img src="<?= get_stylesheet_directory_uri() . "/assets/img/alina-bordunova1.png" ?>" class="image img-fluid" alt="...">
+                    </div>
                 </div>
             </div>
-            <h1 class="fw-normal text-center mb-5">
-                We are a <span class="fst-italic">next-generation</span> communications <br>
-                agency that brings together the worlds of <br>
-                <span class="fst-italic">fashion, lifestyle,</span> and <span class="fst-italic">technology</span> for the
-                <br>
-                consumer of tomorrow.
-            </h1>
+            <div class="px-4">
+                <h1 class="fw-normal text-center mb-5 text px-mb-5">
+                    We are a <span class="fst-italic">next-generation</span> communications agency that brings together the worlds of <span class="fst-italic">fashion, lifestyle,</span> and <span class="fst-italic">technology</span> for the consumer of tomorrow.
+                </h1>
+            </div>
         </div>
     </div>
 </section>
@@ -52,7 +52,12 @@
 <section id="section-about-us">
     <div class="container-fluid">
         <div class="row bg-tblack">
-            <div class="col-md-6 px-0">
+            <div class="col-md-6 px-0 order-md-2 video-player">
+                <video autoplay muted loop class="video-cover">
+                    <source src="<?= get_stylesheet_directory_uri() . '/assets/img/videobg.webm' ?>" type="video/webm">
+                </video>
+            </div>
+            <div class="col-md-6 px-0 order-md-1">
                 <div class="justify-content-center">
                     <div class="text-white text-center py-5 my-5 px-5">
                         <p>ABOUT R.S.V.P</p>
@@ -72,18 +77,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6  px-0">
-                <video autoplay muted loop class="video-cover">
-                    <source src="<?= get_stylesheet_directory_uri() . '/assets/img/videobg.webm' ?>" type="video/webm">
-                </video>
-            </div>
         </div>
     </div>
 </section>
 
 <section id="section-ability" class="py-5 bg-tgrey">
     <div class="container p-5">
-        <h1 class="display-1">
+        <h1 class="display-3 lh-1">
             We take pride in our ability to identify opportunities — and provide innovative solutions that make a
             difference.
         </h1>
@@ -97,7 +97,7 @@
             </div>
             <div class="col-md-4">
                 <div class="d-flex justify-content-center justify-content-md-end">
-                    <a href="/contact" class="btn-big-round"> <span>CONNECT <span>with</span> US</span></a>
+                    <a href="/contact" class="btn-big-round mt-4 mt-sm-0"> <span>CONNECT <span>with</span> US</span></a>
                 </div>
             </div>
         </div>
@@ -313,32 +313,32 @@
 <section id="section-culture" class="py-5">
     <div class="container-fluid p-md-4">
         <h1 class="h4 text-center fw-normal mb-5 fs-16pt">A CULTURE <span class="fst-italic">to </span>CREATE <span class="fst-italic">and </span>ELEVATE</h1>
-        <div class="row py-4 align-items-center">
+        <div class="row pb-4 py-md-4 align-items-center">
             <div class="col-md-8">
-                <h1 class="display-1 text-center">BUILDING <br> <span class="fst-italic">COMMUNITY </span></h1>
+                <h1 class="display-3 text-start text-sm-center px-3">BUILDING <br> <span class="fst-italic">COMMUNITY </span></h1>
             </div>
             <div class="col-md-4">
-                <div class="text-center text-md-start">
+                <div class="text-end text-md-start pt-4 pt-md-0 px-3">
                     <img src="<?= get_stylesheet_directory_uri() . '/assets/img/culture1.png' ?>" class="img-culture" alt="...">
                 </div>
             </div>
         </div>
-        <div class="row py-4 align-items-center">
+        <div class="row pb-4 py-md-4 align-items-center">
             <div class="col-md-4 order-2">
-                <div class="text-center text-md-end">
+                <div class="text-start text-md-end pt-4 pt-md-0 px-3">
                     <img src="<?= get_stylesheet_directory_uri() . '/assets/img/culture2.png' ?>" class="img-culture" alt="...">
                 </div>
             </div>
             <div class="col-md-8 order-1 order-md-2">
-                <h1 class="display-1 text-center">INSPIRING <br> <span class="fst-italic">CREATIVITY </span></h1>
+                <h1 class="display-3 text-start text-sm-center px-3">FOSTERING <br> <span class="fst-italic">COLLABORATION </span></h1>
             </div>
         </div>
-        <div class="row py-4 align-items-center">
+        <div class="row pb-4 py-md-4 align-items-center">
             <div class="col-md-8">
-                <h1 class="display-1 text-center">FOSTERING <br> <span class="fst-italic">COLLABORATION </span></h1>
+                <h1 class="display-3 text-end text-sm-center px-3">INSPIRING <br> <span class="fst-italic">CREATIVITY </span></h1>
             </div>
             <div class="col-md-4">
-                <div class="text-center text-md-start">
+                <div class="text-end text-md-start pt-4 pt-md-0 px-3">
                     <img src="<?= get_stylesheet_directory_uri() . '/assets/img/culture3.png' ?>" class="img-culture" alt="...">
                 </div>
             </div>
@@ -354,7 +354,7 @@
             </div>
             <div class="col-md-6 p-lg-5">
                 <div class="justify-content-center px-lg-5">
-                    <div class="text-white text-center py-5 my-5 px-lg-4">
+                    <div class="text-white text-center py-5 my-5 px-md-4 px-5">
                         <p class="fs-5 fs-16pt mb-lg-4">OUR TEAM</p>
                         <h1 class="display-4 mb-5 lh-1">Meet <br> <span class="fst-italic">The Team</span></h1>
                         <p class="h4 fw-normal mb-5 fs-16pt lh-160">Our team consists of talented and dynamic professionals, who are

@@ -10,17 +10,19 @@ $('.work-carousel').owlCarousel({
     loop: true,
     autoplay: true,
     lazyLoad: true,
-    margin: 30,
     nav: true,
     dots: false,
     responsive: {
         0: {
             items: 1,
+            margin: 10,
+            stagePadding: 50,
         },
         700: {
-            items: 3
+            items: 3,
+            margin: 30,
         }
-    }
+    },
 })
 
 $('.service-carousel').owlCarousel({
@@ -28,8 +30,9 @@ $('.service-carousel').owlCarousel({
     autoplay: true,
     lazyLoad: true,
     margin: 16,
-    nav: true,
+    nav: false,
     dots: false,
     items: 1,
     autoHeight: true,
+    stagePadding: 50,
 })

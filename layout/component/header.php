@@ -1,10 +1,14 @@
 <!-- Pop up Menu -->
 <div class="offcanvas offcanvas-end w-100 PopupMenu" tabindex="-1" id="PopupMenu" aria-labelledby="PopupMenuLabel">
-    <div class="offcanvas-header position-absolute w-100">
-        <h1></h1>
-        <button type="button" class="btn text-white bg-transparent fs-2" data-bs-dismiss="offcanvas" aria-label="Close">X</button>
+    <div class="offcanvas-header w-100">
+        <div class="text-center align-items-center">
+            <span class="fs-16pt">R.S.V.P</span>
+        </div>
+        <div class="text-end">
+            <button type="button" class="btn text-white bg-transparent fs-2 close-menu close-btn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
     </div>
-    <div class="offcanvas-body">
+    <div class="offcanvas-body pt-sm-3">
         <nav class="nav w-100 h-100 align-items-center">
             <ul class="list-unstyled w-100">
                 <li>

@@ -366,11 +366,40 @@ footer .input-group>button {
   .PopupMenu a.display-1 {
     font-size: calc(3rem + 2vw);
   }
+
+  #section-newera .image {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #section-about-us .video-cover {
+    zoom: 4;
+    object-fit: cover;
+    height: 100px;
+  }
+
+  #section-about-us .video-player {
+    height: 350px;
+    overflow: hidden;
+  }
+
+  .img-culture {
+    width: 200px !important;
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   * {
     cursor: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #section-newera .text {
+    margin-left: 25%;
+    margin-right: 25%;
   }
 }
 
@@ -450,4 +479,73 @@ footer .input-group>button {
 footer .form-control::placeholder {
   color: white;
   /* font-family: 'Bodoni Seventytwo ITC'; */
+}
+
+.navbar {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+.service-carousel .owl-item .item {
+  height: 450px;
+}
+
+.service-carousel .img-fluid {
+  height: 360px;
+  object-fit: cover;
+}
+
+.service-carousel .video-cover {
+  height: 360px;
+}
+
+.service-carousel .owl-item:not(.active) .img-fluid, .service-carousel .owl-item:not(.active) .video-cover {
+  margin-top: 30px;
+  height: 250px;
+}
+
+#section-contactus .form-control::placeholder {
+  color: #B8B8B8;
+  font-family: 'Bodoni Seventytwo ITC';
+}
+
+.copyright {
+  font-size: 10pt;
+  color: #B8B8B8;
+}
+
+.close-menu {
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+.offcanvas-header::before, .offcanvas-header div {
+  content: '';
+  flex-basis: 100%;
+}
+
+.close-btn {
+  position: absolute;
+  right: 32px;
+  top: 0px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.5;
+}
+.close-btn:hover {
+  opacity: 1;
+}
+.close-btn:before, .close-btn:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: white;
+}
+.close-btn:before {
+  transform: rotate(45deg);
+}
+.close-btn:after {
+  transform: rotate(-45deg);
 }
