@@ -31,6 +31,7 @@ function get_current_url()
 {
     global $wp;
     $current_url = add_query_arg( array(), $wp->request );
+    $part = explode("/", $current_url);
 
-    return $current_url;
+    return current($part);
 }

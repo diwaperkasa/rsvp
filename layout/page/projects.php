@@ -6,7 +6,7 @@
         </h1>
         <div class="row align-items-center justify-content-center">
             <div class="col-md">
-                <a href="javascript:void(0);">
+                <a href="/projects/birkenstock">
                     <div class="card rounded-0  border-0">
                         <div class="card-body">
                             <p class="mb-0 dotdec position-relative ms-4">01</p>
@@ -18,7 +18,7 @@
                 </a>
             </div>
             <div class="col-md-5">
-                <a href="javascript:void(0);">
+                <a href="/projects/ytl-hotels">
                     <div class="card rounded-0 border-0">
                         <div class="card-body">
                             <p class="mb-0 dotdec position-relative ms-4">02</p>
@@ -30,7 +30,7 @@
                 </a>
             </div>
             <div class="col-md">
-                <a href="javascript:void(0);">
+                <a href="/projects/clinique-la-prairie">
                     <div class="card rounded-0 border-0">
                         <div class="card-body">
                             <p class="mb-0 dotdec position-relative ms-4">03</p>
@@ -44,7 +44,7 @@
         </div>
         <div class="row align-items-center justify-content-center">
             <div class="col-md">
-                <a href="javascript:void(0);">
+                <a href="/projects/zegna-232-1-0-dinner">
                     <div class="card rounded-0  border-0">
                         <div class="card-body">
                             <p class="mb-0 dotdec position-relative ms-4">04</p>
@@ -57,7 +57,7 @@
             </div>
             <div class="col-md-3">
                 <div class="my-5"></div>
-                <a href="#">
+                <a href="/projects/amaffi-asia-boutique">
                     <div class="card rounded-0 border-0">
                         <div class="card-body">
                             <p class="mb-0 dotdec position-relative ms-4">05</p>
@@ -69,7 +69,7 @@
                 </a>
             </div>
             <div class="col-md">
-                <a href="#">
+                <a href="/projects/viva-studio-launch">
                     <div class="card rounded-0 border-0">
                         <div class="card-body">
                             <p class="mb-0 dotdec position-relative ms-4">06</p>
@@ -83,7 +83,7 @@
         </div>
         <div class="row align-items-center justify-content-center">
             <div class="col-md-3">
-                <a href="#">
+                <a href="/projects/brytehall">
                     <div class="card rounded-0  border-0">
                         <div class="card-body">
                             <p class="mb-0 dotdec position-relative ms-4">07</p>
@@ -95,7 +95,7 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="#">
+                <a href="/projects/vogue-launch">
                     <div class="card rounded-0 border-0">
                         <div class="card-body">
                             <p class="mb-0 dotdec position-relative ms-4">08</p>
@@ -108,7 +108,7 @@
             </div>
         </div>
         <div class="text-center mt-5">
-            <a class="fw-normal h5 fst-italic text-decoration-underline" href="/service" role="button">Browse All Services
+            <a class="fw-normal h5 fst-italic text-decoration-underline" href="/services" role="button">Browse All Services
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" viewBox="0 0 54 30" fill="none">
                     <path d="M0.394531 14.9975L53.6048 14.9976" stroke="#F2BE3F" stroke-width="3"></path>
                     <path d="M53.3119 15.3929C50.364 16.2454 45.2012 17.3076 41.5353 20.5209C38.4559 23.2202 37.6553 27.385 37.9149 28.889" stroke="#F2BE3F" stroke-width="3" stroke-linejoin="round"></path>

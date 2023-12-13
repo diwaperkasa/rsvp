@@ -499,9 +499,12 @@ footer .form-control::placeholder {
   height: 360px;
 }
 
+.service-carousel .owl-item:not(.active) p {
+  margin-top: 50px;
+}
+
 .service-carousel .owl-item:not(.active) .img-fluid, .service-carousel .owl-item:not(.active) .video-cover {
-  margin-top: 30px;
-  height: 250px;
+  height: 220px;
 }
 
 #section-contactus .form-control::placeholder {
@@ -532,9 +535,11 @@ footer .form-control::placeholder {
   height: 32px;
   opacity: 0.5;
 }
+
 .close-btn:hover {
   opacity: 1;
 }
+
 .close-btn:before, .close-btn:after {
   position: absolute;
   left: 15px;
@@ -543,9 +548,16 @@ footer .form-control::placeholder {
   width: 2px;
   background-color: white;
 }
+
 .close-btn:before {
   transform: rotate(45deg);
 }
+
 .close-btn:after {
   transform: rotate(-45deg);
+}
+
+#project-detail .video-cover {
+  height: 350px;
+  width: auto;
 }
