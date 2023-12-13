@@ -31,7 +31,7 @@
         <div class="text-center my-5 py-5">
             <h3 class="fw-normal my-3">WELCOME <span class="fst-italic">to</span> R.S.V.P</h3>
             <h1 class="rem7 fw-normal text-center text-break lh-1">
-                A NEW ERA<span class="fst-italic">of</span> <br> COMMUNICATION
+                A NEW ERA <span class="fst-italic">of</span> <br> COMMUNICATION
             </h1>
             <div class="row justify-content-center my-5">
                 <div class="col-md-6">
