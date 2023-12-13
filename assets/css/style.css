@@ -561,3 +561,7 @@ footer .form-control::placeholder {
   height: 350px;
   width: auto;
 }
+
+.logo {
+  color: #1B1B1B
+}

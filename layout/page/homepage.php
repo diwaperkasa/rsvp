@@ -18,8 +18,8 @@
     <div class="container-fluid">
         <div class="px-4">
             <div class="d-flex justify-content-between px-4">
-                <a class="fw-normal h5 fs-16pt" href="#section-contactus" role="button">+ CONNECT</a>
-                <a class="fw-normal h5 fs-16pt" href="#section-newera" role="button"><span class="dotdec h5 position-relative"></span> EXPLORE</a>
+                <a class="fw-normal fs-14pt" href="#section-contactus" role="button">+ CONNECT</a>
+                <a class="fw-normal fs-14pt" href="#section-newera" role="button"><span class="dotdec h5 position-relative"></span> EXPLORE</a>
             </div>
         </div>
     </div>
@@ -42,7 +42,7 @@
             </div>
             <div class="px-4">
                 <h1 class="fw-normal text-center mb-5 text px-mb-5">
-                    We are a <span class="fst-italic">next-generation</span> communications agency that brings together the worlds of <span class="fst-italic">fashion, lifestyle,</span> and <span class="fst-italic">technology</span> for the consumer of tomorrow.
+                    We are a <span class="fst-italic">next-generation</span> communications agency<br>that brings together the worlds of <span class="fst-italic">fashion, lifestyle,</span> and <span class="fst-italic">technology</span> for the consumer of tomorrow.
                 </h1>
             </div>
         </div>
@@ -62,7 +62,7 @@
                     <div class="text-white text-center py-5 my-5 px-5">
                         <p>ABOUT R.S.V.P</p>
                         <h1 class="display-4 mb-5 lh-1">The <span class="fst-italic">Innovation</span> <br> Agency</h1>
-                        <p class="h4 fw-normal mb-5 fs-16pt lh-160">With over 20 years of experience in different emerging markets, we
+                        <p class="h4 fw-normal mb-5 fs-14pt lh-160">With over 20 years of experience in different emerging markets, we
                             specialise in a variety of online and offline service in PR, social, media and digital space to
                             create impactful and engaging campaigns. Our communication strategies are innovative, based on
                             shifting trends and technologies, including AI, AR and VR to effectively communicate and connect
@@ -106,7 +106,7 @@
 
 <section id="section-services" class="py-5">
     <div class="container-fluid p-3 p-md-5">
-        <p class="text-center fs-16pt">OUR SERVICES</p>
+        <p class="text-center fs-14pt">OUR SERVICES</p>
         <h1 class="display-4 text-center mb-5 lh-1">Our Creative <br> <span class="fst-italic">Solutions</span></h1>
         <!-- Desktop View -->
         <div class="row align-items-center d-none d-md-flex">
@@ -224,7 +224,7 @@
 
 <section id="section-projects" class="py-5 bg-tgrey">
     <div class="container-fluid">
-        <p class="text-center fs-5 fs-16pt">OUR PROJECTS</p>
+        <p class="text-center fs-5 fs-14pt">OUR PROJECTS</p>
         <h1 class="display-4 text-center lh-1">Our Selected <br> <span class="fst-italic">Works</span></h1>
         <div class="mt-4">
             <div class="owl-carousel work-carousel owl-theme">
@@ -232,7 +232,7 @@
                     <div class="card rounded-0 px-md-2">
                         <div class="card-body">
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/BIRKENSTOCK.jpg' ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0">Birkenstock</h5>
+                            <h5 class="card-title mt-3 mb-0 fw-normal">Birkenstock</h5>
                             <p class="card-text">2022—2023</p>
                         </div>
                     </div>
@@ -241,7 +241,7 @@
                     <div class="card rounded-0 px-md-2">
                         <div class="card-body">
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/YTL-Hotels.jpg' ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0">YTL Hotels</h5>
+                            <h5 class="card-title mt-3 mb-0 fw-normal">YTL Hotels</h5>
                             <p class="card-text">2022—2023</p>
                         </div>
                     </div>
@@ -250,7 +250,7 @@
                     <div class="card rounded-0 px-md-2">
                         <div class="card-body">
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/AMAFFI.jpg' ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0">AMAFFI Asia Boutique</h5>
+                            <h5 class="card-title mt-3 mb-0 fw-normal">AMAFFI Asia Boutique</h5>
                             <p class="card-text">2022</p>
                         </div>
                     </div>
@@ -259,7 +259,7 @@
                     <div class="card rounded-0 px-md-2">
                         <div class="card-body">
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/Brytehall.jpg' ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0">Brytehall</h5>
+                            <h5 class="card-title mt-3 mb-0 fw-normal">Brytehall</h5>
                             <p class="card-text">2022</p>
                         </div>
                     </div>
@@ -268,7 +268,7 @@
                     <div class="card rounded-0 px-md-2">
                         <div class="card-body">
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/Clique-La-Prairie.jpg' ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0">Clinique La Prairie</h5>
+                            <h5 class="card-title mt-3 mb-0 fw-normal">Clinique La Prairie</h5>
                             <p class="card-text">2023</p>
                         </div>
                     </div>
@@ -277,7 +277,7 @@
                     <div class="card rounded-0">
                         <div class="card-body">
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/VIVA-1.jpg' ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0">VIVA Studio Launch</h5>
+                            <h5 class="card-title mt-3 mb-0 fw-normal">VIVA Studio Launch</h5>
                             <p class="card-text">2022—Present</p>
                         </div>
                     </div>
@@ -286,7 +286,7 @@
                     <div class="card rounded-0">
                         <div class="card-body">
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/Vogue.jpg' ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0">VOGUE Launch</h5>
+                            <h5 class="card-title mt-3 mb-0 fw-normal">VOGUE Launch</h5>
                             <p class="card-text">2020</p>
                         </div>
                     </div>
@@ -295,7 +295,7 @@
                     <div class="card rounded-0">
                         <div class="card-body">
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/Zegna.jpg' ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0">ZEGNA 232 1.0 Dinner</h5>
+                            <h5 class="card-title mt-3 mb-0 fw-normal">ZEGNA 232 1.0 Dinner</h5>
                             <p class="card-text">2023</p>
                         </div>
                     </div>
@@ -355,7 +355,7 @@
             <div class="col-md-6 p-lg-5">
                 <div class="justify-content-center px-lg-5">
                     <div class="text-white text-center py-5 my-5 px-md-4 px-5">
-                        <p class="fs-5 fs-16pt mb-lg-4">OUR TEAM</p>
+                        <p class="fs-5 fs-14pt mb-lg-4">OUR TEAM</p>
                         <h1 class="display-4 mb-5 lh-1">Meet <br> <span class="fst-italic">The Team</span></h1>
                         <p class="h4 fw-normal mb-5 fs-16pt lh-160">Our team consists of talented and dynamic professionals, who are
                             well-versed in the ever-changing landscape of the communications industry to provide excellent

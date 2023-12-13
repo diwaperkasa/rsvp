@@ -61,7 +61,7 @@
                             <li class="mb-2"><a href="#">Email</a></li>
                             <li class="mb-2"><a href="#">Facebook</a></li>
                             <li class="mb-2"><a href="#">Instagram</a></li>
-                            <li class="mb-2"><a href="#">Twitter</a></li>
+                            <li class="mb-2"><a href="#">X (formerly Twitter)</a></li>
                         </ul>
                     </div>
                 </div>
