@@ -7,7 +7,7 @@
             </div>
             <div class="col-md-6">
                 <div class="d-flex flex-column justify-content-between h-100 px-4">
-                    <div class="px-md-5 text-center">
+                    <div class="p-2 px-md-5 text-center">
                         <h1 class="display-6 mb-2">ZEGNA 232 <br> 1.0 Dinner</h1>
                         <div class="owl-carousel project-carousel owl-theme ">
                             <div class="item project-slide">
@@ -26,7 +26,7 @@
                                 <img src="<?= get_stylesheet_directory_uri() . "/assets/img/zegna-slide5.png" ?>" alt="...">
                             </div>
                         </div>
-                        <p class="fs-6 elipsisp my-4">R.S.V.P transported Singapore’s glitterati on a luxurious journey to Oasi Zegna, via a gastronomic Italian feast paired with fine wines and dynamic conversations at Singapore’s elite private members’ club 67 Pall Mall. With Angelo Zegna in attendance, we ensured that ZEGNA’s team and esteemed guests enjoyed an evening grandezza in honour of this classic Italian fashion house.</p>
+                        <p class="fs-6 elipsisp my-4 overflow-auto">R.S.V.P transported Singapore’s glitterati on a luxurious journey to Oasi Zegna, via a gastronomic Italian feast paired with fine wines and dynamic conversations at Singapore’s elite private members’ club 67 Pall Mall. With Angelo Zegna in attendance, we ensured that ZEGNA’s team and esteemed guests enjoyed an evening grandezza in honour of this classic Italian fashion house.</p>
                     </div>
                     <div class="d-flex justify-content-between m-2 mb-4">
                         <div class="text-start">

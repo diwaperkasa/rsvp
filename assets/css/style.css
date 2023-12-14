@@ -565,3 +565,8 @@ footer .form-control::placeholder {
 .logo {
   color: #1B1B1B
 }
+
+.elipsisp {
+  height: 180px;
+  -webkit-line-clamp: unset;
+}

@@ -7,7 +7,7 @@
             </div>
             <div class="col-md-6">
                 <div class="d-flex flex-column justify-content-between h-100 px-4">
-                    <div class="px-md-5 text-center">
+                    <div class="p-2 px-md-5 text-center">
                         <h1 class="display-6 mb-2">VOGUE Launch</h1>
                         <div class="owl-carousel project-carousel owl-theme ">
                             <div class="item project-slide">
@@ -25,7 +25,7 @@
                                 <img src="<?= get_stylesheet_directory_uri() . "/assets/img/VOGUE-slide4.jpg" ?>" alt="...">
                             </div>
                         </div>
-                        <p class="fs-6 elipsisp my-4">VOGUE Singapore launched in 2020 to great fanfare, marking an incredible new era in local and global fashion. R.S.V.P shared a bespoke gift with influential media and fashion personalities, with the first issue of VOGUE Singapore and a visionary book outlining the brand’s inception. Local fashion’s prestigious names were invited to an exclusive event to plant special Vanda Vogue orchids, honouring Singapore while symbolising new beginnings. </p>
+                        <p class="fs-6 elipsisp my-4 overflow-auto">VOGUE Singapore launched in 2020 to great fanfare, marking an incredible new era in local and global fashion. R.S.V.P shared a bespoke gift with influential media and fashion personalities, with the first issue of VOGUE Singapore and a visionary book outlining the brand’s inception. Local fashion’s prestigious names were invited to an exclusive event to plant special Vanda Vogue orchids, honouring Singapore while symbolising new beginnings. </p>
                     </div>
                     <div class="d-flex justify-content-between m-2 mb-4">
                         <div class="text-start">
