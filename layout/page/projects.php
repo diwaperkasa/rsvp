@@ -11,7 +11,7 @@
                         <div class="card-body">
                             <p class="mb-0 dotdec position-relative ms-4">01</p>
                             <img src="<?= get_stylesheet_directory_uri() . "/assets/img/BIRKENSTOCK.jpg" ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0">Birkenstock</h5>
+                            <h5 class="card-title mt-3 mb-0 fw-normal">Birkenstock</h5>
                             <p class="card-text">2022—2023</p>
                         </div>
                     </div>
@@ -23,7 +23,7 @@
                         <div class="card-body">
                             <p class="mb-0 dotdec position-relative ms-4">02</p>
                             <img src="<?= get_stylesheet_directory_uri() . "/assets/img/YTL-Hotels.jpg" ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0">YTL Hotels</h5>
+                            <h5 class="card-title mt-3 mb-0 fw-normal">YTL Hotels</h5>
                             <p class="card-text">2022—2023</p>
                         </div>
                     </div>
@@ -35,7 +35,7 @@
                         <div class="card-body">
                             <p class="mb-0 dotdec position-relative ms-4">03</p>
                             <img src="<?= get_stylesheet_directory_uri() . "/assets/img/Clique-La-Prairie.jpg" ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0">Clinique La Prairie</h5>
+                            <h5 class="card-title mt-3 mb-0 fw-normal">Clinique La Prairie</h5>
                             <p class="card-text">2023</p>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                         <div class="card-body">
                             <p class="mb-0 dotdec position-relative ms-4">04</p>
                             <img src="<?= get_stylesheet_directory_uri() . "/assets/img/Zegna.jpg" ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0">ZEGNA 232 1.0 Dinner</h5>
+                            <h5 class="card-title mt-3 mb-0 fw-normal">ZEGNA 232 1.0 Dinner</h5>
                             <p class="card-text">2023</p>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
                         <div class="card-body">
                             <p class="mb-0 dotdec position-relative ms-4">05</p>
                             <img src="<?= get_stylesheet_directory_uri() . "/assets/img/AMAFFI.jpg" ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0">AMAFFI Asia Boutique</h5>
+                            <h5 class="card-title mt-3 mb-0 fw-normal">AMAFFI Asia Boutique</h5>
                             <p class="card-text">2022</p>
                         </div>
                     </div>
@@ -74,7 +74,7 @@
                         <div class="card-body">
                             <p class="mb-0 dotdec position-relative ms-4">06</p>
                             <img src="<?= get_stylesheet_directory_uri() . "/assets/img/VIVA-1.jpg" ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0">VIVA Studio Launch</h5>
+                            <h5 class="card-title mt-3 mb-0 fw-normal">VIVA Studio Launch</h5>
                             <p class="card-text">2022—Present</p>
                         </div>
                     </div>
@@ -88,7 +88,7 @@
                         <div class="card-body">
                             <p class="mb-0 dotdec position-relative ms-4">07</p>
                             <img src="<?= get_stylesheet_directory_uri() . "/assets/img/Brytehall.jpg" ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0">Brytehall</h5>
+                            <h5 class="card-title mt-3 mb-0 fw-normal">Brytehall</h5>
                             <p class="card-text">2022</p>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                         <div class="card-body">
                             <p class="mb-0 dotdec position-relative ms-4">08</p>
                             <img src="<?= get_stylesheet_directory_uri() . "/assets/img/Vogue.jpg" ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0">VOGUE Launch</h5>
+                            <h5 class="card-title mt-3 mb-0 fw-normal">VOGUE Launch</h5>
                             <p class="card-text">2020</p>
                         </div>
                     </div>
