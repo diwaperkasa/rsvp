@@ -14,50 +14,50 @@
                 <li>
                     <div class="row g-1 align-items-end">
                         <div class="col-5 text-end">
-                            <h4 class="mb-3">01</h4>
+                            <p class="mb-2 fw-normal fs-10pt">01</p>
                         </div>
                         <div class="col-7">
-                            <a class="display-1" href="/about">About</a>
+                            <a class="display-1 lh-1" href="/about">About</a>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="row g-1 align-items-end">
                         <div class="col-7 text-end">
-                            <a class="display-1" href="/services">Services</a>
+                            <a class="display-1 lh-1" href="/services">Services</a>
                         </div>
                         <div class="col-5">
-                            <h4 class="mb-3">02</h4>
+                            <p class="mb-2 fw-normal fs-10pt">02</p>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="row g-1 align-items-end">
                         <div class="col-5 text-end">
-                            <h4 class="mb-3">03</h4>
+                            <span class="mb-2 fw-normal fs-10pt">03</span>
                         </div>
                         <div class="col-7">
-                            <a class="display-1" href="/projects">Projects</a>
+                            <a class="display-1 lh-1" href="/projects">Projects</a>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="row g-1 align-items-end">
                         <div class="col-7 text-end">
-                            <a class="display-1" href="/culture">Culture</a>
+                            <a class="display-1 lh-1" href="/culture">Culture</a>
                         </div>
                         <div class="col-5">
-                            <h4 class="mb-3">04</h4>
+                            <p class="mb-2 fw-normal fs-10pt">04</p>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="row g-1 align-items-end">
                         <div class="col-5 text-end">
-                            <h4 class="mb-3">05</h4>
+                            <p class="mb-2 fw-normal fs-10pt">05</p>
                         </div>
                         <div class="col-7">
-                            <a class="display-1" href="/contact">Contact</a>
+                            <a class="display-1 lh-1" href="/contact">Contact</a>
                         </div>
                     </div>
                 </li>

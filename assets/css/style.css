@@ -215,6 +215,7 @@ a .post-title:hover {
 }
 
 .video-cover {
+  max-width: 100%;
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -591,4 +592,33 @@ footer .form-control::placeholder {
   background-color: #1B1B1B;
   color: white;
   transform: none;
+}
+
+@media (min-width: 1200px) {
+  #section-culture .display-1 {
+      font-size: 7rem;
+  }
+}
+
+.numbering-dec {
+  font-weight: normal;
+  left: -15%;
+}
+
+#section-culture img.img-fluid.odd, #section-culture video.video-cover.odd {
+  width: 500px !important;
+  height: 400px !important;
+  object-fit: cover;
+}
+
+#section-culture img.img-fluid.even, #section-culture video.video-cover.even {
+  width: 400px !important;
+  height: 500px !important;
+  object-fit: cover;
+}
+
+#section-future img.img-fluid {
+  width: 600px !important;
+  /* height: 800px !important; */
+  object-fit: cover; 
 }

@@ -1,19 +1,19 @@
 <section id="section-culture" class="py-5">
     <div class="container-fluid p-3 p-md-5">
-        <h1 class="display-4 text-center mb-5">
-            Our <span class="fst-italic">Culture</span> ,<br>
+        <h1 class="display-4 text-center mb-5 lh-1">
+            Our <span class="fst-italic">Culture</span>,<br>
             Our <span class="fst-italic">Vision</span>
         </h1>
         <div class="row">
             <div class="col-md-4">
                 <div class="card rounded-0 border-0">
                     <div class="card-body p-0">
-                        <p class="mb-0">01</p>
+                        <p class="mb-2">01</p>
                         <img src="<?= get_stylesheet_directory_uri() . '/assets/img/pr.png' ?>" class="img-fluid" alt="...">
                         <h3 class="fw-normal my-3">Building
                             <br> <span class="fst-italic">Community</span>
                         </h3>
-                        <p class="fs-6">We believe in the power of community to heighten a sense of belonging and engagement that is integral for lifestyle brands to create long-term relationships with customers. </p>
+                        <p class="fs-14pt lh-160">We believe in the power of community to heighten a sense of belonging and engagement that is integral for lifestyle brands to create long-term relationships with customers. </p>
                     </div>
                 </div>
             </div>
@@ -21,24 +21,24 @@
                 <div class="py-md-5"></div>
                 <div class="card rounded-0 border-0 mt-md-5">
                     <div class="card-body p-0">
-                        <p class="mb-0">02</p>
+                        <p class="mb-2">02</p>
                         <img src="<?= get_stylesheet_directory_uri() . '/assets/img/ic.jpg' ?>" class="img-fluid" alt="...">
                         <h3 class="fw-normal my-3">Inspiring
                             <br> <span class="fst-italic">Creativity</span>
                         </h3>
-                        <p class="fs-6">Through encouraging creativity and experimentation, we foster a culture of innovation and originality that inspires our team to develop campaigns that stand out from the rest. </p>
+                        <p class="fs-14pt lh-160">Through encouraging creativity and experimentation, we foster a culture of innovation and originality that inspires our team to develop campaigns that stand out from the rest. </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card rounded-0 border-0">
                     <div class="card-body p-0">
-                        <p class="mb-0">03</p>
+                        <p class="mb-2">03</p>
                         <img src="<?= get_stylesheet_directory_uri() . '/assets/img/fc.png' ?>" class="img-fluid" alt="...">
                         <h3 class="fw-normal my-3">Fostering
                             <br> <span class="fst-italic">Collaboration</span>
                         </h3>
-                        <p class="fs-6">Collaborative environments spark diverse perspectives, stronger relationships, learning opportunities and growth for clients. With our portfolio of partners and contacts, our creative culture leads to more effective and impactful campaigns for our clients.</p>
+                        <p class="fs-14pt lh-160">Collaborative environments spark diverse perspectives, stronger relationships, learning opportunities and growth for clients. With our portfolio of partners and contacts, our creative culture leads to more effective and impactful campaigns for our clients.</p>
                     </div>
                 </div>
             </div>

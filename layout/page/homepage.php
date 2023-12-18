@@ -42,7 +42,7 @@
             </div>
             <div class="px-4">
                 <h1 class="fw-normal text-center mb-5 text px-mb-5">
-                    We are a <span class="fst-italic">next-generation</span> communications agency<br>that brings together the worlds of <span class="fst-italic">fashion, lifestyle,</span> and <span class="fst-italic">technology</span> for the consumer of tomorrow.
+                    We are a <span class="fst-italic">next-generation</span> communications agency that brings together the worlds of <span class="fst-italic">fashion, lifestyle,</span> and <span class="fst-italic">technology</span> for the consumer of tomorrow.
                 </h1>
             </div>
         </div>
@@ -85,7 +85,7 @@
 
 <section id="section-ability" class="py-5 bg-tgrey">
     <div class="container p-5">
-        <h1 class="display-1 lh-1">
+        <h1 class="display-3 lh-1">
             We take pride in our <i>ability</i> to identify <i>opportunities</i> — and provide innovative solutions that make a
             <i>difference</i>.
         </h1>
@@ -331,10 +331,12 @@
     <div class="container-fluid p-md-4">
         <h1 class="h4 text-center fw-normal mb-5 fs-20pt">A CULTURE <span class="fst-italic">to </span>CREATE <span class="fst-italic">and </span>ELEVATE</h1>
         <div class="row pb-4 py-md-4 align-items-center">
-            <div class="col-md-8">
-                <h1 class="display-3 text-start text-sm-center px-3">BUILDING <br> <span class="fst-italic">COMMUNITY </span></h1>
+            <div class="col-md-7">
+                <div class="d-flex">
+                    <h1 class="display-1 text-start text-sm-center mx-3 ms-md-auto me-2 lh-1">BUILDING <br> <span class="fst-italic">COMMUNITY </span></h1>
+                </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <div class="text-end text-md-start pt-4 pt-md-0 px-3">
                     <img src="<?= get_stylesheet_directory_uri() . '/assets/img/culture1.png' ?>" class="img-culture" alt="...">
                 </div>
@@ -347,14 +349,18 @@
                 </div>
             </div>
             <div class="col-md-8 order-1 order-md-2">
-                <h1 class="display-3 text-start text-sm-center px-3">FOSTERING <br> <span class="fst-italic">COLLABORATION </span></h1>
+                <div class="d-flex">
+                    <h1 class="display-1 text-start text-sm-center mx-3 me-md-auto me-2 lh-1">FOSTERING <br> <span class="fst-italic">COLLABORATION </span></h1>
+                </div>
             </div>
         </div>
         <div class="row pb-4 py-md-4 align-items-center">
-            <div class="col-md-8">
-                <h1 class="display-3 text-end text-sm-center px-3">INSPIRING <br> <span class="fst-italic">CREATIVITY </span></h1>
+            <div class="col-md-7">
+                <div class="d-flex">
+                    <h1 class="display-1 text-start text-sm-center mx-3 ms-md-auto me-2 lh-1">INSPIRING <br> <span class="fst-italic">CREATIVITY </span></h1>
+                </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <div class="text-end text-md-start pt-4 pt-md-0 px-3">
                     <img src="<?= get_stylesheet_directory_uri() . '/assets/img/culture3.png' ?>" class="img-culture" alt="...">
                 </div>
