@@ -488,10 +488,6 @@ footer .input-group>button {
   font-family: 'Bodoni Seventytwo ITC';
 }
 
-.list-unstyled a {
-  font-family: 'Bodoni Seventytwo ITC';
-}
-
 footer .form-control::placeholder {
   color: white;
   /* font-family: 'Bodoni Seventytwo ITC'; */
