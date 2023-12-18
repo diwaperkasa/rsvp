@@ -62,18 +62,20 @@
                     <div class="text-white text-center py-5 my-5 px-5">
                         <p>ABOUT R.S.V.P</p>
                         <h1 class="display-4 mb-5 lh-1">The <span class="fst-italic">Innovation</span> <br> Agency</h1>
-                        <p class="h4 fw-normal mb-5 fs-14pt lh-160">With over 20 years of experience in different emerging markets, we
+                        <p class="h4 fw-normal mx-md-5 mb-5 fs-14pt lh-160">With over 20 years of experience in different emerging markets, we
                             specialise in a variety of online and offline service in PR, social, media and digital space to
                             create impactful and engaging campaigns. Our communication strategies are innovative, based on
                             shifting trends and technologies, including AI, AR and VR to effectively communicate and connect
                             with diverse target audiences in meaningful ways.</p>
                         <a class="fw-normal h5 fst-italic text-decoration-underline" href="/about" role="button">Learn More
+                        </a>
+                        <span class="ms-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" viewBox="0 0 54 30" fill="none">
                                 <path d="M0.394531 14.9975L53.6048 14.9976" stroke="#F2BE3F" stroke-width="3"></path>
                                 <path d="M53.3119 15.3929C50.364 16.2454 45.2012 17.3076 41.5353 20.5209C38.4559 23.2202 37.6553 27.385 37.9149 28.889" stroke="#F2BE3F" stroke-width="3" stroke-linejoin="round"></path>
                                 <path d="M53.3119 14.6066C50.364 13.7542 45.2012 12.6919 41.5353 9.47857C38.4559 6.77935 37.6553 2.61453 37.9149 1.11053" stroke="#F2BE3F" stroke-width="3" stroke-linejoin="round"></path>
                             </svg>
-                        </a>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -83,9 +85,9 @@
 
 <section id="section-ability" class="py-5 bg-tgrey">
     <div class="container p-5">
-        <h1 class="display-3 lh-1">
-            We take pride in our ability to identify opportunities — and provide innovative solutions that make a
-            difference.
+        <h1 class="display-1 lh-1">
+            We take pride in our <i>ability</i> to identify <i>opportunities</i> — and provide innovative solutions that make a
+            <i>difference</i>.
         </h1>
         <div class="row my-3 align-items-end">
             <div class="col-md-8">
@@ -210,26 +212,27 @@
                 </div>
             </div>
         </div>
-        <div class="text-center mt-5">
-            <a class="fw-normal h5 fst-italic text-decoration-underline" href="/services" role="button">Browse All Services
+        <div class="text-center mt-5 pt-md-3">
+            <a class="fw-normal h5 fst-italic text-decoration-underline" href="/services" role="button">Browse All Services</a>
+            <span class="ms-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" viewBox="0 0 54 30" fill="none">
                     <path d="M0.394531 14.9975L53.6048 14.9976" stroke="#F2BE3F" stroke-width="3"></path>
                     <path d="M53.3119 15.3929C50.364 16.2454 45.2012 17.3076 41.5353 20.5209C38.4559 23.2202 37.6553 27.385 37.9149 28.889" stroke="#F2BE3F" stroke-width="3" stroke-linejoin="round"></path>
                     <path d="M53.3119 14.6066C50.364 13.7542 45.2012 12.6919 41.5353 9.47857C38.4559 6.77935 37.6553 2.61453 37.9149 1.11053" stroke="#F2BE3F" stroke-width="3" stroke-linejoin="round"></path>
                 </svg>
-            </a>
+            </span>
         </div>
     </div>
 </section>
 
 <section id="section-projects" class="py-5 bg-tgrey">
     <div class="container-fluid">
-        <p class="text-center fs-5 fs-14pt">OUR PROJECTS</p>
+        <p class="text-center fs-14pt">OUR PROJECTS</p>
         <h1 class="display-4 text-center lh-1">Our Selected <br> <span class="fst-italic">Works</span></h1>
         <div class="mt-4">
             <div class="owl-carousel work-carousel owl-theme">
                 <div class="item">
-                    <div class="card rounded-0 px-md-2">
+                    <div class="card rounded-0 px-md-2 border-0">
                         <div class="card-body">
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/BIRKENSTOCK.jpg' ?>" class="img-fluid" alt="...">
                             <h5 class="card-title mt-3 mb-0 fw-normal">Birkenstock</h5>
@@ -238,7 +241,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="card rounded-0 px-md-2">
+                    <div class="card rounded-0 px-md-2 border-0">
                         <div class="card-body">
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/YTL-Hotels.jpg' ?>" class="img-fluid" alt="...">
                             <h5 class="card-title mt-3 mb-0 fw-normal">YTL Hotels</h5>
@@ -247,7 +250,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="card rounded-0 px-md-2">
+                    <div class="card rounded-0 px-md-2 border-0">
                         <div class="card-body">
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/AMAFFI.jpg' ?>" class="img-fluid" alt="...">
                             <h5 class="card-title mt-3 mb-0 fw-normal">AMAFFI Asia Boutique</h5>
@@ -256,7 +259,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="card rounded-0 px-md-2">
+                    <div class="card rounded-0 px-md-2 border-0">
                         <div class="card-body">
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/Brytehall.jpg' ?>" class="img-fluid" alt="...">
                             <h5 class="card-title mt-3 mb-0 fw-normal">Brytehall</h5>
@@ -265,7 +268,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="card rounded-0 px-md-2">
+                    <div class="card rounded-0 px-md-2 border-0">
                         <div class="card-body">
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/Clique-La-Prairie.jpg' ?>" class="img-fluid" alt="...">
                             <h5 class="card-title mt-3 mb-0 fw-normal">Clinique La Prairie</h5>
@@ -274,7 +277,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="card rounded-0">
+                    <div class="card rounded-0 px-md-2 border-0">
                         <div class="card-body">
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/VIVA-1.jpg' ?>" class="img-fluid" alt="...">
                             <h5 class="card-title mt-3 mb-0 fw-normal">VIVA Studio Launch</h5>
@@ -283,7 +286,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="card rounded-0">
+                    <div class="card rounded-0 px-md-2 border-0">
                         <div class="card-body">
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/Vogue.jpg' ?>" class="img-fluid" alt="...">
                             <h5 class="card-title mt-3 mb-0 fw-normal">VOGUE Launch</h5>
@@ -292,7 +295,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="card rounded-0">
+                    <div class="card rounded-0 px-md-2 border-0">
                         <div class="card-body">
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/Zegna.jpg' ?>" class="img-fluid" alt="...">
                             <h5 class="card-title mt-3 mb-0 fw-normal">ZEGNA 232 1.0 Dinner</h5>
@@ -326,7 +329,7 @@
 
 <section id="section-culture" class="py-5">
     <div class="container-fluid p-md-4">
-        <h1 class="h4 text-center fw-normal mb-5 fs-16pt">A CULTURE <span class="fst-italic">to </span>CREATE <span class="fst-italic">and </span>ELEVATE</h1>
+        <h1 class="h4 text-center fw-normal mb-5 fs-20pt">A CULTURE <span class="fst-italic">to </span>CREATE <span class="fst-italic">and </span>ELEVATE</h1>
         <div class="row pb-4 py-md-4 align-items-center">
             <div class="col-md-8">
                 <h1 class="display-3 text-start text-sm-center px-3">BUILDING <br> <span class="fst-italic">COMMUNITY </span></h1>
@@ -374,13 +377,14 @@
                         <p class="h4 fw-normal mb-5 fs-14pt lh-160">Our team consists of talented and dynamic professionals, who are
                             well-versed in the ever-changing landscape of the communications industry to provide excellent
                             service that suits the needs of our clients.</p>
-                        <a class="fw-normal h5 fst-italic text-decoration-underline" href="/contact" role="button">Learn More
+                        <a class="fw-normal h5 fst-italic text-decoration-underline" href="/contact" role="button">Learn More</a>
+                        <span class="ms-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" viewBox="0 0 54 30" fill="none">
                                 <path d="M0.394531 14.9975L53.6048 14.9976" stroke="#F2BE3F" stroke-width="3"></path>
                                 <path d="M53.3119 15.3929C50.364 16.2454 45.2012 17.3076 41.5353 20.5209C38.4559 23.2202 37.6553 27.385 37.9149 28.889" stroke="#F2BE3F" stroke-width="3" stroke-linejoin="round"></path>
                                 <path d="M53.3119 14.6066C50.364 13.7542 45.2012 12.6919 41.5353 9.47857C38.4559 6.77935 37.6553 2.61453 37.9149 1.11053" stroke="#F2BE3F" stroke-width="3" stroke-linejoin="round"></path>
                             </svg>
-                        </a>
+                        </span>
                     </div>
                 </div>
             </div>

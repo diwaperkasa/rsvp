@@ -421,31 +421,47 @@ footer .input-group>button {
 }
 
 .fs-10pt {
-  font-size: 10pt;
+  font-size: 10pt !important;
 }
 
 .fs-11pt {
-  font-size: 11pt;
+  font-size: 11pt !important;
 }
 
 .fs-12pt {
-  font-size: 12pt;
+  font-size: 12pt !important;
 }
 
 .fs-13pt {
-  font-size: 13pt;
+  font-size: 13pt !important;
 }
 
 .fs-14pt {
-  font-size: 14pt;
+  font-size: 14pt !important;
 }
 
 .fs-15pt {
-  font-size: 15pt;
+  font-size: 15pt !important;
 }
 
 .fs-16pt {
-  font-size: 16pt;
+  font-size: 16pt !important;
+}
+
+.fs-17pt {
+  font-size: 17pt !important;
+}
+
+.fs-18pt {
+  font-size: 18pt !important;
+}
+
+.fs-19pt {
+  font-size: 19pt !important;
+}
+
+.fs-20pt {
+  font-size: 20pt !important;
 }
 
 .lh-160 {
@@ -569,4 +585,14 @@ footer .form-control::placeholder {
 .elipsisp {
   height: 180px;
   -webkit-line-clamp: unset;
+}
+
+.navbar-nav .nav-item .nav-link::before {
+  box-shadow: none;
+}
+
+.btn-big-round:hover {
+  background-color: #1B1B1B;
+  color: white;
+  transform: none;
 }

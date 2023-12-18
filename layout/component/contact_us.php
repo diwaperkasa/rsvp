@@ -1,25 +1,24 @@
 <section id="section-contactus" class="py-5 bg-tgrey">
-    <div class="container">
+    <div class="container my-5">
         <h1 class="display-3 text-center lh-1">Start a <span class="fst-italic">Conversation</span> <br> With Us Today</h1>
         <p class="fw-normal h5 text-center mt-4"> <span class="text-decoration-underline"> By Email </span>/ <span class="text-decoration-underline">By WhatsApp</span></p>
-
         <div class="row my-5 justify-content-center">
             <div class="col-md-7">
                 <form class="row g-3">
                     <div class="col-md-6">
                         <label for="inputName" class="form-label">Name*</label>
-                        <input type="text" class="form-control rounded-0" id="inputName" placeholder="Name">
+                        <input type="text" class="form-control rounded-0 border-0 p-2" id="inputName" placeholder="Your Name" required>
                     </div>
                     <div class="col-md-6">
                         <label for="inputEmail" class="form-label">Email*</label>
-                        <input type="email" class="form-control rounded-0" id="inputEmail" placeholder="Email">
+                        <input type="email" class="form-control rounded-0 border-0 p-2" id="inputEmail" placeholder="Email" required>
                     </div>
                     <div class="col-12">
                         <label for="inputMessage" class="form-label">Message</label>
-                        <textarea class="form-control rounded-0" id="inputMessage" rows="5" placeholder="Write your enquiry here"></textarea>
+                        <textarea class="form-control rounded-0 border-0 p-2" id="inputMessage" rows="5" placeholder="Write your enquiry here"></textarea>
                     </div>
                     <div class="col-12 text-center mt-5">
-                        <a class="fw-normal h5 fst-italic text-decoration-underline" href="#" role="button">Submit Form</a>
+                        <button type="submit" class="fw-normal h5 fst-italic text-decoration-underline rounded-0 border-0" role="button">Submit Form</button>
                     </div>
                 </form>
             </div>
