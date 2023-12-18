@@ -6,11 +6,11 @@ $('.testi-carousel').owlCarousel({
     dots: true,
 })
 
-$('.work-carousel').owlCarousel({
+const workCarousel = $('.work-carousel').owlCarousel({
     loop: true,
     autoplay: true,
     lazyLoad: true,
-    nav: true,
+    nav: false,
     dots: false,
     responsive: {
         0: {
@@ -23,7 +23,17 @@ $('.work-carousel').owlCarousel({
             margin: 30,
         }
     },
-})
+});
+
+$('.prev-button').click(function () {
+    console.log('prev');
+    workCarousel.trigger('prev.owl.carousel');
+});
+
+$('.next-button').click(function () {
+    console.log('next');
+    workCarousel.trigger('next.owl.carousel');
+});
 
 $('.service-carousel').owlCarousel({
     loop: true,

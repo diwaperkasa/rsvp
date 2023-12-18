@@ -89,7 +89,7 @@
         </h1>
         <div class="row my-3 align-items-end">
             <div class="col-md-8">
-                <p class="fs-16pt">
+                <p class="fs-14pt">
                     We are passionate about telling stories, and creating holistic campaigns that build connections and bring
                     about growth for the brands we work with. We strive to create and execute strategies that exceed our
                     clients’ expectations and are committed to providing exceptional service with a personal touch.
@@ -302,10 +302,24 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex">
-            <a class="fw-normal h5 fst-italic text-decoration-underline" href="/projects" role="button">
-                Explore All
-            </a>
+        <div class="d-flex mt-4 mx-2 mx-md-0 justify-content-between align-items-center">
+            <div>
+                <a class="fw-normal h5 fst-italic text-decoration-underline" href="/projects" role="button">
+                    Explore All
+                </a>
+            </div>
+            <div>
+                <button class="work-carousel-nav prev-button border-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <path d="M20 30 L8 16 20 2" />
+                    </svg>
+                </button>
+                <button class="work-carousel-nav next-button border-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <path d="M12 30 L24 16 12 2" />
+                    </svg>
+                </button>
+            </div>
         </div>
     </div>
 </section>
@@ -357,7 +371,7 @@
                     <div class="text-white text-center py-5 my-5 px-md-4 px-5">
                         <p class="fs-5 fs-14pt mb-lg-4">OUR TEAM</p>
                         <h1 class="display-4 mb-5 lh-1">Meet <br> <span class="fst-italic">The Team</span></h1>
-                        <p class="h4 fw-normal mb-5 fs-16pt lh-160">Our team consists of talented and dynamic professionals, who are
+                        <p class="h4 fw-normal mb-5 fs-14pt lh-160">Our team consists of talented and dynamic professionals, who are
                             well-versed in the ever-changing landscape of the communications industry to provide excellent
                             service that suits the needs of our clients.</p>
                         <a class="fw-normal h5 fst-italic text-decoration-underline" href="/contact" role="button">Learn More
