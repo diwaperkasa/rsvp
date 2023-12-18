@@ -87,13 +87,14 @@
 
 
         <div class="text-center mt-5">
-            <a class="fw-normal h5 fst-italic text-decoration-underline" href="/contact" role="button">Contact Us
+            <a class="fw-normal h5 fst-italic text-decoration-underline" href="/contact" role="button">Contact Us</a>
+            <span class="ms-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" viewBox="0 0 54 30" fill="none">
                     <path d="M0.394531 14.9975L53.6048 14.9976" stroke="#F2BE3F" stroke-width="3"></path>
                     <path d="M53.3119 15.3929C50.364 16.2454 45.2012 17.3076 41.5353 20.5209C38.4559 23.2202 37.6553 27.385 37.9149 28.889" stroke="#F2BE3F" stroke-width="3" stroke-linejoin="round"></path>
                     <path d="M53.3119 14.6066C50.364 13.7542 45.2012 12.6919 41.5353 9.47857C38.4559 6.77935 37.6553 2.61453 37.9149 1.11053" stroke="#F2BE3F" stroke-width="3" stroke-linejoin="round"></path>
                 </svg>
-            </a>
+            </span>
         </div>
     </div>
     <div class="marquee mt-5">
