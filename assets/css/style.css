@@ -598,6 +598,10 @@ footer .form-control::placeholder {
   #section-culture .display-1 {
       font-size: 7rem;
   }
+
+  #section-ability .display-3 {
+    font-size: 6rem;
+  }
 }
 
 .numbering-dec {
