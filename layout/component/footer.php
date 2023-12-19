@@ -6,7 +6,8 @@
                     <div>
                         <div class="row align-items-end mb-3">
                             <div class="col-md-3">
-                                <span class="logo fw-normal text-light">R.S.V.P</span>
+                                <img class="img-logo" height="25px" src="<?= get_stylesheet_directory_uri() . "/assets/img/R.S.V.P Logo.png" ?>" />
+                                <!-- <span class="logo fw-normal text-light">R.S.V.P</span> -->
                             </div>
                             <div class="col-md-9">
                                 <h5 class="fw-normal">Don’t miss out. Subscribe to news from R.S.V.P</h5>

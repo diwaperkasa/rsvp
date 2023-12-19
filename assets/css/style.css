@@ -626,3 +626,8 @@ footer .form-control::placeholder {
   /* height: 800px !important; */
   object-fit: cover; 
 }
+
+.img-logo {
+  margin-top: -35px;
+  filter: brightness(0) invert(1);
+}

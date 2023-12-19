@@ -94,7 +94,8 @@
                     </li>
                 </ul>
                 <a class="navbar-brand m-0 p-0" href="/">
-                    <span class="logo">R.S.V.P</span>
+                    <!-- <span class="logo">R.S.V.P</span> -->
+                    <img height="20px" src="<?= get_stylesheet_directory_uri() . "/assets/img/R.S.V.P Logo.png" ?>" />
                 </a>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
