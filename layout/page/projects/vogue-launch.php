@@ -18,7 +18,7 @@
                             </div>
                             <div class="item project-slide">
                                 <video autoplay muted loop class="video-cover">
-                                    <source src="<?= get_stylesheet_directory_uri() . '/assets/img/VOGUE-slide3.webm' ?>" type="video/webm">
+                                    <source src="<?= get_stylesheet_directory_uri() . '/assets/img/VOGUE-slide3.mp4' ?>" type="video/mp4">
                                 </video>
                             </div>
                             <div class="item project-slide">

@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <div class="cursor d-none d-md-block"></div>
-    <div class="cursor2 d-none d-md-block"></div>
+    <div class="cursor d-none"></div>
+    <div class="cursor2 d-none"></div>
     <!-- Header -->
     <?php include_once "component/header.php" ?>
     <!-- End of header -->

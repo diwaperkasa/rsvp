@@ -53,8 +53,8 @@
     <div class="container-fluid">
         <div class="row bg-tblack">
             <div class="col-md-6 px-0 order-md-2 video-player">
-                <video autoplay muted loop class="video-cover">
-                    <source src="<?= get_stylesheet_directory_uri() . '/assets/img/videobg.webm' ?>" type="video/webm">
+                <video autoplay muted loop playsinline class="video-cover">
+                    <source src="<?= get_stylesheet_directory_uri() . '/assets/img/videobg.mp4' ?>" type="video/mp4">
                 </video>
             </div>
             <div class="col-md-6 px-0 order-md-1">
@@ -134,8 +134,8 @@
                 <div class="card rounded-0 border-0 px-md-2 h-80">
                     <div class="card-body p-0">
                         <p class="mb-0">03</p>
-                        <video autoplay muted loop class="video-cover">
-                            <source src="<?= get_stylesheet_directory_uri() . '/assets/img/Runway-Video.webm' ?>" type="video/webm">
+                        <video autoplay muted loop playsinline class="video-cover">
+                            <source src="<?= get_stylesheet_directory_uri() . '/assets/img/Runway-Video.mp4' ?>" type="video/mp4">
                         </video>
                         <h5 class="card-title mt-3 mb-0 fw-normal lh-1">EVENT <br> MANAGEMENT</h5>
                     </div>
@@ -185,7 +185,7 @@
                     <div class="card rounded-0 border-0 h-75">
                         <div class="card-body p-0">
                             <p class="mb-0">03</p>
-                            <video autoplay muted loop class="video-cover">
+                            <video autoplay muted loop playsinline class="video-cover">
                                 <source src="<?= get_stylesheet_directory_uri() . '/assets/img/Runway-Video.webm' ?>" type="video/webm">
                             </video>
                             <h5 class="card-title mt-3 mb-0 fw-normal lh-1">EVENT <br> MANAGEMENT</h5>
@@ -337,14 +337,14 @@
                 </div>
             </div>
             <div class="col-md-5">
-                <div class="text-end text-md-start pt-4 pt-md-0 px-3">
+                <div class="text-end text-md-start pt-4 pt-md-0 px-3 overflow-hidden">
                     <img src="<?= get_stylesheet_directory_uri() . '/assets/img/culture1.png' ?>" class="img-culture" alt="...">
                 </div>
             </div>
         </div>
         <div class="row pb-4 py-md-4 align-items-center">
             <div class="col-md-4 order-2">
-                <div class="text-start text-md-end pt-4 pt-md-0 px-3">
+                <div class="text-start text-md-end pt-4 pt-md-0 px-3 overflow-hidden">
                     <img src="<?= get_stylesheet_directory_uri() . '/assets/img/culture2.png' ?>" class="img-culture" alt="...">
                 </div>
             </div>
@@ -361,7 +361,7 @@
                 </div>
             </div>
             <div class="col-md-5">
-                <div class="text-end text-md-start pt-4 pt-md-0 px-3">
+                <div class="text-end text-md-start pt-4 pt-md-0 px-3 overflow-hidden">
                     <img src="<?= get_stylesheet_directory_uri() . '/assets/img/culture3.png' ?>" class="img-culture" alt="...">
                 </div>
             </div>
@@ -372,8 +372,10 @@
 <section id="section-team">
     <div class="container-fluid">
         <div class="row bg-tblack">
-            <div class="col-md-6  px-0">
-                <img src="<?= get_stylesheet_directory_uri() . "/assets/img/architectural-details-1.png" ?>" class="img-fluid h-100" alt="...">
+            <div class="col-md-6 px-0">
+                <div class="overflow-hidden">
+                    <img src="<?= get_stylesheet_directory_uri() . "/assets/img/architectural-details-1.png" ?>" class="img-team" alt="...">
+                </div>
             </div>
             <div class="col-md-6 p-lg-5">
                 <div class="justify-content-center px-lg-5">
