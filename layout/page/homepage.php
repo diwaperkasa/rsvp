@@ -312,12 +312,12 @@
                 </a>
             </div>
             <div>
-                <button class="work-carousel-nav prev-button border-0">
+                <button class="work-carousel-nav prev-button border-0 bg-transparent text-dark">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                         <path d="M20 30 L8 16 20 2" />
                     </svg>
                 </button>
-                <button class="work-carousel-nav next-button border-0">
+                <button class="work-carousel-nav next-button border-0 bg-transparent text-dark">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                         <path d="M12 30 L24 16 12 2" />
                     </svg>
