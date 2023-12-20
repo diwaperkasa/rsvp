@@ -186,7 +186,7 @@
                         <div class="card-body p-0">
                             <p class="mb-0">03</p>
                             <video autoplay muted loop playsinline class="video-cover">
-                                <source src="<?= get_stylesheet_directory_uri() . '/assets/img/Runway-Video.webm' ?>" type="video/webm">
+                                <source src="<?= get_stylesheet_directory_uri() . '/assets/img/Runway-Video.mp4' ?>" type="video/mp4">
                             </video>
                             <h5 class="card-title mt-3 mb-0 fw-normal lh-1">EVENT <br> MANAGEMENT</h5>
                         </div>
