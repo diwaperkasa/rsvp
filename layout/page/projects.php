@@ -56,7 +56,7 @@
                 </a>
             </div>
             <div class="col-md-3">
-                <div class="my-5"></div>
+                <div class="my-0 my-md-5"></div>
                 <a href="/projects/amaffi-asia-boutique">
                     <div class="card rounded-0 border-0">
                         <div class="card-body">
