@@ -55,7 +55,7 @@
                             <li class="mb-2"><a href="/culture">Culture</a></li>
                         </ul>
                     </div>
-                    <div class="col-4">
+                    <div class="col-8">
                         <p class="h4 mb-4 fw-normal">Contact</p>
                         <ul class="list-unstyled">
                             <li class="mb-2"><a href="#">Email</a></li>
