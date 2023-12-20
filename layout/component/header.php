@@ -90,7 +90,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
             <a class="navbar-brand navbar-toggler border-0" href="/">
-                <span class="logo">R.S.V.P</span>
+                <!-- <span class="logo">R.S.V.P</span> -->
+                <img height="24px" src="<?= get_stylesheet_directory_uri() . "/assets/img/R.S.V.P Logo.png" ?>" />
             </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" href="#PopupMenu" role="button" aria-controls="PopupMenuLabel">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 50 16" fill="none">

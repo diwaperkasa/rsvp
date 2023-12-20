@@ -62,7 +62,7 @@
                     <div class="text-white text-center py-5 my-5 px-5">
                         <p>ABOUT R.S.V.P</p>
                         <h1 class="display-4 mb-5 lh-1">The <span class="fst-italic">Innovation</span> <br> Agency</h1>
-                        <p class="h4 fw-normal mx-md-5 mb-5 fs-14pt lh-160">With over 20 years of experience in different emerging markets, we
+                        <p class="h4 fw-normal mx-md-5 mb-5 fs-14pt lh-160 about">With over 20 years of experience in different emerging markets, we
                             specialise in a variety of online and offline service in PR, social, media and digital space to
                             create impactful and engaging campaigns. Our communication strategies are innovative, based on
                             shifting trends and technologies, including AI, AR and VR to effectively communicate and connect

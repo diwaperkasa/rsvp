@@ -640,3 +640,16 @@ footer .img-logo {
   font-weight: 200;
   font-size: 1rem;
 }
+
+#section-about-us .about {
+  font-family: 'Helvetica Neue';
+}
+
+header .navbar-light .navbar-brand:focus {
+  color: transparent;
+}
+
+.navbar-brand:focus {
+  color: transparent;
+  transition: none;
+}
