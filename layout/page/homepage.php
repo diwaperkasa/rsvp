@@ -380,7 +380,7 @@
                     <div class="text-white text-center py-5 my-5 px-md-4 px-5">
                         <p class="fs-5 fs-14pt mb-lg-4">OUR TEAM</p>
                         <h1 class="display-4 mb-5 lh-1">Meet <br> <span class="fst-italic">The Team</span></h1>
-                        <p class="h4 fw-normal mb-5 fs-14pt lh-160">Our team consists of talented and dynamic professionals, who are
+                        <p class="h4 fw-normal mb-5 fs-14pt lh-160 about">Our team consists of talented and dynamic professionals, who are
                             well-versed in the ever-changing landscape of the communications industry to provide excellent
                             service that suits the needs of our clients.</p>
                         <a class="fw-normal h5 fst-italic text-decoration-underline" href="/contact" role="button">Learn More</a>

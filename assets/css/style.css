@@ -641,7 +641,7 @@ footer .img-logo {
   font-size: 1rem;
 }
 
-#section-about-us .about {
+#section-about-us .about, #section-team .about {
   font-family: 'Helvetica Neue';
 }
 
