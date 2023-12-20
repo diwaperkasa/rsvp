@@ -18,7 +18,7 @@
                 <a href="/about" class="p-2"><span>ABOUT</span></a>
                 <a href="/contact" class="p-2"><span>CONTACT</span></a>
             </div>
-            <button type="button" class="btn text-white bg-transparent rounded-0" data-bs-dismiss="offcanvas" aria-label="Close">
+            <button type="button" class="btn text-white bg-transparent rounded-0  ms-auto ms-md-0" data-bs-dismiss="offcanvas" aria-label="Close">
                 <svg id="i-close" class="d-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                     <path d="M2 30 L30 2 M30 30 L2 2" />
                 </svg>
