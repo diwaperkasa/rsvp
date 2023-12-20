@@ -535,10 +535,10 @@ footer .form-control::placeholder {
   font-weight: normal;
 }
 
-.offcanvas-header::before, .offcanvas-header div {
+/* .offcanvas-header::before, .offcanvas-header div {
   content: '';
   flex-basis: 100%;
-}
+} */
 
 .close-btn {
   position: absolute;
@@ -628,6 +628,15 @@ footer .form-control::placeholder {
 }
 
 .img-logo {
-  margin-top: -35px;
   filter: brightness(0) invert(1);
+}
+
+footer .img-logo {
+  margin-top: -35px;
+}
+
+.offcanvas-header {
+  font-family: 'Helvetica Neue';
+  font-weight: 200;
+  font-size: 1rem;
 }

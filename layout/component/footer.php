@@ -50,7 +50,7 @@
                         <p class="h4 mb-4 fw-normal">About</p>
                         <ul class="list-unstyled">
                             <li class="mb-2"><a href="/about">About</a></li>
-                            <li class="mb-2"><a href="/service">Services</a></li>
+                            <li class="mb-2"><a href="/services">Services</a></li>
                             <li class="mb-2"><a href="/projects">Portfolio</a></li>
                             <li class="mb-2"><a href="/culture">Culture</a></li>
                         </ul>
