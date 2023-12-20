@@ -18,7 +18,7 @@
                         <textarea class="form-control rounded-0 border-0 p-2" id="inputMessage" rows="5" placeholder="Write your enquiry here"></textarea>
                     </div>
                     <div class="col-12 text-center mt-5">
-                        <button type="submit" class="fw-normal h5 fst-italic text-decoration-underline rounded-0 border-0 bg-transparent" role="button">Submit Form</button>
+                        <button type="submit" class="fw-normal h5 fst-italic text-decoration-underline rounded-0 border-0 bg-transparent text-dark" role="button">Submit Form</button>
                     </div>
                 </form>
             </div>
