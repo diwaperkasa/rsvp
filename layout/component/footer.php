@@ -42,7 +42,7 @@
                 <div class="row">
                     <form action="">
                         <div class="input-group mb-5">
-                            <input type="email" class="form-control bg-transparent border-bottom text-white px-0" placeholder="Email Address" aria-label="Email Address" aria-describedby="button-addon2" required/>
+                            <input type="email" class="form-control bg-transparent border-bottom text-white px-0 form-no-focus" placeholder="Email Address" aria-label="Email Address" aria-describedby="button-addon2" required/>
                             <button class="btn btn-outline-secondary border-bottom text-white px-0" type="submit" id="button-addon2">SUBSCRIBE</button>
                         </div>
                     </form>

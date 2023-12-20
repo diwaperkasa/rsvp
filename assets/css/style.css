@@ -659,3 +659,11 @@ header .navbar-light .navbar-brand:focus {
   height: auto;
   max-width: 100%;
 }
+
+.form-no-focus:focus {
+  box-shadow: none !important;
+}
+
+.form-no-focus:focus::placeholder {
+  color: rgba(var(--bs-white-rgb), 0.5)!important;;
+}
