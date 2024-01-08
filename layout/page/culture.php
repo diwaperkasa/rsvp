@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="text-center mt-5">
-            <a class="fw-normal h5 fst-italic text-decoration-underline" href="/service" role="button">Browse All Services</a>
+            <a class="fw-normal h5 fst-italic text-decoration-underline" href="/services" role="button">Browse All Services</a>
             <span class="ms-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" viewBox="0 0 54 30" fill="none">
                     <path d="M0.394531 14.9975L53.6048 14.9976" stroke="#F2BE3F" stroke-width="3"></path>
