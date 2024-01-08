@@ -22,7 +22,7 @@
                         <h1 class="display-4 mb-5 lh-1">At R.S.V.P, we think outside the box to make your campaign a <span class="fst-italic">success</span>.</h1>
                         <p class="mb-5 fs-6">With over 20 years of experience in different emerging markets, we specialise in a variety of online and offline service in PR, social, media and digital space to create impactful and engaging campaigns. Our communication strategies are innovative, based on shifting trends and technologies to effectively communicate and connect with diverse target audiences in meaningful ways.</p>
                         <div class="mb-5">
-                            <a class="fw-normal h5 fst-italic text-decoration-underline" href="/services" role="button">View All Service</a>
+                            <a class="fw-normal h5 fst-italic text-decoration-underline" href="/services" role="button">View All Services</a>
                             <span class="ms-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" viewBox="0 0 54 30" fill="none">
                                     <path d="M0.394531 14.9975L53.6048 14.9976" stroke="#F2BE3F" stroke-width="3"></path>

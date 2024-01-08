@@ -32,7 +32,7 @@
                         </div>
                         <div class="text-end">
                             <p class="mb-0">YEAR</p>
-                            <h5>2022—Present</h5>
+                            <h5>2023</h5>
                         </div>
                     </div>
                 </div>

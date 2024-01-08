@@ -49,7 +49,7 @@
             <div class="col-md-6">
                 <div class="text-center text-md-end">
                     <video autoplay muted loop class="video-cover odd">
-                        <source src="<?= get_stylesheet_directory_uri() . "/assets/img/Runway-Video.webm" ?>" type="video/webm">
+                        <source src="<?= get_stylesheet_directory_uri() . "/assets/img/Runway-Video.mp4" ?>" type="video/mp4">
                     </video>
                 </div>
             </div>

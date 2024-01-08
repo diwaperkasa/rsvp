@@ -12,7 +12,7 @@
                             <p class="mb-0 dotdec position-relative ms-4">01</p>
                             <img src="<?= get_stylesheet_directory_uri() . "/assets/img/BIRKENSTOCK.jpg" ?>" class="img-fluid" alt="...">
                             <h5 class="card-title mt-3 mb-0 fw-normal">Birkenstock</h5>
-                            <p class="card-text">2022—2023</p>
+                            <p class="card-text">2022—Present</p>
                         </div>
                     </div>
                 </a>
@@ -24,7 +24,7 @@
                             <p class="mb-0 dotdec position-relative ms-4">02</p>
                             <img src="<?= get_stylesheet_directory_uri() . "/assets/img/YTL-Hotels.jpg" ?>" class="img-fluid" alt="...">
                             <h5 class="card-title mt-3 mb-0 fw-normal">YTL Hotels</h5>
-                            <p class="card-text">2022—2023</p>
+                            <p class="card-text">2018-Present</p>
                         </div>
                     </div>
                 </a>
@@ -75,7 +75,7 @@
                             <p class="mb-0 dotdec position-relative ms-4">06</p>
                             <img src="<?= get_stylesheet_directory_uri() . "/assets/img/VIVA-1.jpg" ?>" class="img-fluid" alt="...">
                             <h5 class="card-title mt-3 mb-0 fw-normal">VIVA Studio Launch</h5>
-                            <p class="card-text">2022—Present</p>
+                            <p class="card-text">2023</p>
                         </div>
                     </div>
                 </a>
