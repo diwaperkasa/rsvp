@@ -34,3 +34,18 @@ a.forEach(item => {
     cursor.classList.remove('hover');
   });
 });
+
+$('form#subscribed-form').submit(function(e) {
+  e.preventDefault();
+
+  $.ajax({
+    type: "POST",
+    url: '/',
+    data: {
+      subscribed_email: $('#subscribed_email').val(),
+    },
+    success: function() {
+        
+    },
+  });
+});

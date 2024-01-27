@@ -231,78 +231,94 @@
         <h1 class="display-4 text-center lh-1">Our Selected <br> <span class="fst-italic">Works</span></h1>
         <div class="mt-4">
             <div class="owl-carousel work-carousel owl-theme">
-                <div class="item">
-                    <div class="card rounded-0 px-md-2 border-0">
-                        <div class="card-body">
-                            <img src="<?= get_stylesheet_directory_uri() . '/assets/img/BIRKENSTOCK.jpg' ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0 fw-normal">Birkenstock</h5>
-                            <p class="card-text">2022—2023</p>
+                <a href="/projects/birkenstock">
+                    <div class="item">
+                        <div class="card rounded-0 px-md-2 border-0">
+                            <div class="card-body">
+                                <img src="<?= get_stylesheet_directory_uri() . '/assets/img/BIRKENSTOCK.jpg' ?>" class="img-fluid" alt="...">
+                                <h5 class="card-title mt-3 mb-0 fw-normal">Birkenstock</h5>
+                                <p class="card-text">2022—2023</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="card rounded-0 px-md-2 border-0">
-                        <div class="card-body">
-                            <img src="<?= get_stylesheet_directory_uri() . '/assets/img/YTL-Hotels.jpg' ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0 fw-normal">YTL Hotels</h5>
-                            <p class="card-text">2022—2023</p>
+                </a>
+                <a href="/projects/ytl-hotels">
+                    <div class="item">
+                        <div class="card rounded-0 px-md-2 border-0">
+                            <div class="card-body">
+                                <img src="<?= get_stylesheet_directory_uri() . '/assets/img/YTL-Hotels.jpg' ?>" class="img-fluid" alt="...">
+                                <h5 class="card-title mt-3 mb-0 fw-normal">YTL Hotels</h5>
+                                <p class="card-text">2022—2023</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="card rounded-0 px-md-2 border-0">
-                        <div class="card-body">
-                            <img src="<?= get_stylesheet_directory_uri() . '/assets/img/AMAFFI.jpg' ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0 fw-normal">AMAFFI Asia Boutique</h5>
-                            <p class="card-text">2022</p>
+                </a>
+                <a href="/projects/amaffi-asia-boutique">
+                    <div class="item">
+                        <div class="card rounded-0 px-md-2 border-0">
+                            <div class="card-body">
+                                <img src="<?= get_stylesheet_directory_uri() . '/assets/img/AMAFFI.jpg' ?>" class="img-fluid" alt="...">
+                                <h5 class="card-title mt-3 mb-0 fw-normal">AMAFFI Asia Boutique</h5>
+                                <p class="card-text">2022</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="card rounded-0 px-md-2 border-0">
-                        <div class="card-body">
-                            <img src="<?= get_stylesheet_directory_uri() . '/assets/img/Brytehall.jpg' ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0 fw-normal">Brytehall</h5>
-                            <p class="card-text">2022</p>
+                </a>
+                <a href="/projects/brytehall">
+                    <div class="item">
+                        <div class="card rounded-0 px-md-2 border-0">
+                            <div class="card-body">
+                                <img src="<?= get_stylesheet_directory_uri() . '/assets/img/Brytehall.jpg' ?>" class="img-fluid" alt="...">
+                                <h5 class="card-title mt-3 mb-0 fw-normal">Brytehall</h5>
+                                <p class="card-text">2022</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="card rounded-0 px-md-2 border-0">
-                        <div class="card-body">
-                            <img src="<?= get_stylesheet_directory_uri() . '/assets/img/Clique-La-Prairie.jpg' ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0 fw-normal">Clinique La Prairie</h5>
-                            <p class="card-text">2023</p>
+                </a>
+                <a href="/projects/clinique-la-prairie">
+                    <div class="item">
+                        <div class="card rounded-0 px-md-2 border-0">
+                            <div class="card-body">
+                                <img src="<?= get_stylesheet_directory_uri() . '/assets/img/Clique-La-Prairie.jpg' ?>" class="img-fluid" alt="...">
+                                <h5 class="card-title mt-3 mb-0 fw-normal">Clinique La Prairie</h5>
+                                <p class="card-text">2023</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="card rounded-0 px-md-2 border-0">
-                        <div class="card-body">
-                            <img src="<?= get_stylesheet_directory_uri() . '/assets/img/VIVA-1.jpg' ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0 fw-normal">VIVA Studio Launch</h5>
-                            <p class="card-text">2022—Present</p>
+                </a>
+                <a href="/projects/viva-studio-launch">
+                    <div class="item">
+                        <div class="card rounded-0 px-md-2 border-0">
+                            <div class="card-body">
+                                <img src="<?= get_stylesheet_directory_uri() . '/assets/img/VIVA-1.jpg' ?>" class="img-fluid" alt="...">
+                                <h5 class="card-title mt-3 mb-0 fw-normal">VIVA Studio Launch</h5>
+                                <p class="card-text">2022—Present</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="card rounded-0 px-md-2 border-0">
-                        <div class="card-body">
-                            <img src="<?= get_stylesheet_directory_uri() . '/assets/img/Vogue.jpg' ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0 fw-normal">VOGUE Launch</h5>
-                            <p class="card-text">2020</p>
+                </a>
+                <a href="/projects/vogue-launch">
+                    <div class="item">
+                        <div class="card rounded-0 px-md-2 border-0">
+                            <div class="card-body">
+                                <img src="<?= get_stylesheet_directory_uri() . '/assets/img/Vogue.jpg' ?>" class="img-fluid" alt="...">
+                                <h5 class="card-title mt-3 mb-0 fw-normal">VOGUE Launch</h5>
+                                <p class="card-text">2020</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="card rounded-0 px-md-2 border-0">
-                        <div class="card-body">
-                            <img src="<?= get_stylesheet_directory_uri() . '/assets/img/Zegna.jpg' ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0 fw-normal">ZEGNA 232 1.0 Dinner</h5>
-                            <p class="card-text">2023</p>
+                </a>
+                <a href="/projects/zegna-232-1-0-dinner">
+                    <div class="item">
+                        <div class="card rounded-0 px-md-2 border-0">
+                            <div class="card-body">
+                                <img src="<?= get_stylesheet_directory_uri() . '/assets/img/Zegna.jpg' ?>" class="img-fluid" alt="...">
+                                <h5 class="card-title mt-3 mb-0 fw-normal">ZEGNA 232 1.0 Dinner</h5>
+                                <p class="card-text">2023</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
         <div class="d-flex mt-4 mx-2 mx-md-0 justify-content-between align-items-center">

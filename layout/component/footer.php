@@ -40,10 +40,10 @@
             </div>
             <div class="col-md-6">
                 <div class="row">
-                    <form action="">
+                    <form id="subscribed-form" method="POST" action="/">
                         <div class="input-group mb-5">
-                            <input type="email" class="form-control bg-transparent border-bottom text-white px-0 form-no-focus" placeholder="Email Address" aria-label="Email Address" aria-describedby="button-addon2" required/>
-                            <button class="btn btn-outline-secondary border-bottom text-white px-0" type="submit" id="button-addon2">SUBSCRIBE</button>
+                            <input type="email" class="form-control bg-transparent border-bottom text-white px-0 form-no-focus" name="subscribed_email" id="subscribed_email" placeholder="Email Address" aria-label="Email Address" aria-describedby="button-addon2" required/>
+                            <button class="btn btn-outline-secondary border-bottom text-white px-0" type="submit">SUBSCRIBE</button>
                         </div>
                     </form>
                 </div>
@@ -60,10 +60,10 @@
                     <div class="col-8">
                         <p class="h4 mb-4 fw-normal">Contact</p>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><a href="#">Email</a></li>
-                            <li class="mb-2"><a href="#">Facebook</a></li>
-                            <li class="mb-2"><a href="#">Instagram</a></li>
-                            <li class="mb-2"><a href="#">X (formerly Twitter)</a></li>
+                            <li class="mb-2"><a href="mailto:info@rsvp-communication.com">Email</a></li>
+                            <li class="mb-2"><a target="_blank" href="https://www.facebook.com/profile.php?id=61550959474472">Facebook</a></li>
+                            <li class="mb-2"><a target="_blank" href="https://www.instagram.com/rsvpsingapore/">Instagram</a></li>
+                            <li class="mb-2"><a target="_blank" href="https://twitter.com/rsvp_agency">X (formerly Twitter)</a></li>
                         </ul>
                     </div>
                 </div>
