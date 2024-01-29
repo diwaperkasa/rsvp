@@ -69,7 +69,7 @@
                 </div>
             </div>
             <div class="text-center text-sm-start copyright">
-                <p>R.S.V.P Agency © 2023. All rights reserved.</p>
+                <p>R.S.V.P Agency © <?= date('Y') ?>. All rights reserved.</p>
             </div>
         </div>
     </div>
