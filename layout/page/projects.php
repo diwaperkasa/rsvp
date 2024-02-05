@@ -22,7 +22,7 @@
     $groupIndex = 0;
 ?>
 
-<section id="section-culture" class="py-5">
+<section id="section-projects" class="py-5">
     <div class="container-fluid p-3 p-md-5">
         <h1 class="display-4 text-center mb-5 lh-1">
             Curated <span class="fst-italic">Selection</span><br>
@@ -44,7 +44,9 @@
                     <div class="card rounded-0  border-0">
                         <div class="card-body">
                             <p class="mb-0 dotdec position-relative ms-4"><?= $key + 1 ?></p>
-                            <img src="<?= wp_get_attachment_url($thumbnail ? $thumbnail[0] : 0) ?>" class="img-fluid" alt="...">
+                            <div class="img-list-container">
+                                <img src="<?= wp_get_attachment_url($thumbnail ? $thumbnail[0] : 0) ?>" alt="...">
+                            </div>
                             <h5 class="card-title mt-3 mb-0 fw-normal"><?= $post->post_title ?></h5>
                             <p class="card-text"><?= carbon_get_post_meta( $post->ID, 'project_year' ) ?></p>
                         </div>
