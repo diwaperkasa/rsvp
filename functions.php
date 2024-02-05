@@ -11,7 +11,7 @@ function add_custom_field_action()
         ->add_fields( [
             Field::make( 'text', 'rsvp_email', 'Email' ),
             Field::make( 'text', 'rsvp_facebook', 'Facebook' ),
-            Field::make( 'text', 'rsvp_intagram', 'Intagram' ),
+            Field::make( 'text', 'rsvp_instagram', 'Instagram' ),
             Field::make( 'text', 'rsvp_twitter', 'X (Twitter)' ),
             Field::make( 'text', 'rsvp_linkedin', 'LinkedIn' ),
         ]);

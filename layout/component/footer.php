@@ -62,7 +62,7 @@
                         <ul class="list-unstyled">
                             <li class="mb-2"><a href="mailto:<?= carbon_get_theme_option('rsvp_email') ?>">Email</a></li>
                             <li class="mb-2"><a target="_blank" href="<?= carbon_get_theme_option('rsvp_facebook') ?>">Facebook</a></li>
-                            <li class="mb-2"><a target="_blank" href="<?= carbon_get_theme_option('rsvp_instagrem') ?>">Instagram</a></li>
+                            <li class="mb-2"><a target="_blank" href="<?= carbon_get_theme_option('rsvp_instagram') ?>">Instagram</a></li>
                             <li class="mb-2"><a target="_blank" href="<?= carbon_get_theme_option('rsvp_twitter') ?>">X (formerly Twitter)</a></li>
                         </ul>
                     </div>
