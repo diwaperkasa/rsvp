@@ -1,21 +1,5 @@
 <?php
-    $args = [];
-    $args = array(
-        'posts_per_page' => -1,
-        'orderby' => 'ID',
-        'order' => 'ASC',
-        'post_type' => 'post',
-        'post_status' => 'publish',
-        'tax_query' => [
-            [
-                'field' => 'slug',
-                'terms' => 'projects',
-                'taxonomy' => 'category',
-            ]
-        ]
-    );
-
-    $result = new WP_Query($args);
+    $result = rsvp_get_projects();
     $postSize = $result->found_posts;
     $postPerRow = 3;
     $rowIndex = 0;

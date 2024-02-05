@@ -177,3 +177,25 @@ function rsvp_get_next_post()
 
     return $next;
 }
+
+function rsvp_get_projects(int $limit = -1)
+{
+    $args = [
+        'posts_per_page' => $limit,
+        'orderby' => 'ID',
+        'order' => 'ASC',
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'tax_query' => [
+            [
+                'field' => 'slug',
+                'terms' => 'projects',
+                'taxonomy' => 'category',
+            ]
+        ]
+    ];
+
+    $result = new WP_Query($args);
+
+    return $result;
+}
