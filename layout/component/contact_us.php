@@ -1,11 +1,11 @@
 <?php
-    wp_enqueue_script('contact-us', get_stylesheet_directory_uri() . '/assets/js/contact.js', [], "1.0", true);
+    wp_enqueue_script('contact-us', get_stylesheet_directory_uri() . '/assets/js/contact.js', [], "1.1", true);
 ?>
 
 <section id="section-contactus" class="py-5 bg-tgrey">
     <div class="container my-5">
         <h1 class="display-3 text-center lh-1">Start a <span class="fst-italic">Conversation</span> <br> With Us Today</h1>
-        <p class="fw-normal h5 text-center mt-4"> <span class="text-decoration-underline"> By Email </span>/ <span class="text-decoration-underline">By WhatsApp</span></p>
+        <p id="contact-desc" class="fw-normal h5 text-center mt-4"> <span class="text-decoration-underline"> By Email </span>/ <span class="text-decoration-underline">By WhatsApp</span></p>
         <div class="row my-5 justify-content-center">
             <div class="col-md-7">
                 <form id="contact-form" action="/contact" method="POST" class="row g-3">
@@ -25,11 +25,15 @@
                         <button type="submit" class="fw-normal h5 fst-italic text-decoration-underline rounded-0 border-0 bg-transparent text-dark" role="button">Submit Form</button>
                     </div>
                 </form>
+                <div id="success-message" class="d-none">
+                    <h3 class="fw-normal text-center my-2">Form Submitted</h3>
+                    <p class="fw-normal text-center">Thank you for reaching out to us and we will get back to your enquiry as soon as we can.</p>
+                </div>
             </div>
         </div>
 
         <div class="mt-4 text-center">
-            <a target="_blank" href="https://www.facebook.com/profile.php?id=61550959474472" class="h2 me-4">
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=31550959474472" class="h2 me-4">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                     <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
                 </svg>

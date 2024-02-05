@@ -9,8 +9,16 @@ $('form#contact-form').submit(function(e) {
             contact_email: $('#contact_email').val(),
             contact_message: $('#contact_message').val(),
         },
-        success: function() {
-            
+        beforeSend: function() {
+            $("form#contact-form button[type='submit']").prop('disabled', true);
         },
+        success: function() {
+            $('form#contact-form').addClass('d-none');
+            $('#section-contactus #contact-desc').addClass('d-none');
+            $('#section-contactus #success-message').removeClass('d-none');
+        },
+        complete: function() {
+            $("form#contact-form button[type='submit']").prop('disabled', true);
+        }
     });
 });

@@ -85,16 +85,17 @@ function send_quotation_email()
         throw new \WpOrg\Requests\Exception\InvalidArgument("name or email cannot be empty");
     }
 
-    $headers[] = 'From: Test <no-reply@rsvp-communication.com>';
+    $headers[] = "From: Test <{$email}>";
     $headers[] = 'Content-Type: text/html; charset="utf-8"';
     $body = get_email_template('quotation_email');
     $contactData = new \Mint\MRM\DataStores\ContactData($email, [
         "first_name" => $name,
         "status" => "subscribed",
     ]);
+    $toEmail = carbon_get_theme_option('rsvp_email');
 
     add_subscribed_email($contactData);
-    wp_mail($email, "New message from RSVP client | {$name}", $body, $headers);
+    wp_mail($toEmail, "New message from RSVP client | {$name}", $body, $headers);
 }
 
 function email_subscribed()

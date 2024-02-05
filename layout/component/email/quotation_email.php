@@ -342,7 +342,7 @@ $message = $_POST['contact_message'] ?? null;
 
                                                             <div class="v-text-align" style="font-size: 14px; color: #ffffff; line-height: 150%; text-align: left; word-wrap: break-word;">
                                                                 <p style="font-size: 14px; line-height: 150%;"><strong>R.S.V.P Communication</strong></p>
-                                                                <p style="font-size: 14px; line-height: 150%;"><span style="color: #b8b8b8; font-family: 'Helvetica Neue', sans-serif; font-size: 13.3333px; text-align: left; white-space: normal; background-color: #1b1b1b; float: none; display: inline; line-height: 19.5px;">© 2023</span></p>
+                                                                <p style="font-size: 14px; line-height: 150%;"><span style="color: #b8b8b8; font-family: 'Helvetica Neue', sans-serif; font-size: 13.3333px; text-align: left; white-space: normal; background-color: #1b1b1b; float: none; display: inline; line-height: 19.5px;">© <?= date('Y') ?></span></p>
                                                             </div>
 
                                                         </td>
