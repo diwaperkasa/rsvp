@@ -44,8 +44,19 @@ $('form#subscribed-form').submit(function(e) {
     data: {
       subscribed_email: $('#subscribed_email').val(),
     },
-    success: function() {
-        
+    beforeSend: function() {
+      $("form#subscribed-form button[type='submit']").prop('disabled', true);
     },
+    success: function() {
+      $("form#subscribed-form button[type='submit']")
+          .addClass('d-none');
+
+      $("form#subscribed-form input#subscribed_email")
+          .val("You're now subscribed. Thank you for joining R.S.V.P community!")
+          .prop('readonly', true);
+    },
+    complete: function() {
+      $("form#subscribed-form button[type='submit']").prop('disabled', false);
+    }
   });
 });

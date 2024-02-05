@@ -54,7 +54,7 @@ if ( ! function_exists( 'rsvp_block_styles' ) ) {
             wp_enqueue_script('jquery_script', get_stylesheet_directory_uri() . '/assets/vendor/jquery/jquery-3.2.1.min.js', [], false, true);
             wp_enqueue_script('bootstrap_script', get_stylesheet_directory_uri() . '/assets/vendor/bootstrap/js/bootstrap.bundle.min.js', [], false, true);
             wp_enqueue_script('carousel_script', get_stylesheet_directory_uri() . '/assets/vendor/owlcarousel/owl.carousel.min.js', [], false, true);
-            wp_enqueue_script('main_script', get_stylesheet_directory_uri() . '/assets/js/main.js', [], "1.6", true);
+            wp_enqueue_script('main_script', get_stylesheet_directory_uri() . '/assets/js/main.js', [], "1.7", true);
         }
     }
 }
