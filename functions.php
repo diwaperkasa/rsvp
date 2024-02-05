@@ -86,7 +86,7 @@ function send_quotation_email()
         throw new \WpOrg\Requests\Exception\InvalidArgument("name or email cannot be empty");
     }
 
-    $headers[] = "From: Test <{$email}>";
+    $headers[] = "From: {$name} <{$email}>";
     $headers[] = 'Content-Type: text/html; charset="utf-8"';
     $body = get_email_template('quotation_email');
     $contactData = new \Mint\MRM\DataStores\ContactData($email, [
