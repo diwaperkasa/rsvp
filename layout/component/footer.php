@@ -60,10 +60,10 @@
                     <div class="col-8">
                         <p class="h4 mb-4 fw-normal">Contact</p>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><a href="mailto:info@rsvp-communication.com">Email</a></li>
-                            <li class="mb-2"><a target="_blank" href="https://www.facebook.com/profile.php?id=61550959474472">Facebook</a></li>
-                            <li class="mb-2"><a target="_blank" href="https://www.instagram.com/rsvpsingapore/">Instagram</a></li>
-                            <li class="mb-2"><a target="_blank" href="https://twitter.com/rsvp_agency">X (formerly Twitter)</a></li>
+                            <li class="mb-2"><a href="mailto:<?= carbon_get_theme_option('rsvp_email') ?>">Email</a></li>
+                            <li class="mb-2"><a target="_blank" href="<?= carbon_get_theme_option('rsvp_facebook') ?>">Facebook</a></li>
+                            <li class="mb-2"><a target="_blank" href="<?= carbon_get_theme_option('rsvp_instagrem') ?>">Instagram</a></li>
+                            <li class="mb-2"><a target="_blank" href="<?= carbon_get_theme_option('rsvp_twitter') ?>">X (formerly Twitter)</a></li>
                         </ul>
                     </div>
                 </div>

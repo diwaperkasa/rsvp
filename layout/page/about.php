@@ -20,7 +20,9 @@
                 <div class="col-md-6 offset-md-6">
                     <div class="p-3">
                         <h1 class="display-4 mb-5 lh-1">At R.S.V.P, we think outside the box to make your campaign a <span class="fst-italic">success</span>.</h1>
-                        <p class="mb-5 fs-6">With over 20 years of experience in different emerging markets, we specialise in a variety of online and offline service in PR, social, media and digital space to create impactful and engaging campaigns. Our communication strategies are innovative, based on shifting trends and technologies to effectively communicate and connect with diverse target audiences in meaningful ways.</p>
+                        <p class="mb-5 fs-6">
+                        With over 20 years of experience in different emerging markets, we specialise in a variety of online and offline services in PR, social media and the digital space to create impactful and engaging campaigns. Our communication strategies are innovative, based on shifting trends and technologies, including AI, AR and VR, to effectively communicate and connect with diverse target audiences in meaningful ways.
+                        </p>
                         <div class="mb-5">
                             <a class="fw-normal h5 fst-italic text-decoration-underline" href="/services" role="button">View All Services</a>
                             <span class="ms-2">

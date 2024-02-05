@@ -1,112 +1,68 @@
+<?php
+    $args = [];
+    $args = array(
+        'posts_per_page' => -1,
+        'orderby' => 'ID',
+        'order' => 'ASC',
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'tax_query' => [
+            [
+                'field' => 'slug',
+                'terms' => 'projects',
+                'taxonomy' => 'category',
+            ]
+        ]
+    );
+
+    $result = new WP_Query($args);
+    $postSize = $result->found_posts;
+    $postPerRow = 3;
+    $rowIndex = 0;
+    $groupIndex = 0;
+?>
+
 <section id="section-culture" class="py-5">
     <div class="container-fluid p-3 p-md-5">
         <h1 class="display-4 text-center mb-5 lh-1">
             Curated <span class="fst-italic">Selection</span><br>
             of <span class="fst-italic">Projects</span>
         </h1>
-        <div class="row align-items-center justify-content-center">
-            <div class="col-md">
-                <a href="/projects/birkenstock">
+        <?php foreach ($result->get_posts() as $key => $post): ?>
+            <?php
+                $thumbnail = carbon_get_post_meta($post->ID, 'project_thumbnail');
+            ?>
+            <?php if ($rowIndex == 0): ?>
+                <div class="row align-items-center justify-content-center">
+            <?php endif; ?>
+            <div class="<?= ($groupIndex % 2 == 0) ? 
+                (($postSize - (($groupIndex + 1) * $postPerRow) < $postPerRow) ?
+                    ("col-md-" . (5 - ($postSize - $key)))
+                    : ($rowIndex % 2 == 0 ? "col-md" : "col-md-5"))
+                : ($rowIndex % 2 == 0 ? "col-md" : "col-md-3") ?>">
+                <a href="<?= get_permalink($post) ?>">
                     <div class="card rounded-0  border-0">
                         <div class="card-body">
-                            <p class="mb-0 dotdec position-relative ms-4">01</p>
-                            <img src="<?= get_stylesheet_directory_uri() . "/assets/img/BIRKENSTOCK.jpg" ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0 fw-normal">Birkenstock</h5>
-                            <p class="card-text">2022—Present</p>
+                            <p class="mb-0 dotdec position-relative ms-4"><?= $key + 1 ?></p>
+                            <img src="<?= wp_get_attachment_url($thumbnail ? $thumbnail[0] : 0) ?>" class="img-fluid" alt="...">
+                            <h5 class="card-title mt-3 mb-0 fw-normal"><?= $post->post_title ?></h5>
+                            <p class="card-text"><?= carbon_get_post_meta( $post->ID, 'project_year' ) ?></p>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="col-md-5">
-                <a href="/projects/ytl-hotels">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <p class="mb-0 dotdec position-relative ms-4">02</p>
-                            <img src="<?= get_stylesheet_directory_uri() . "/assets/img/YTL-Hotels.jpg" ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0 fw-normal">YTL Hotels</h5>
-                            <p class="card-text">2018-Present</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md">
-                <a href="/projects/clinique-la-prairie">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <p class="mb-0 dotdec position-relative ms-4">03</p>
-                            <img src="<?= get_stylesheet_directory_uri() . "/assets/img/Clique-La-Prairie.jpg" ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0 fw-normal">Clinique La Prairie</h5>
-                            <p class="card-text">2023</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="row align-items-center justify-content-center">
-            <div class="col-md">
-                <a href="/projects/zegna-232-1-0-dinner">
-                    <div class="card rounded-0  border-0">
-                        <div class="card-body">
-                            <p class="mb-0 dotdec position-relative ms-4">04</p>
-                            <img src="<?= get_stylesheet_directory_uri() . "/assets/img/Zegna.jpg" ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0 fw-normal">ZEGNA 232 1.0 Dinner</h5>
-                            <p class="card-text">2023</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3">
-                <div class="my-0 my-md-5"></div>
-                <a href="/projects/amaffi-asia-boutique">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <p class="mb-0 dotdec position-relative ms-4">05</p>
-                            <img src="<?= get_stylesheet_directory_uri() . "/assets/img/AMAFFI.jpg" ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0 fw-normal">AMAFFI Asia Boutique</h5>
-                            <p class="card-text">2022</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md">
-                <a href="/projects/viva-studio-launch">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <p class="mb-0 dotdec position-relative ms-4">06</p>
-                            <img src="<?= get_stylesheet_directory_uri() . "/assets/img/VIVA-1.jpg" ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0 fw-normal">VIVA Studio Launch</h5>
-                            <p class="card-text">2023</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="row align-items-center justify-content-center">
-            <div class="col-md-3">
-                <a href="/projects/brytehall">
-                    <div class="card rounded-0  border-0">
-                        <div class="card-body">
-                            <p class="mb-0 dotdec position-relative ms-4">07</p>
-                            <img src="<?= get_stylesheet_directory_uri() . "/assets/img/Brytehall.jpg" ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0 fw-normal">Brytehall</h5>
-                            <p class="card-text">2022</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a href="/projects/vogue-launch">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <p class="mb-0 dotdec position-relative ms-4">08</p>
-                            <img src="<?= get_stylesheet_directory_uri() . "/assets/img/Vogue.jpg" ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0 fw-normal">VOGUE Launch</h5>
-                            <p class="card-text">2020</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
+            <?php ++$rowIndex; ?>
+            <?php if ($rowIndex == $postPerRow): ?>
+                </div>
+            <?php endif; ?>
+            <?php
+                if ($rowIndex == $postPerRow) {
+                    ++$groupIndex;
+                }
+
+                $rowIndex = $rowIndex == 3 ? 0 : $rowIndex;
+            ?>
+        <?php endforeach; ?>
         <div class="text-center mt-5">
             <a class="fw-normal h5 fst-italic text-decoration-underline" href="/services" role="button">Browse All Services</a>
             <span class="ms-2">

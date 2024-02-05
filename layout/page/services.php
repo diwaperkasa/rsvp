@@ -16,7 +16,7 @@
             </div>
             <div class="col-md-6">
                 <div class="text-center text-md-end">
-                    <img src="<?= get_stylesheet_directory_uri() . "/assets/img/ser1.png" ?>" class="img-fluid w-75 odd" alt="...">
+                    <img src="<?= get_stylesheet_directory_uri() . "/assets/img/LISEZ-MOI.jpeg" ?>" class="img-fluid w-75 odd" alt="...">
                 </div>
             </div>
         </div>
@@ -63,9 +63,9 @@
             <div class="col-md-6 order-1 order-md-2">
                 <div>
                     <h1 class="display-5 fw-normal my-3 position-relative lh-1">SOCIAL MEDIA <br>MANAGEMENT <span class="numbering-dec">04</span></h1>
-                    <p class="fs-14pt">We enhance the visibility of the brands we work with in the
-                        digital sphere through creating vibrant and powerful social
-                        media campaigns to build a social media presence across different platforms.</p>
+                    <p class="fs-14pt">
+                    We enhance the visibility of the brands we work with within the digital sphere through creating vibrant and powerful social media campaigns to build a strong presence across different platforms.
+                    </p>
                 </div>
             </div>
         </div>

@@ -347,14 +347,15 @@ footer .input-group>button {
   -webkit-line-clamp: 7;
 }
 
-@media only screen and (max-height: 600px) {
+@media only screen and (min-height: 768px) {
   .elipsisp {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
+    height: unset !important;
   }
 
   .project-slide img {
-    height: 175px;
+    height: 400px;
     width: auto !important;
     margin: auto;
     object-fit: cover;
