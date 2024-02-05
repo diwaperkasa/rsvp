@@ -13,6 +13,7 @@ function add_custom_field_action()
             Field::make( 'text', 'rsvp_facebook', 'Facebook' ),
             Field::make( 'text', 'rsvp_intagram', 'Intagram' ),
             Field::make( 'text', 'rsvp_twitter', 'X (Twitter)' ),
+            Field::make( 'text', 'rsvp_linkedin', 'LinkedIn' ),
         ]);
     
     Container::make( 'post_meta', 'Custom Data' )
