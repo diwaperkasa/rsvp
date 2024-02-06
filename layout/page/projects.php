@@ -49,6 +49,9 @@
                 $rowIndex = $rowIndex == 3 ? 0 : $rowIndex;
             ?>
         <?php endforeach; ?>
+        <?php if ($rowIndex != $postPerRow): ?>
+            </div>
+        <?php endif; ?>
         <div class="text-center mt-5">
             <a class="fw-normal h5 fst-italic text-decoration-underline" href="/services" role="button">Browse All Services</a>
             <span class="ms-2">
