@@ -348,7 +348,7 @@ footer .input-group>button {
   .elipsisp {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
-    height: unset !important;
+    height: auto !important;
   }
 }
 
