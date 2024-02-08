@@ -21,13 +21,13 @@
                         <div class="owl-carousel project-carousel owl-theme ">
                             <?php foreach (carbon_get_post_meta( get_the_ID(), 'project_photo' ) as $mediaId): ?>
                                 <?php $fileInfo = pathinfo(get_attached_file($mediaId)); ?>
-                                <div class="item project-slide overflow-hidden mx-1">
+                                <div class="item project-slide d-flex overflow-hidden mx-1">
                                     <?php if (in_array($fileInfo['extension'], ['mp4', 'webm', 'ogg'])): ?>
-                                        <video autoplay="" muted="" loop="" class="video-cover">
-                                            <source class="img-fluid" src="<?= wp_get_attachment_url($mediaId) ?>" type="video/<?= $fileInfo['extension'] ?>">
+                                        <video autoplay="" muted="" loop="" class="video-cover img-fluid my-auto">
+                                            <source class="img-fluid my-auto" src="<?= wp_get_attachment_url($mediaId) ?>" type="video/<?= $fileInfo['extension'] ?>">
                                         </video>
                                     <?php else: ?>
-                                        <img class="img-fluid" src="<?= wp_get_attachment_url($mediaId) ?>" alt="<?= wp_get_attachment_url($mediaId) ?>">
+                                        <img class="img-fluid my-auto" src="<?= wp_get_attachment_url($mediaId) ?>" alt="<?= wp_get_attachment_url($mediaId) ?>">
                                     <?php endif; ?>
                                 </div>
                             <?php endforeach; ?>

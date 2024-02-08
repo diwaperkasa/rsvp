@@ -323,9 +323,8 @@ footer .input-group>button {
   z-index: 1;
 }
 
-.project-slide img {
+.project-slide {
   height: 400px;
-  object-fit: cover;
 }
 
 .dots li a:before {
@@ -561,11 +560,6 @@ footer .form-control::placeholder {
 
 .close-btn:after {
   transform: rotate(-45deg);
-}
-
-#project-detail .video-cover {
-  height: 350px;
-  width: auto;
 }
 
 .logo {
