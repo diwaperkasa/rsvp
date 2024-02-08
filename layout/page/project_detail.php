@@ -23,7 +23,7 @@
                                 <?php $fileInfo = pathinfo(get_attached_file($mediaId)); ?>
                                 <div class="item project-slide d-flex justify-content-center overflow-hidden mx-1">
                                     <?php if (in_array($fileInfo['extension'], ['mp4', 'webm', 'ogg'])): ?>
-                                        <video autoplay="" muted="" loop="" class="video-cover img-fluid my-auto">
+                                        <video autoplay muted loop playsinline class="video-cover img-fluid my-auto">
                                             <source src="<?= wp_get_attachment_url($mediaId) ?>" type="video/<?= $fileInfo['extension'] ?>">
                                         </video>
                                     <?php else: ?>
