@@ -672,3 +672,15 @@ header .navbar-light .navbar-brand:focus {
     right: 0;
   }
 }
+
+#project-detail {
+  .owl-carousel .owl-item img {
+    max-height: 400px;
+    width: auto;
+  }
+
+  .owl-carousel .owl-item video {
+    max-height: 400px;
+    width: auto;
+  }
+}
