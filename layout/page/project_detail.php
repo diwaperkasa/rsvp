@@ -24,10 +24,10 @@
                                 <div class="item project-slide overflow-hidden mx-1">
                                     <?php if (in_array($fileInfo['extension'], ['mp4', 'webm', 'ogg'])): ?>
                                         <video autoplay="" muted="" loop="" class="video-cover">
-                                            <source src="<?= wp_get_attachment_url($mediaId) ?>" type="video/<?= $fileInfo['extension'] ?>">
+                                            <source class="img-fluid" src="<?= wp_get_attachment_url($mediaId) ?>" type="video/<?= $fileInfo['extension'] ?>">
                                         </video>
                                     <?php else: ?>
-                                <img src="<?= wp_get_attachment_url($mediaId) ?>" alt="<?= wp_get_attachment_url($mediaId) ?>">
+                                        <img class="img-fluid" src="<?= wp_get_attachment_url($mediaId) ?>" alt="<?= wp_get_attachment_url($mediaId) ?>">
                                     <?php endif; ?>
                                 </div>
                             <?php endforeach; ?>

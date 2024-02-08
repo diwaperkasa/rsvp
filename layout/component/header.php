@@ -84,7 +84,9 @@
 </div>
 <!-- End Pop up Menu -->
 <div class="d-block px-3 py-2 text-center text-bold bg-tblack">
-    <p class="text-white h6 fw-normal">Join the <span class="h6 fw-normal fst-italic">R.S.V.P Community</span></p>
+    <a href="mailto:<?= carbon_get_theme_option('rsvp_email') ?>">
+        <p class="text-white h6 fw-normal">Join the <span class="h6 fw-normal fst-italic">R.S.V.P Community</span></p>
+    </a>
 </div>
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">

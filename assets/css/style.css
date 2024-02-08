@@ -324,9 +324,7 @@ footer .input-group>button {
 }
 
 .project-slide img {
-  height: 350px;
-  width: auto !important;
-  margin: auto;
+  height: 400px;
   object-fit: cover;
 }
 
@@ -352,13 +350,6 @@ footer .input-group>button {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
     height: unset !important;
-  }
-
-  .project-slide img {
-    height: 400px;
-    width: auto !important;
-    margin: auto;
-    object-fit: cover;
   }
 }
 

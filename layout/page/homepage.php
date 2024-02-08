@@ -113,76 +113,30 @@
         <!-- Desktop View -->
         <div class="row align-items-center d-none d-md-flex">
             <div class="col">
-                <div class="card rounded-0 border-0 px-md-2">
-                    <div class="card-body p-0">
-                        <p class="mb-0">01</p>
-                        <img src=" <?= get_stylesheet_directory_uri() . "/assets/img/pr.png" ?>" class="img-fluid" alt="...">
-                        <h5 class="card-title mt-3 mb-0 fw-normal lh-1">PUBLIC <br> RELATIONS</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card rounded-0 border-0 px-md-2">
-                    <div class="card-body p-0">
-                        <p class="mb-0">02</p>
-                        <img src="<?= get_stylesheet_directory_uri() . "/assets/img/cc.png" ?>" class="img-fluid" alt="...">
-                        <h5 class="card-title mt-3 mb-0 fw-normal lh-1">CONTENT <br> CREATION</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col align-self-stretch">
-                <div class="card rounded-0 border-0 px-md-2 h-80">
-                    <div class="card-body p-0">
-                        <p class="mb-0">03</p>
-                        <video autoplay muted loop playsinline class="video-cover">
-                            <source src="<?= get_stylesheet_directory_uri() . '/assets/img/Runway-Video.mp4' ?>" type="video/mp4">
-                        </video>
-                        <h5 class="card-title mt-3 mb-0 fw-normal lh-1">EVENT <br> MANAGEMENT</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card rounded-0 border-0 px-md-2">
-                    <div class="card-body p-0">
-                        <p class="mb-0">04</p>
-                        <img src="<?= get_stylesheet_directory_uri() . '/assets/img/sm.png' ?>" class="img-fluid" alt="...">
-                        <h5 class="card-title mt-3 mb-0 fw-normal lh-1">SOCIAL MEDIA <br> MANAGEMENT</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card rounded-0 border-0 px-md-2">
-                    <div class="card-body p-0">
-                        <p class="mb-0">05</p>
-                        <img src="<?= get_stylesheet_directory_uri() . "/assets/img/in.png" ?>" class="img-fluid" alt="...">
-                        <h5 class="card-title mt-3 mb-0 fw-normal lh-1">INNOVATION</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Mobile View -->
-        <div class="mt-4 d-block d-md-none">
-            <div class="owl-carousel service-carousel owl-theme">
-                <div class="item">
-                    <div class="card rounded-0 border-0">
+                <a href="/services">
+                    <div class="card rounded-0 border-0 px-md-2">
                         <div class="card-body p-0">
                             <p class="mb-0">01</p>
-                            <img src="<?= get_stylesheet_directory_uri() . '/assets/img/pr.png' ?>" class="img-fluid" alt="...">
+                            <img src=" <?= get_stylesheet_directory_uri() . "/assets/img/pr.png" ?>" class="img-fluid" alt="...">
                             <h5 class="card-title mt-3 mb-0 fw-normal lh-1">PUBLIC <br> RELATIONS</h5>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="card rounded-0 border-0">
+                </a>
+            </div>
+            <div class="col">
+                <a href="/services">
+                    <div class="card rounded-0 border-0 px-md-2">
                         <div class="card-body p-0">
                             <p class="mb-0">02</p>
-                            <img src="<?= get_stylesheet_directory_uri() . '/assets/img/cc.png' ?>" class="img-fluid" alt="...">
+                            <img src="<?= get_stylesheet_directory_uri() . "/assets/img/cc.png" ?>" class="img-fluid" alt="...">
                             <h5 class="card-title mt-3 mb-0 fw-normal lh-1">CONTENT <br> CREATION</h5>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="card rounded-0 border-0 h-75">
+                </a>
+            </div>
+            <div class="col align-self-stretch">
+                <a href="/services">
+                    <div class="card rounded-0 border-0 px-md-2 h-80">
                         <div class="card-body p-0">
                             <p class="mb-0">03</p>
                             <video autoplay muted loop playsinline class="video-cover">
@@ -191,24 +145,90 @@
                             <h5 class="card-title mt-3 mb-0 fw-normal lh-1">EVENT <br> MANAGEMENT</h5>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="card rounded-0 border-0">
+                </a>
+            </div>
+            <div class="col">
+                <a href="/services">
+                    <div class="card rounded-0 border-0 px-md-2">
                         <div class="card-body p-0">
                             <p class="mb-0">04</p>
                             <img src="<?= get_stylesheet_directory_uri() . '/assets/img/sm.png' ?>" class="img-fluid" alt="...">
                             <h5 class="card-title mt-3 mb-0 fw-normal lh-1">SOCIAL MEDIA <br> MANAGEMENT</h5>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="card rounded-0 border-0">
+                </a>
+            </div>
+            <div class="col">
+                <a href="/services">
+                    <div class="card rounded-0 border-0 px-md-2">
                         <div class="card-body p-0">
                             <p class="mb-0">05</p>
                             <img src="<?= get_stylesheet_directory_uri() . "/assets/img/in.png" ?>" class="img-fluid" alt="...">
                             <h5 class="card-title mt-3 mb-0 fw-normal lh-1">INNOVATION</h5>
                         </div>
                     </div>
+                </a>
+            </div>
+        </div>
+        <!-- Mobile View -->
+        <div class="mt-4 d-block d-md-none">
+            <div class="owl-carousel service-carousel owl-theme">
+                <div class="item">
+                    <a href="/services">
+                        <div class="card rounded-0 border-0">
+                            <div class="card-body p-0">
+                                <p class="mb-0">01</p>
+                                <img src="<?= get_stylesheet_directory_uri() . '/assets/img/pr.png' ?>" class="img-fluid" alt="...">
+                                <h5 class="card-title mt-3 mb-0 fw-normal lh-1">PUBLIC <br> RELATIONS</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/services">
+                        <div class="card rounded-0 border-0">
+                            <div class="card-body p-0">
+                                <p class="mb-0">02</p>
+                                <img src="<?= get_stylesheet_directory_uri() . '/assets/img/cc.png' ?>" class="img-fluid" alt="...">
+                                <h5 class="card-title mt-3 mb-0 fw-normal lh-1">CONTENT <br> CREATION</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/services">
+                        <div class="card rounded-0 border-0 h-75">
+                            <div class="card-body p-0">
+                                <p class="mb-0">03</p>
+                                <video autoplay muted loop playsinline class="video-cover">
+                                    <source src="<?= get_stylesheet_directory_uri() . '/assets/img/Runway-Video.mp4' ?>" type="video/mp4">
+                                </video>
+                                <h5 class="card-title mt-3 mb-0 fw-normal lh-1">EVENT <br> MANAGEMENT</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/services">
+                        <div class="card rounded-0 border-0">
+                            <div class="card-body p-0">
+                                <p class="mb-0">04</p>
+                                <img src="<?= get_stylesheet_directory_uri() . '/assets/img/sm.png' ?>" class="img-fluid" alt="...">
+                                <h5 class="card-title mt-3 mb-0 fw-normal lh-1">SOCIAL MEDIA <br> MANAGEMENT</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/services">
+                        <div class="card rounded-0 border-0">
+                            <div class="card-body p-0">
+                                <p class="mb-0">05</p>
+                                <img src="<?= get_stylesheet_directory_uri() . "/assets/img/in.png" ?>" class="img-fluid" alt="...">
+                                <h5 class="card-title mt-3 mb-0 fw-normal lh-1">INNOVATION</h5>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
