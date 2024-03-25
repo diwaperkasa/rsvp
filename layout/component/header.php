@@ -5,6 +5,7 @@
             <a href="/" class="p-2"><span>HOME</span></a>
             <a href="/services" class="p-2"><span>SERVICES</span></a>
             <a href="/projects" class="p-2"><span>PROJECTS</span></a>
+            <a href="/news" class="p-2"><span>NEWS</span></a>
         </div>
         <div>
             <div class="text-center align-items-center">
@@ -111,6 +112,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link pb-0 px-0 mx-2 <?= get_current_url() === "projects" ? "active" : null ?>" href="/projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pb-0 px-0 mx-2 <?= get_current_url() === "news" ? "active" : null ?>" href="/news">News</a>
                     </li>
                 </ul>
                 <a class="navbar-brand m-0 p-0" href="/">

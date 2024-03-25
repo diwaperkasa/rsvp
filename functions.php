@@ -31,6 +31,17 @@ function add_custom_field_action()
             Field::make( 'text', 'project_year', __( 'Year' ) ),
             Field::make( 'media_gallery', 'project_photo', __( 'Media Gallery' ) )
         ]);
+
+    Container::make( 'post_meta', 'Custom Data' )
+        ->where( 'post_type', '=', 'post' )
+        ->where( 'post_term', '=', [
+            'field' => 'slug',
+            'value' => 'news',
+            'taxonomy' => 'category',
+        ])
+        ->add_fields( [
+            Field::make( 'image', 'thumbnail', __( 'Thumbnail' ) ),
+        ]);
 }
 
 add_action( 'after_setup_theme', 'crb_load' );
@@ -50,7 +61,7 @@ if ( ! function_exists( 'rsvp_block_styles' ) ) {
             wp_enqueue_style( 'bootstrap_style', get_stylesheet_directory_uri() . '/assets/vendor/bootstrap/css/bootstrap.min.css' );
             wp_enqueue_style( 'carousel_style', get_stylesheet_directory_uri() . '/assets/vendor/owlcarousel/assets/owl.carousel.min.css' );
             wp_enqueue_style( 'carousel_theme_style', get_stylesheet_directory_uri() . '/assets/vendor/owlcarousel/assets/owl.theme.default.css' );
-            wp_enqueue_style( 'main_style', get_stylesheet_directory_uri() . '/assets/css/style.css', [], "1.6" );
+            wp_enqueue_style( 'main_style', get_stylesheet_directory_uri() . '/assets/css/style.css', [], "1.7" );
             // add js lib
             wp_enqueue_script('jquery_script', get_stylesheet_directory_uri() . '/assets/vendor/jquery/jquery-3.2.1.min.js', [], false, true);
             wp_enqueue_script('bootstrap_script', get_stylesheet_directory_uri() . '/assets/vendor/bootstrap/js/bootstrap.bundle.min.js', [], false, true);
@@ -192,6 +203,29 @@ function rsvp_get_projects(int $limit = -1)
             [
                 'field' => 'slug',
                 'terms' => 'projects',
+                'taxonomy' => 'category',
+            ]
+        ]
+    ];
+
+    $result = new WP_Query($args);
+
+    return $result;
+}
+
+function rsvp_get_news(int $limit = -1, int $page = 1)
+{
+    $args = [
+        'posts_per_page' => $limit,
+        'paged' => max(1, $page),
+        'orderby' => 'ID',
+        'order' => 'ASC',
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'tax_query' => [
+            [
+                'field' => 'slug',
+                'terms' => 'news',
                 'taxonomy' => 'category',
             ]
         ]
