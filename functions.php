@@ -219,7 +219,7 @@ function rsvp_get_news(int $limit = -1, int $page = 1)
         'posts_per_page' => $limit,
         'paged' => max(1, $page),
         'orderby' => 'ID',
-        'order' => 'ASC',
+        'order' => 'DESC',
         'post_type' => 'post',
         'post_status' => 'publish',
         'tax_query' => [
