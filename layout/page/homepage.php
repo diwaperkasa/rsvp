@@ -62,11 +62,9 @@
                     <div class="text-white text-center py-5 my-5 px-5">
                         <p>ABOUT R.S.V.P</p>
                         <h1 class="display-4 mb-5 lh-1">The <span class="fst-italic">Innovation</span> <br> Agency</h1>
-                        <p class="h4 fw-normal mx-md-5 mb-5 fs-14pt lh-160 about">With over 20 years of experience in different emerging markets, we
-                            specialise in a variety of online and offline service in PR, social, media and digital space to
-                            create impactful and engaging campaigns. Our communication strategies are innovative, based on
-                            shifting trends and technologies, including AI, AR and VR to effectively communicate and connect
-                            with diverse target audiences in meaningful ways.</p>
+                        <p class="h4 fw-normal mx-md-5 mb-5 fs-14pt lh-160 about">
+                            With two decades of expertise across vibrant emerging markets, our agency is a catalyst for innovation in communication. We deliver a comprehensive suite of services in PR, social media, digital content creation and event management. Our strategies are at the cutting edge, embracing shifts in trends and technology, to forge connections with diverse audiences and create narratives that resonate and engage. We innovate your story ...
+                        </p>
                         <a class="fw-normal h5 fst-italic text-decoration-underline" href="/about" role="button">Learn More
                         </a>
                         <span class="ms-2">

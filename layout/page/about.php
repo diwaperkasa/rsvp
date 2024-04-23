@@ -21,7 +21,7 @@
                     <div class="p-3">
                         <h1 class="display-4 mb-5 lh-1">At R.S.V.P, we think outside the box to make your campaign a <span class="fst-italic">success</span>.</h1>
                         <p class="mb-5 fs-6">
-                        With over 20 years of experience in different emerging markets, we specialise in a variety of online and offline services in PR, social media and the digital space to create impactful and engaging campaigns. Our communication strategies are innovative, based on shifting trends and technologies, including AI, AR and VR, to effectively communicate and connect with diverse target audiences in meaningful ways.
+                            With a strong expertise in journalism, publishing, photography, talent management, marketing and business development, our diverse team is the cornerstone of our success. Each member brings a unique perspective that, when unified, creates a powerhouse of innovative thinking. This multidisciplinary approach ensures that we are more than a PR agency - we are a holistic communications partner committed to building community and nurturing long-term relationships. The synergy of our combined skills positions us to craft strategies that drive success, turning our clients' visions into impactful realities. We strongly believe in collaborations with our innovation partners that share the same values and vision as we do. Among them are Cashlabs, Poddster , Spinfashion, Institut of Digital Fashion and DressX.
                         </p>
                         <div class="mb-5">
                             <a class="fw-normal h5 fst-italic text-decoration-underline" href="/services" role="button">View All Services</a>

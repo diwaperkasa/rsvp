@@ -1,3 +1,8 @@
+<?php
+    // add custom script
+    wp_enqueue_script('homepage', get_stylesheet_directory_uri() . '/assets/js/service.js', [], "1.0", true);
+?>
+
 <section id="section-culture" class="py-5">
     <div class="container p-3 p-md-5">
         <h1 class="display-4 text-center mb-5 lh-1">
@@ -8,10 +13,27 @@
             <div class="col-md-6">
                 <div>
                     <h1 class="display-5 fw-normal my-3 position-relative lh-1">PUBLIC <br>RELATIONS <span class="numbering-dec">01</span> </h1>
-                    <p class="fs-14pt">Strong relationships are everything, and we have grown a loyal
+                    <p class="fs-14pt">
+                        Strong relationships are everything, and we have grown a loyal
                         pool of media contacts for our communications strategies.
                         Through leveraging this vast network, we develop engaging
-                        campaigns to share your stories in the best way possible.</p>
+                        campaigns to share your stories in the best way possible.
+                    </p>
+                    <div class="collapse" id="collapse-service-1">
+                        <p class="fs-14pt">
+                            Services include: Press Office, Press Events, Day-to Day Media Relations Management, Press Tour Organisation, Showroom Management, Product Seeding.
+                        </p>
+                    </div>
+                    <div class="mb-3 text-center text-md-start">
+                        <a data-toggle="#collapse-service-1" class="collapse-toggle-service" href="javascript:void(0)">
+                            <span class="text">View More</span>
+                            <span class="arrow">
+                                <svg id="i-chevron-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 4 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <path d="M30 12 L16 24 2 12" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="col-md-6">
@@ -29,11 +51,35 @@
             <div class="col-md-6 order-1 order-md-2">
                 <div>
                     <h1 class="display-5 fw-normal my-3 position-relative lh-1">CONTENT <br>CREATION <span class="numbering-dec">02</span></h1>
-                    <p class="fs-14pt">Our content creation services are insightful, original and
+                    <p class="fs-14pt">
+                        Our content creation services are insightful, original and
                         strategic to amplify our client’s voices. We focus on the
                         smallest of details and provide highly-tailored approaches
                         through editorial content that resonates with your audience
-                        and digital production that elevates your brand.</p>
+                        and digital production that elevates your brand.
+                    </p>
+                    <div class="collapse" id="collapse-service-2">
+                        <p class="fs-14pt">
+                            RSVP Agency offers dynamic content services to amplify your brand:
+                        </p>
+                        <ol class="fs-14pt" type="1">
+                            <li>Content Planning: We deliver end-to-end content solutions, from writing and editing to photography and design.</li>
+                            <li>Native Ads and Media Campaigns: Custom campaigns that blend seamlessly with user experiences.</li>
+                            <li>Microsite Creation: Standalone web pages to highlight your specific marketing drives.</li>
+                            <li>Podcast Production: Dive into podcasting for an engaging corporate presence with our comprehensive package - scripting, training, guest coordination, and studio recording.</li>
+                        </ol>
+                        <p class="fs-14pt">
+                            Our podcast service stands out as an innovative tool for storytelling and corporate engagement.
+                        </p>
+                    </div>
+                    <div class="mb-3 text-center text-md-start">
+                        <a data-toggle="#collapse-service-2" class="collapse-toggle-service" href="javascript:void(0)">
+                            <span class="text">View More</span>
+                            <svg id="i-chevron-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 4 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                <path d="M30 12 L16 24 2 12" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -41,9 +87,32 @@
             <div class="col-md-6">
                 <div>
                     <h1 class="display-5 fw-normal my-3 position-relative lh-1">EVENT <br>MANAGEMENT <span class="numbering-dec">03</span></h1>
-                    <p class="fs-14pt">Our event portfolio is diverse, from intimate presentations to large-scale openings
+                    <p class="fs-14pt">
+                        Our event portfolio is diverse, from intimate presentations to large-scale openings
                         and product launches. With a strong network of event partners and key opinion leaders,
-                        we brainstorm, design, conceptualise, fabricate, set up and dismantle – and secure celebrity attendance in the process.</p>
+                        we brainstorm, design, conceptualise, fabricate, set up and dismantle – and secure celebrity attendance in the process.
+                    </p>
+                    <div class="collapse" id="collapse-service-3">
+                        <p class="fs-14pt">
+                            Event formats:
+                        </p>
+                        <ol class="fs-14pt" type="1">
+                            <li>Media Presentation, Press Conferences, Press Trips</li>
+                            <li>Gala Events, Show Entertainment , Roadshows, Festivals</li>
+                            <li>Fashion Shows , Styling Events, Trunkshows</li>
+                            <li>Conferences, Workshops, Masterclasses, Trainings</li>
+                        </ol>
+                    </div>
+                    <div class="mb-3 text-center text-md-start">
+                        <a data-toggle="#collapse-service-3" class="collapse-toggle-service" href="javascript:void(0)">
+                            <span class="text">View More</span>
+                            <span class="arrow">
+                                <svg id="i-chevron-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 4 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <path d="M30 12 L16 24 2 12" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="col-md-6">
@@ -64,8 +133,27 @@
                 <div>
                     <h1 class="display-5 fw-normal my-3 position-relative lh-1">SOCIAL MEDIA <br>MANAGEMENT <span class="numbering-dec">04</span></h1>
                     <p class="fs-14pt">
-                    We enhance the visibility of the brands we work with within the digital sphere through creating vibrant and powerful social media campaigns to build a strong presence across different platforms.
+                        We enhance the visibility of the brands we work with within the digital sphere through creating vibrant and powerful social media campaigns to build a strong presence across different platforms.
                     </p>
+                    <div class="collapse" id="collapse-service-4">
+                        <ol class="fs-14pt" type="1">
+                            <li>Content Creation: Crafting on-brand visual and textual content that resonates with your audiences</li>
+                            <li>Engagement Strategies: Driving interactions through targeted posts and campaigns</li>
+                            <li>Trend Monitoring: Keeping pace with the latest industry trends to maintain relevance</li>
+                            <li>Influencer Collaborations: Partnering with influencers to expand reach</li>
+                            <li>Analytics & Reporting: Measuring performance to refine and optimise strategy</li>
+                        </ol>
+                    </div>
+                    <div class="mb-3 text-center text-md-start">
+                        <a data-toggle="#collapse-service-4" class="collapse-toggle-service" href="javascript:void(0)">
+                            <span class="text">View More</span>
+                            <span class="arrow">
+                                <svg id="i-chevron-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 4 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <path d="M30 12 L16 24 2 12" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -73,8 +161,11 @@
             <div class="col-md-6">
                 <div>
                     <h1 class="display-5 fw-normal my-3 position-relative lh-1">INNOVATION <span class="numbering-dec">05</span></h1>
-                    <p class="fs-14pt mb-3">We see a changing world of communication as new technologies continue to be developed. AI, VR and AR enable new ways of immersive engagement, interaction and storytelling. We apply AI, VR and AR to optimise processes and to create new experiences for your target audiences.</p>
-                    <p class="fs-14pt">In a new decentralised virtual world, community-building is important for brands and we have successfully created Web3 communities from scratch, leveraging Discord technology and Twitter spaces management.</p class="fs-14pt">
+                    <p class="fs-14pt mb-3">
+                        We see a changing world of communication as new technologies continue to be developed to enable new ways of immersive engagement, interaction and storytelling. We apply AI, VR and AR to optimise processes and to create new experiences for your target audiences.
+                    </p>
+                    <p class="fs-14pt">
+                        In a new decentralised virtual world, community-building is important for brands. The next generation of consumer appreciates transparency and new connectivity beyond existing physical spaces. With our international brand partners, we can offer a wide range of digital services including CGI campaigns, immersive product experinces, digitisation of products (NFC Tracing).
                     </p>
                 </div>
             </div>
