@@ -12,17 +12,19 @@
                 </div>
                 <div class="col-md-6">
                     <div class="p-3">
-                        <img src="<?= get_stylesheet_directory_uri() . '/assets/img/about.jpg' ?>" class="img-fluid" alt="...">
+                        <img src="<?= wp_get_attachment_url(carbon_get_post_meta(get_the_ID(), 'thumbnail')) ?>" class="img-fluid" alt="...">
                     </div>
                 </div>
             </div>
             <div class="row ">
                 <div class="col-md-6 offset-md-6">
                     <div class="p-3">
-                        <h1 class="display-4 mb-5 lh-1">At R.S.V.P, we think outside the box to make your campaign a <span class="fst-italic">success</span>.</h1>
-                        <p class="mb-5 fs-6">
-                            With a strong expertise in journalism, publishing, photography, talent management, marketing and business development, our diverse team is the cornerstone of our success. Each member brings a unique perspective that, when unified, creates a powerhouse of innovative thinking. This multidisciplinary approach ensures that we are more than a PR agency - we are a holistic communications partner committed to building community and nurturing long-term relationships. The synergy of our combined skills positions us to craft strategies that drive success, turning our clients' visions into impactful realities. We strongly believe in collaborations with our innovation partners that share the same values and vision as we do. Among them are Cashlabs, Poddster , Spinfashion, Institut of Digital Fashion and DressX.
-                        </p>
+                        <div>
+                            <?= carbon_get_post_meta( get_the_ID(), 'title' ) ?>
+                        </div>
+                        <div>
+                            <?= carbon_get_post_meta( get_the_ID(), 'description' ) ?>
+                        </div>
                         <div class="mb-5">
                             <a class="fw-normal h5 fst-italic text-decoration-underline" href="/services" role="button">View All Services</a>
                             <span class="ms-2">

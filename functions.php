@@ -16,7 +16,7 @@ function add_custom_field_action()
             Field::make( 'text', 'rsvp_linkedin', 'LinkedIn' ),
         ]);
     
-    Container::make( 'post_meta', 'Custom Data' )
+    Container::make( 'post_meta', 'Editor' )
         ->where( 'post_type', '=', 'post' )
         ->where( 'post_term', '=', [
             'field' => 'slug',
@@ -32,7 +32,7 @@ function add_custom_field_action()
             Field::make( 'media_gallery', 'project_photo', __( 'Media Gallery' ) )
         ]);
 
-    Container::make( 'post_meta', 'Custom Data' )
+    Container::make( 'post_meta', 'Editor' )
         ->where( 'post_type', '=', 'post' )
         ->where( 'post_term', '=', [
             'field' => 'slug',
@@ -41,6 +41,15 @@ function add_custom_field_action()
         ])
         ->add_fields( [
             Field::make( 'image', 'thumbnail', __( 'Thumbnail' ) ),
+        ]);
+
+    Container::make( 'post_meta', 'Editor' )
+        ->where( 'post_type', '=', 'page' )
+        ->where( 'post_name', '=', 'about')
+        ->add_fields( [
+            Field::make( 'image', 'thumbnail', __( 'Thumbnail' ) ),
+            Field::make( 'rich_text', 'title', __( 'Title' ) ),
+            Field::make( 'rich_text', 'description', __( 'Description' ) ),
         ]);
 }
 
