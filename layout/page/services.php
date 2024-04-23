@@ -1,6 +1,6 @@
 <?php
     // add custom script
-    wp_enqueue_script('homepage', get_stylesheet_directory_uri() . '/assets/js/service.js', [], "1.0", true);
+    wp_enqueue_script('homepage', get_stylesheet_directory_uri() . '/assets/js/service.js', [], "1.1", true);
 ?>
 
 <section id="section-culture" class="py-5">
@@ -75,9 +75,11 @@
                     <div class="mb-3 text-center text-md-start">
                         <a data-toggle="#collapse-service-2" class="collapse-toggle-service" href="javascript:void(0)">
                             <span class="text">View More</span>
-                            <svg id="i-chevron-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 4 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                                <path d="M30 12 L16 24 2 12" />
-                            </svg>
+                            <span class="arrow">
+                                <svg id="i-chevron-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 4 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <path d="M30 12 L16 24 2 12" />
+                                </svg>
+                            </span>
                         </a>
                     </div>
                 </div>
