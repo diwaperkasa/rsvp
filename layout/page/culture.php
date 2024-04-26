@@ -1,19 +1,14 @@
 <section id="section-culture" class="py-5">
     <div class="container-fluid p-3 p-md-5">
-        <h1 class="display-4 text-center mb-5 lh-1">
-            Our <span class="fst-italic">Culture</span>,<br>
-            Our <span class="fst-italic">Vision</span>
-        </h1>
+        <?= carbon_get_post_meta( get_post()->ID, 'page_title' ) ?>
         <div class="row">
             <div class="col-md-4">
                 <div class="card rounded-0 border-0">
                     <div class="card-body p-0">
                         <p class="mb-2">01</p>
-                        <img src="<?= get_stylesheet_directory_uri() . '/assets/img/pr.png' ?>" class="img-fluid" alt="...">
-                        <h3 class="fw-normal my-3">Building
-                            <br> <span class="fst-italic">Community</span>
-                        </h3>
-                        <p class="fs-14pt lh-160">We believe in the power of community to heighten a sense of belonging and engagement that is integral for lifestyle brands to create long-term relationships with customers. </p>
+                        <img src="<?= wp_get_attachment_url(carbon_get_post_meta(get_post()->ID, 'img_1')) ?>" class="img-fluid w-100 culture-img" alt="...">
+                        <?= carbon_get_post_meta( get_post()->ID, 'title_1' ) ?>
+                        <?= carbon_get_post_meta( get_post()->ID, 'desc_1' ) ?>
                     </div>
                 </div>
             </div>
@@ -22,11 +17,9 @@
                 <div class="card rounded-0 border-0 mt-md-5">
                     <div class="card-body p-0">
                         <p class="mb-2">02</p>
-                        <img src="<?= get_stylesheet_directory_uri() . '/assets/img/ic.jpg' ?>" class="img-fluid" alt="...">
-                        <h3 class="fw-normal my-3">Inspiring
-                            <br> <span class="fst-italic">Creativity</span>
-                        </h3>
-                        <p class="fs-14pt lh-160">Through encouraging creativity and experimentation, we foster a culture of innovation and originality that inspires our team to develop campaigns that stand out from the rest. </p>
+                        <img src="<?= wp_get_attachment_url(carbon_get_post_meta(get_post()->ID, 'img_2')) ?>" class="img-fluid w-100 culture-img" alt="...">
+                        <?= carbon_get_post_meta( get_post()->ID, 'title_2' ) ?>
+                        <?= carbon_get_post_meta( get_post()->ID, 'desc_2' ) ?>
                     </div>
                 </div>
             </div>
@@ -34,11 +27,9 @@
                 <div class="card rounded-0 border-0">
                     <div class="card-body p-0">
                         <p class="mb-2">03</p>
-                        <img src="<?= get_stylesheet_directory_uri() . '/assets/img/fc.png' ?>" class="img-fluid" alt="...">
-                        <h3 class="fw-normal my-3">Fostering
-                            <br> <span class="fst-italic">Collaboration</span>
-                        </h3>
-                        <p class="fs-14pt lh-160">Collaborative environments spark diverse perspectives, stronger relationships, learning opportunities and growth for clients. With our portfolio of partners and contacts, our creative culture leads to more effective and impactful campaigns for our clients.</p>
+                        <img src="<?= wp_get_attachment_url(carbon_get_post_meta(get_post()->ID, 'img_3')) ?>" class="img-fluid w-100 culture-img" alt="...">
+                        <?= carbon_get_post_meta( get_post()->ID, 'title_3' ) ?>
+                        <?= carbon_get_post_meta( get_post()->ID, 'desc_3' ) ?>
                     </div>
                 </div>
             </div>

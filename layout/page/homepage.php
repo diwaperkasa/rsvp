@@ -103,131 +103,65 @@
         </div>
     </div>
 </section>
-
+<?php
+    $services = rsvp_get_services();
+?>
 <section id="section-services" class="py-5">
     <div class="container-fluid p-3 p-md-5">
         <p class="text-center fs-14pt">OUR SERVICES</p>
         <h1 class="display-4 text-center mb-5 lh-1">Our Creative <br> <span class="fst-italic">Solutions</span></h1>
         <!-- Desktop View -->
-        <div class="row align-items-center d-none d-md-flex">
-            <div class="col">
-                <a href="/services">
-                    <div class="card rounded-0 border-0 px-md-2">
-                        <div class="card-body p-0">
-                            <p class="mb-0">01</p>
-                            <img src=" <?= get_stylesheet_directory_uri() . "/assets/img/pr.png" ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0 fw-normal lh-1">PUBLIC <br> RELATIONS</h5>
+        <div class="desktop row align-items-center d-none d-md-flex">
+            <?php foreach ($services->get_posts() as $key => $post): ?>
+                <div class="col">
+                    <a href="/services">
+                        <div class="card rounded-0 border-0 px-md-2">
+                            <div class="card-body p-0">
+                                <p class="mb-0"><?= carbon_get_post_meta( $post->ID, 'position' ) ?></p>
+                                <?php
+                                    $mediaId = carbon_get_post_meta($post->ID, 'thumbnail');
+                                    $fileInfo = pathinfo(get_attached_file($mediaId));
+                                ?>
+                                <?php if (in_array($fileInfo['extension'], ['mp4', 'webm', 'ogg'])): ?>
+                                    <video autoplay muted loop playsinline class="video-cover <?= $key % 2 == 0 ? "odd" : "even" ?>">
+                                        <source src="<?= wp_get_attachment_url($mediaId) ?>" type="video/<?= $fileInfo['extension'] ?>">
+                                    </video>
+                                <?php else: ?>
+                                    <img src="<?= wp_get_attachment_url($mediaId) ?>" class="img-fluid <?= $key % 2 == 0 ? "odd" : "even" ?>" alt="...">
+                                <?php endif; ?>
+                                <h5 class="card-title mt-3 mb-0 fw-normal lh-1"><?= carbon_get_post_meta( $post->ID, 'title' ) ?></h5>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="/services">
-                    <div class="card rounded-0 border-0 px-md-2">
-                        <div class="card-body p-0">
-                            <p class="mb-0">02</p>
-                            <img src="<?= get_stylesheet_directory_uri() . "/assets/img/cc.png" ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0 fw-normal lh-1">CONTENT <br> CREATION</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col align-self-stretch">
-                <a href="/services">
-                    <div class="card rounded-0 border-0 px-md-2 h-80">
-                        <div class="card-body p-0">
-                            <p class="mb-0">03</p>
-                            <video autoplay muted loop playsinline class="video-cover">
-                                <source src="<?= get_stylesheet_directory_uri() . '/assets/img/Runway-Video.mp4' ?>" type="video/mp4">
-                            </video>
-                            <h5 class="card-title mt-3 mb-0 fw-normal lh-1">EVENT <br> MANAGEMENT</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="/services">
-                    <div class="card rounded-0 border-0 px-md-2">
-                        <div class="card-body p-0">
-                            <p class="mb-0">04</p>
-                            <img src="<?= get_stylesheet_directory_uri() . '/assets/img/sm.png' ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0 fw-normal lh-1">SOCIAL MEDIA <br> MANAGEMENT</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="/services">
-                    <div class="card rounded-0 border-0 px-md-2">
-                        <div class="card-body p-0">
-                            <p class="mb-0">05</p>
-                            <img src="<?= get_stylesheet_directory_uri() . "/assets/img/in.png" ?>" class="img-fluid" alt="...">
-                            <h5 class="card-title mt-3 mb-0 fw-normal lh-1">INNOVATION</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
+                    </a>
+                </div>
+            <?php endforeach; ?>
         </div>
         <!-- Mobile View -->
         <div class="mt-4 d-block d-md-none">
             <div class="owl-carousel service-carousel owl-theme">
-                <div class="item">
-                    <a href="/services">
-                        <div class="card rounded-0 border-0">
-                            <div class="card-body p-0">
-                                <p class="mb-0">01</p>
-                                <img src="<?= get_stylesheet_directory_uri() . '/assets/img/pr.png' ?>" class="img-fluid" alt="...">
-                                <h5 class="card-title mt-3 mb-0 fw-normal lh-1">PUBLIC <br> RELATIONS</h5>
+                <?php foreach ($services->get_posts() as $key => $post): ?>
+                    <div class="item">
+                        <a href="/services">
+                            <div class="card rounded-0 border-0">
+                                <div class="card-body p-0">
+                                    <p class="mb-0"><?= carbon_get_post_meta( $post->ID, 'position' ) ?></p>
+                                    <?php
+                                        $mediaId = carbon_get_post_meta($post->ID, 'thumbnail');
+                                        $fileInfo = pathinfo(get_attached_file($mediaId));
+                                    ?>
+                                    <?php if (in_array($fileInfo['extension'], ['mp4', 'webm', 'ogg'])): ?>
+                                        <video autoplay muted loop playsinline class="video-cover">
+                                            <source src="<?= wp_get_attachment_url($mediaId) ?>" type="video/mp4">
+                                        </video>
+                                    <?php else: ?>
+                                        <img src="<?= wp_get_attachment_url($mediaId) ?>" class="img-fluid" alt="...">
+                                    <?php endif; ?>
+                                    <h5 class="card-title mt-3 mb-0 fw-normal lh-1"><?= carbon_get_post_meta( $post->ID, 'title' ) ?></h5>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="/services">
-                        <div class="card rounded-0 border-0">
-                            <div class="card-body p-0">
-                                <p class="mb-0">02</p>
-                                <img src="<?= get_stylesheet_directory_uri() . '/assets/img/cc.png' ?>" class="img-fluid" alt="...">
-                                <h5 class="card-title mt-3 mb-0 fw-normal lh-1">CONTENT <br> CREATION</h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="/services">
-                        <div class="card rounded-0 border-0 h-75">
-                            <div class="card-body p-0">
-                                <p class="mb-0">03</p>
-                                <video autoplay muted loop playsinline class="video-cover">
-                                    <source src="<?= get_stylesheet_directory_uri() . '/assets/img/Runway-Video.mp4' ?>" type="video/mp4">
-                                </video>
-                                <h5 class="card-title mt-3 mb-0 fw-normal lh-1">EVENT <br> MANAGEMENT</h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="/services">
-                        <div class="card rounded-0 border-0">
-                            <div class="card-body p-0">
-                                <p class="mb-0">04</p>
-                                <img src="<?= get_stylesheet_directory_uri() . '/assets/img/sm.png' ?>" class="img-fluid" alt="...">
-                                <h5 class="card-title mt-3 mb-0 fw-normal lh-1">SOCIAL MEDIA <br> MANAGEMENT</h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="/services">
-                        <div class="card rounded-0 border-0">
-                            <div class="card-body p-0">
-                                <p class="mb-0">05</p>
-                                <img src="<?= get_stylesheet_directory_uri() . "/assets/img/in.png" ?>" class="img-fluid" alt="...">
-                                <h5 class="card-title mt-3 mb-0 fw-normal lh-1">INNOVATION</h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                <?php endforeach; ?>
             </div>
         </div>
         <div class="text-center mt-5 pt-md-3">
@@ -301,36 +235,36 @@
         <div class="row pb-4 py-md-4 align-items-center">
             <div class="col-md-7">
                 <div class="d-flex">
-                    <h1 class="display-1 text-start text-sm-center mx-3 ms-md-auto me-2 lh-1">BUILDING <br> <span class="fst-italic">COMMUNITY </span></h1>
+                    <?= carbon_get_post_meta( get_post()->ID, 'culture_title_1' ) ?>
                 </div>
             </div>
             <div class="col-md-5">
                 <div class="text-end text-md-start pt-4 pt-md-0 px-3 overflow-hidden">
-                    <img src="<?= get_stylesheet_directory_uri() . '/assets/img/culture1.png' ?>" class="img-culture" alt="...">
+                    <img src="<?= wp_get_attachment_url(carbon_get_post_meta(get_post()->ID, 'culture_img_1')) ?>" class="img-culture" alt="...">
                 </div>
             </div>
         </div>
         <div class="row pb-4 py-md-4 align-items-center">
             <div class="col-md-4 order-2">
                 <div class="text-start text-md-end pt-4 pt-md-0 px-3 overflow-hidden">
-                    <img src="<?= get_stylesheet_directory_uri() . '/assets/img/culture2.png' ?>" class="img-culture" alt="...">
+                    <img src="<?= wp_get_attachment_url(carbon_get_post_meta(get_post()->ID, 'culture_img_2')) ?>" class="img-culture" alt="...">
                 </div>
             </div>
             <div class="col-md-8 order-1 order-md-2">
                 <div class="d-flex">
-                    <h1 class="display-1 text-start text-sm-center mx-3 me-md-auto me-2 lh-1">FOSTERING <br> <span class="fst-italic">COLLABORATION </span></h1>
+                    <?= carbon_get_post_meta( get_post()->ID, 'culture_title_2' ) ?>
                 </div>
             </div>
         </div>
         <div class="row pb-4 py-md-4 align-items-center">
             <div class="col-md-7">
                 <div class="d-flex">
-                    <h1 class="display-1 text-start text-sm-center mx-3 ms-md-auto me-2 lh-1">INSPIRING <br> <span class="fst-italic">CREATIVITY </span></h1>
+                    <?= carbon_get_post_meta( get_post()->ID, 'culture_title_3' ) ?>
                 </div>
             </div>
             <div class="col-md-5">
                 <div class="text-end text-md-start pt-4 pt-md-0 px-3 overflow-hidden">
-                    <img src="<?= get_stylesheet_directory_uri() . '/assets/img/culture3.png' ?>" class="img-culture" alt="...">
+                    <img src="<?= wp_get_attachment_url(carbon_get_post_meta(get_post()->ID, 'culture_img_3')) ?>" class="img-culture" alt="...">
                 </div>
             </div>
         </div>

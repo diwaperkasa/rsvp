@@ -697,3 +697,25 @@ header .navbar-light .navbar-brand:focus {
   max-width: 800px;
   max-height: 800px;
 }
+
+#section-services {
+  .desktop .card-body img, .desktop .card-body video {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .desktop .card-body img.even, .desktop .card-body video.even {
+    height: 350px;
+  }
+
+  .desktop .card-body img.odd, .desktop .card-body video.odd {
+    height: 450px;
+  }
+}
+
+#section-culture {
+  .culture-img {
+    height: 1000px;
+    object-fit: cover;
+  }
+}
