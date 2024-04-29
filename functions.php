@@ -218,52 +218,44 @@ function add_subscribed_email(\Mint\MRM\DataStores\ContactData $contactData)
 
 function rsvp_get_prev_post()
 {
-    $prev = get_adjacent_post( false, "", true);
+    $post = get_post();
+    $categories = get_the_category($post->ID);
+    $category = $categories[0];
+    $args = array(
+        'posts_per_page' => 1,
+        'offset' => 0,
+        'cat' => $category->cat_ID,
+        'orderby' => 'ID',
+        'order' => 'DESC',
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'suppress_filters' => true 
+    );
 
-    if (empty($prev)) {
-        $post = get_post();
-        $categories = get_the_category($post->ID);
-        $category = $categories[0];
-        $args = array(
-            'posts_per_page' => 1,
-            'offset' => 0,
-            'cat' => $category->cat_ID,
-            'orderby' => 'ID',
-            'order' => 'DESC',
-            'post_type' => 'post',
-            'post_status' => 'publish',
-            'suppress_filters' => true 
-        );
-
-        $result = new WP_Query( $args ); 
-        $prev = $result->post;
-    }
+    $result = new WP_Query( $args ); 
+    $prev = $result->post;
 
     return $prev;
 }
 
 function rsvp_get_next_post()
 {
-    $next = get_adjacent_post( false, "", false);
+    $post = get_post();
+    $categories = get_the_category($post->ID);
+    $category = $categories[0];
+    $args = array(
+        'posts_per_page' => 1,
+        'offset' => 0,
+        'cat' => $category->cat_ID,
+        'orderby' => 'ID',
+        'order' => 'ASC',
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'suppress_filters' => true 
+    );
 
-    if (empty($next)) {
-        $post = get_post();
-        $categories = get_the_category($post->ID);
-        $category = $categories[0];
-        $args = array(
-            'posts_per_page' => 1,
-            'offset' => 0,
-            'cat' => $category->cat_ID,
-            'orderby' => 'ID',
-            'order' => 'ASC',
-            'post_type' => 'post',
-            'post_status' => 'publish',
-            'suppress_filters' => true 
-        );
-
-        $result = new WP_Query( $args ); 
-        $next = $result->post;
-    }
+    $result = new WP_Query( $args ); 
+    $next = $result->post;
 
     return $next;
 }
