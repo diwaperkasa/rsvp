@@ -45,7 +45,9 @@ function add_custom_field_action()
                 Field::make( 'image', 'culture_img_2', __( 'Image 2' ) ),
                 Field::make( 'rich_text', 'culture_title_3', __( 'Title 3' ) ),
                 Field::make( 'image', 'culture_img_3', __( 'Image 3' ) ),
-                Field::make( 'separator', 'team_separator', __( 'Team Section' ) )
+                Field::make( 'separator', 'team_separator', __( 'Team Section' ) ),
+                Field::make( 'image', 'team_img', __( 'Our Team' ) ),
+                Field::make( 'image', 'team_bg', __( 'Background Image' ) ),
             ]);
     }
 
@@ -136,7 +138,7 @@ if ( ! function_exists( 'rsvp_block_styles' ) ) {
             wp_enqueue_style( 'bootstrap_style', get_stylesheet_directory_uri() . '/assets/vendor/bootstrap/css/bootstrap.min.css' );
             wp_enqueue_style( 'carousel_style', get_stylesheet_directory_uri() . '/assets/vendor/owlcarousel/assets/owl.carousel.min.css' );
             wp_enqueue_style( 'carousel_theme_style', get_stylesheet_directory_uri() . '/assets/vendor/owlcarousel/assets/owl.theme.default.css' );
-            wp_enqueue_style( 'main_style', get_stylesheet_directory_uri() . '/assets/css/style.css', [], "1.9" );
+            wp_enqueue_style( 'main_style', get_stylesheet_directory_uri() . '/assets/css/style.css', [], "2.0" );
             // add js lib
             wp_enqueue_script('jquery_script', get_stylesheet_directory_uri() . '/assets/vendor/jquery/jquery-3.2.1.min.js', [], false, true);
             wp_enqueue_script('bootstrap_script', get_stylesheet_directory_uri() . '/assets/vendor/bootstrap/js/bootstrap.bundle.min.js', [], false, true);

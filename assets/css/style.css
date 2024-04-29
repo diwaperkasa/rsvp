@@ -396,8 +396,7 @@ footer .input-group>button {
   }
 
   .img-team {
-    max-width: none !important;
-    height: 45rem !important;
+    padding: 10rem !important;
   }
 }
 
@@ -644,6 +643,7 @@ header .navbar-light .navbar-brand:focus {
 .img-team {
   height: auto;
   max-width: 100%;
+  padding: 5rem 4rem 5rem 4rem
 }
 
 .form-no-focus:focus {
@@ -724,5 +724,13 @@ header .navbar-light .navbar-brand:focus {
       height: auto;
       object-fit: contain;
     }
+  }
+}
+
+#section-team {
+  .bg-team {
+    background-image: url("/wp-content/themes/rsvp/assets/img/architectural-details-1.png");
+    height: auto;
+    background-size: cover;
   }
 }

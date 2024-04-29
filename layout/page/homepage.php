@@ -274,9 +274,11 @@
 <section id="section-team">
     <div class="container-fluid">
         <div class="row bg-tblack">
-            <div class="col-md-6 px-0">
-                <div class="overflow-hidden">
-                    <img src="<?= get_stylesheet_directory_uri() . "/assets/img/architectural-details-1.png" ?>" class="img-team" alt="...">
+            <div class="col-md-6 px-0 bg-team" style="background-image: url('<?= wp_get_attachment_url(carbon_get_post_meta(get_post()->ID, 'team_bg')) ?>');">
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <img src="<?= wp_get_attachment_url(carbon_get_post_meta(get_post()->ID, 'team_img')) ?>" class="img-team" alt="...">
+                    </div>
                 </div>
             </div>
             <div class="col-md-6 p-lg-5">
