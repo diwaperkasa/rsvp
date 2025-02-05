@@ -5,7 +5,7 @@
 <section id="section-contactus" class="py-5 bg-tgrey">
     <div class="container my-5">
         <h1 class="display-3 text-center lh-1">Start a <span class="fst-italic">Conversation</span> <br> With Us Today</h1>
-        <p id="contact-desc" class="fw-normal h5 text-center mt-4"> <span class="text-decoration-underline"> By Email </span>/ <span class="text-decoration-underline">By WhatsApp</span></p>
+        <p id="contact-desc" class="fw-normal h5 text-center mt-4"> <span class="text-decoration-underline"> By Email </span><!--/ <span class="text-decoration-underline">By WhatsApp</span> --></p>
         <div class="row my-5 justify-content-center">
             <div class="col-md-7">
                 <form id="contact-form" action="/contact" method="POST" class="row g-3">
