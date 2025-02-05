@@ -396,8 +396,7 @@ footer .input-group>button {
   }
 
   .img-team {
-    max-width: none !important;
-    height: 45rem !important;
+    padding: 10rem !important;
   }
 }
 
@@ -644,6 +643,7 @@ header .navbar-light .navbar-brand:focus {
 .img-team {
   height: auto;
   max-width: 100%;
+  padding: 5rem 4rem 5rem 4rem
 }
 
 .form-no-focus:focus {
@@ -696,4 +696,41 @@ header .navbar-light .navbar-brand:focus {
 .news-thumnail {
   max-width: 800px;
   max-height: 800px;
+}
+
+#section-services {
+  .desktop .card-body img, .desktop .card-body video {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .desktop .card-body img.even, .desktop .card-body video.even {
+    height: 350px;
+  }
+
+  .desktop .card-body img.odd, .desktop .card-body video.odd {
+    height: 450px;
+  }
+}
+
+#section-culture {
+  .culture-img {
+    height: 800px;
+    object-fit: cover;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .culture-img {
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}
+
+#section-team {
+  .bg-team {
+    background-image: url("/wp-content/themes/rsvp/assets/img/architectural-details-1.png");
+    height: auto;
+    background-size: cover;
+  }
 }
