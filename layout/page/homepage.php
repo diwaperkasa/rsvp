@@ -138,7 +138,7 @@
         </div>
         <!-- Mobile View -->
         <div class="mt-4 d-block d-md-none">
-            <div class="service-carousel owl-theme">
+            <div class="owl-carousel service-carousel owl-theme">
                 <?php foreach ($services->get_posts() as $key => $post): ?>
                     <div class="item">
                         <a href="/services">
