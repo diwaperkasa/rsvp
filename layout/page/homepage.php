@@ -187,7 +187,7 @@
         <h1 class="display-4 text-center lh-1">Our Selected <br> <span class="fst-italic">Works</span></h1>
         <div class="mt-4">
             <div class="row justify-content-center">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <div class="owl-carousel work-carousel owl-theme">
                         <?php foreach ($projects->get_posts() as $project): ?>
                             <?php
