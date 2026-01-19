@@ -186,25 +186,29 @@
         <p class="text-center fs-14pt">OUR PROJECTS</p>
         <h1 class="display-4 text-center lh-1">Our Selected <br> <span class="fst-italic">Works</span></h1>
         <div class="mt-4">
-            <div class="work-carousel owl-theme">
-                <?php foreach ($projects->get_posts() as $project): ?>
-                    <?php
-                        $thumbnail = carbon_get_post_meta($project->ID, 'project_thumbnail');
-                    ?>
-                    <a href="<?= get_permalink($project) ?>">
-                        <div class="item">
-                            <div class="card rounded-0 px-md-2 border-0">
-                                <div class="card-body">
-                                    <div class="img-list-container">
-                                        <img src="<?= wp_get_attachment_url($thumbnail ? $thumbnail[0] : 0) ?>" alt="<?= $project->post_title ?>">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="work-carousel owl-theme">
+                        <?php foreach ($projects->get_posts() as $project): ?>
+                            <?php
+                                $thumbnail = carbon_get_post_meta($project->ID, 'project_thumbnail');
+                            ?>
+                            <a href="<?= get_permalink($project) ?>">
+                                <div class="item">
+                                    <div class="card rounded-0 px-md-2 border-0">
+                                        <div class="card-body">
+                                            <div class="img-list-container">
+                                                <img src="<?= wp_get_attachment_url($thumbnail ? $thumbnail[0] : 0) ?>" alt="<?= $project->post_title ?>">
+                                            </div>
+                                            <h5 class="card-title mt-3 mb-0 fw-normal"><?= $project->post_title ?></h5>
+                                            <p class="card-text"><?= carbon_get_post_meta($project->ID, 'project_year') ?></p>
+                                        </div>
                                     </div>
-                                    <h5 class="card-title mt-3 mb-0 fw-normal"><?= $project->post_title ?></h5>
-                                    <p class="card-text"><?= carbon_get_post_meta($project->ID, 'project_year') ?></p>
                                 </div>
-                            </div>
-                        </div>
-                    </a>
-                <?php endforeach; ?>
+                            </a>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="d-flex mt-4 mx-2 mx-md-0 justify-content-between align-items-center">
