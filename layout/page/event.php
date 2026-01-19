@@ -1,7 +1,7 @@
 <section id="events-section" class="pb-5">
     <div class="container">
         <h1 class="display-4 text-center my-5 lh-1">
-            Events</br>At</br>The Mill
+            Events At</br>The Mill
         </h1>
         <div class="row h-100">
             <div class="col-lg-6">
