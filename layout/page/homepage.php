@@ -138,7 +138,7 @@
         </div>
         <!-- Mobile View -->
         <div class="mt-4 d-block d-md-none">
-            <div class="owl-carousel service-carousel owl-theme">
+            <div class="service-carousel owl-theme">
                 <?php foreach ($services->get_posts() as $key => $post): ?>
                     <div class="item">
                         <a href="/services">
@@ -186,7 +186,7 @@
         <p class="text-center fs-14pt">OUR PROJECTS</p>
         <h1 class="display-4 text-center lh-1">Our Selected <br> <span class="fst-italic">Works</span></h1>
         <div class="mt-4">
-            <div class="owl-carousel work-carousel owl-theme">
+            <div class="work-carousel owl-theme">
                 <?php foreach ($projects->get_posts() as $project): ?>
                     <?php
                         $thumbnail = carbon_get_post_meta($project->ID, 'project_thumbnail');

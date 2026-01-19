@@ -18,7 +18,7 @@
                         <?php if ($subtitle = carbon_get_post_meta( get_the_ID(), 'project_subtitle' )): ?>
                             <h6 class="fw-normal mb-4"><?= $subtitle ?></h6>
                         <?php endif; ?>
-                        <div class="owl-carousel project-carousel owl-theme ">
+                        <div class="project-carousel owl-theme ">
                             <?php foreach (carbon_get_post_meta( get_the_ID(), 'project_photo' ) as $mediaId): ?>
                                 <?php $fileInfo = pathinfo(get_attached_file($mediaId)); ?>
                                 <div class="item project-slide d-flex justify-content-center overflow-hidden mx-1">
