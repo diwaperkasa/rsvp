@@ -35,57 +35,22 @@ $right_menus = array_slice($header_menus, $half);
     </div>
     <div class="offcanvas-body pt-sm-3">
         <nav class="nav w-100 h-100 align-items-center">
+            <?php
+            $off_canvas_menus = get_wp_menu_tree('offset');
+            ?>
             <ul class="list-unstyled w-100">
-                <li>
-                    <div class="row g-1 align-items-end">
-                        <div class="col-5 text-end">
-                            <p class="mb-2 fw-normal fs-10pt">01</p>
+                <?php foreach ($off_canvas_menus as $index => $menu) : ?>
+                    <li>
+                        <div class="row g-1 align-items-end">
+                            <div class="col-5 text-end">
+                                <p class="mb-2 fw-normal fs-10pt"><?= sprintf('%02d', $index + 1) ?></p>
+                            </div>
+                            <div class="col-7">
+                                <a class="display-1 lh-1" href="<?= $menu['url'] ?>"><?= $menu['title'] ?></a>
+                            </div>
                         </div>
-                        <div class="col-7">
-                            <a class="display-1 lh-1" href="/about">About</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="row g-1 align-items-end">
-                        <div class="col-7 text-end">
-                            <a class="display-1 lh-1" href="/services">Services</a>
-                        </div>
-                        <div class="col-5">
-                            <p class="mb-2 fw-normal fs-10pt">02</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="row g-1 align-items-end">
-                        <div class="col-5 text-end">
-                            <span class="mb-2 fw-normal fs-10pt">03</span>
-                        </div>
-                        <div class="col-7">
-                            <a class="display-1 lh-1" href="/projects">Projects</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="row g-1 align-items-end">
-                        <div class="col-7 text-end">
-                            <a class="display-1 lh-1" href="/culture">Culture</a>
-                        </div>
-                        <div class="col-5">
-                            <p class="mb-2 fw-normal fs-10pt">04</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="row g-1 align-items-end">
-                        <div class="col-5 text-end">
-                            <p class="mb-2 fw-normal fs-10pt">05</p>
-                        </div>
-                        <div class="col-7">
-                            <a class="display-1 lh-1" href="/contact">Contact</a>
-                        </div>
-                    </div>
-                </li>
+                    </li>
+                <?php endforeach ?>
             </ul>
         </nav>
     </div>
