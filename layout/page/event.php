@@ -14,9 +14,11 @@
                         <?php foreach ($galleries as $gallery): ?>
                             <div class="item">
                                 <figure class="position-relative">
-                                    <?= wp_get_attachment_image($gallery['image'], 'large', false, [
-                                        'class' => 'img-fluid ratio ratio-16x9'
-                                    ]) ?>
+                                    <div class="ratio ratio-16x9">
+                                        <?= wp_get_attachment_image($gallery['image'], 'large', false, [
+                                            'class' => 'img-fluid'
+                                        ]) ?>
+                                    </div>
                                     <figcaption class="position-absolute bottom-0 px-4 py-2">
                                         <span class="text-white fs-6">
                                             <?= $gallery['caption'] ?>
