@@ -188,7 +188,7 @@
         <div class="mt-4">
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <div class="work-carousel owl-theme">
+                    <div class="owl-carousel work-carousel owl-theme">
                         <?php foreach ($projects->get_posts() as $project): ?>
                             <?php
                                 $thumbnail = carbon_get_post_meta($project->ID, 'project_thumbnail');

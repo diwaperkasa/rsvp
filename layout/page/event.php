@@ -10,7 +10,7 @@
             <div class="col-lg-6">
                 <?php $galleries = carbon_get_post_meta(get_the_ID(), 'media_gallery'); ?>
                 <?php if ($galleries) :?>
-                    <div class="owl-carousel owl-theme">
+                    <div class="event-carousel owl-carousel owl-theme">
                         <?php foreach ($galleries as $gallery): ?>
                             <div class="item">
                                 <figure class="position-relative">

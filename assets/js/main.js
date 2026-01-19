@@ -61,7 +61,7 @@ $('form#subscribed-form').submit(function(e) {
   });
 });
 
-$('.owl-carousel').owlCarousel({
+$('.event-carousel').owlCarousel({
     loop: true,
     autoplay: true,
     nav: false,
