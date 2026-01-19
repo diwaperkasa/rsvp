@@ -43,7 +43,7 @@ $right_menus = array_slice($header_menus, $half);
                     <li>
                         <div class="row g-1 align-items-end">
                             <div class="<?= ($index % 2 === 0) ? 'col-5' : 'col-7' ?> text-end">
-                                <p class="mb-2 fw-normal fs-10pt"><?= $index + 1 ?></p>
+                                <p class="mb-2 fw-normal fs-10pt"><?= sprintf('%02d', $index + 1) ?></p>
                             </div>
                             <div class="<?= ($index % 2 === 0) ? 'col-7' : 'col-5' ?>">
                                 <a class="display-1 lh-1" href="<?= $menu['url'] ?>"><?= $menu['title'] ?></a>
