@@ -42,10 +42,10 @@ $right_menus = array_slice($header_menus, $half);
                 <?php foreach ($off_canvas_menus as $index => $menu) : ?>
                     <li>
                         <div class="row g-1 align-items-end">
-                            <div class="<?= ($index % 2 === 0) ? 'col-4' : 'col-5' ?> text-end">
+                            <div class="<?= ($index % 2 === 0) ? 'col-3 col-md-4' : 'col-4 col-md-5' ?> text-end">
                                 <p class="mb-2 fw-normal fs-10pt"><?= sprintf('%02d', $index + 1) ?></p>
                             </div>
-                            <div class="<?= ($index % 2 === 0) ? 'col-8' : 'col-7' ?>">
+                            <div class="<?= ($index % 2 === 0) ? 'col-9 col-md-8' : 'col-8 col-md-7' ?>">
                                 <a class="display-1 lh-1" href="<?= $menu['url'] ?>"><?= $menu['title'] ?></a>
                             </div>
                         </div>
