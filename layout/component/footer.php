@@ -1,3 +1,7 @@
+<?php
+$footer_menus = get_wp_menu_tree('footer');
+?>
+
 <footer class="container-fluid">
     <div class="container-fluid py-4">
         <div class="row py-5">
@@ -48,24 +52,18 @@
                     </form>
                 </div>
                 <div class="row">
-                    <div class="col-4">
-                        <p class="h4 mb-4 fw-normal">About</p>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><a href="/about">About</a></li>
-                            <li class="mb-2"><a href="/services">Services</a></li>
-                            <li class="mb-2"><a href="/projects">Portfolio</a></li>
-                            <li class="mb-2"><a href="/culture">Culture</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-8">
-                        <p class="h4 mb-4 fw-normal">Contact</p>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><a href="mailto:<?= carbon_get_theme_option('rsvp_email') ?>">Email</a></li>
-                            <li class="mb-2"><a target="_blank" href="<?= carbon_get_theme_option('rsvp_facebook') ?>">Facebook</a></li>
-                            <li class="mb-2"><a target="_blank" href="<?= carbon_get_theme_option('rsvp_instagram') ?>">Instagram</a></li>
-                            <li class="mb-2"><a target="_blank" href="<?= carbon_get_theme_option('rsvp_twitter') ?>">X (formerly Twitter)</a></li>
-                        </ul>
-                    </div>
+                    <?php foreach ($footer_menus as $menu) : ?>
+                        <div class="col-4">
+                            <p class="h4 mb-4 fw-normal"><?= $menu['title'] ?></p>
+                            <ul class="list-unstyled">
+                                <?php foreach ($menu['children'] as $child) : ?>
+                                    <li class="mb-2">
+                                        <a target="<?= $child['target'] ?>" href="<?= $child['url'] ?>"><?= $child['title'] ?></a>
+                                    </li>
+                                <?php endforeach ?>
+                            </ul>
+                        </div>
+                    <?php endforeach ?>
                 </div>
             </div>
             <div class="text-center text-sm-start copyright">

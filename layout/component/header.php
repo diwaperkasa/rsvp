@@ -1,11 +1,18 @@
+<?php
+$current_slug = get_post_field( 'post_name', get_queried_object_id() );
+$header_menus = get_wp_menu_tree('header');
+$half = ceil(count($header_menus) / 2);
+$left_menus = array_slice($header_menus, 0, $half);
+$right_menus = array_slice($header_menus, $half);
+?>
+
 <!-- Pop up Menu -->
 <div class="offcanvas offcanvas-end w-100 PopupMenu" tabindex="-1" id="PopupMenu" aria-labelledby="PopupMenuLabel">
     <div class="offcanvas-header w-100 justify-content-between">
         <div class="d-flex align-items-center d-none d-md-block">
-            <a href="/" class="p-2"><span>HOME</span></a>
-            <a href="/services" class="p-2"><span>SERVICES</span></a>
-            <a href="/projects" class="p-2"><span>PROJECTS</span></a>
-            <a href="/news" class="p-2"><span>NEWS</span></a>
+            <?php foreach ($left_menus as $menu) : ?>
+                <a href="<?= $menu['url'] ?>" class="p-2 text-uppercase"><span><?= $menu['title'] ?></span></a>
+            <?php endforeach ?>
         </div>
         <div>
             <div class="text-center align-items-center">
@@ -15,9 +22,9 @@
         </div>
         <div class="d-flex align-items-center">
             <div class="d-none d-md-block">
-                <a href="/culture" class="p-2"><span>CULTURE</span></a>
-                <a href="/about" class="p-2"><span>ABOUT</span></a>
-                <a href="/contact" class="p-2"><span>CONTACT</span></a>
+                <?php foreach ($right_menus as $menu) : ?>
+                    <a href="<?= $menu['url'] ?>" class="p-2 text-uppercase"><span><?= $menu['title'] ?></span></a>
+                <?php endforeach ?>
             </div>
             <button type="button" class="btn text-white bg-transparent rounded-0  ms-auto ms-md-0" data-bs-dismiss="offcanvas" aria-label="Close">
                 <svg id="i-close" class="d-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -104,33 +111,22 @@
             </button>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link pb-0 px-0 ms-0 me-2 <?= get_current_url() ? null : "active" ?>" aria-current="page" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pb-0 px-0 mx-2 <?= get_current_url() === "services" ? "active" : null ?>" href="/services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pb-0 px-0 mx-2 <?= get_current_url() === "projects" ? "active" : null ?>" href="/projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pb-0 px-0 mx-2 <?= get_current_url() === "news" ? "active" : null ?>" href="/news">News</a>
-                    </li>
+                    <?php foreach ($left_menus as $menu) : ?>
+                        <li class="nav-item">
+                            <a class="nav-link pb-0 px-0 mx-2 <?= $current_slug === sanitize_title($menu['title']) ? "active" : null ?>" href="<?= $menu['url'] ?>"><?= $menu['title'] ?></a>
+                        </li>
+                    <?php endforeach ?>
                 </ul>
                 <a class="navbar-brand m-0 p-0" href="/">
                     <!-- <span class="logo">R.S.V.P</span> -->
                     <img height="20px" src="<?= get_stylesheet_directory_uri() . "/assets/img/R.S.V.P Logo.png" ?>" />
                 </a>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link pb-0 px-0 mx-2 <?= get_current_url() === "culture" ? "active" : null ?>" href="/culture">Culture</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pb-0 px-0 mx-2 <?= get_current_url() === "about" ? "active" : null ?>" href="/about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pb-0 px-0 mx-2 <?= get_current_url() === "contact" ? "active" : null ?>" href="/contact">Contact</a>
-                    </li>
+                    <?php foreach ($right_menus as $menu) : ?>
+                        <li class="nav-item">
+                            <a class="nav-link pb-0 px-0 mx-2 <?= $current_slug === sanitize_title($menu['title']) ? "active" : null ?>" href="<?= $menu['url'] ?>"><?= $menu['title'] ?></a>
+                        </li>
+                    <?php endforeach ?>
                     <li>
                         <a class="btn" type="button" data-bs-toggle="offcanvas" href="#PopupMenu" role="button" aria-controls="PopupMenuLabel">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 50 16" fill="none">

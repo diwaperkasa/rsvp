@@ -7,6 +7,14 @@ add_action( 'carbon_fields_register_fields', 'add_custom_field_action' );
 
 function add_custom_field_action()
 {
+    add_theme_support('html5', array(
+        'search-form',
+        'comment-form',
+        'comment-list',
+        'gallery',
+        'caption',
+        'widgets',
+    ));
     // RSVP General
     Container::make( 'theme_options', __( 'RSVP Options' ) )
         ->add_fields( [
@@ -67,6 +75,20 @@ function add_custom_field_action()
                 Field::make( 'image', 'img_3', __( 'Image 3' ) ),
                 Field::make( 'rich_text', 'title_3', __( 'Title 3' ) ),
                 Field::make( 'rich_text', 'desc_3', __( 'Desc 3' ) ),
+            ]);
+    }
+
+    // Events page
+    if ($post = get_page_by_title( 'events' ))
+    {
+        Container::make( 'post_meta', 'Gallery Editor' )
+            ->where( 'post_id', '=', $post->ID)
+            ->add_fields( [
+                Field::make( 'complex', 'media_gallery' )
+                    ->add_fields( [
+                        Field::make( 'image', 'image', 'Image' ),
+                        Field::make( 'text', 'caption', 'Caption' ),
+                    ])
             ]);
     }
     
@@ -143,7 +165,7 @@ if ( ! function_exists( 'rsvp_block_styles' ) ) {
             wp_enqueue_script('jquery_script', get_stylesheet_directory_uri() . '/assets/vendor/jquery/jquery-3.2.1.min.js', [], false, true);
             wp_enqueue_script('bootstrap_script', get_stylesheet_directory_uri() . '/assets/vendor/bootstrap/js/bootstrap.bundle.min.js', [], false, true);
             wp_enqueue_script('carousel_script', get_stylesheet_directory_uri() . '/assets/vendor/owlcarousel/owl.carousel.min.js', [], false, true);
-            wp_enqueue_script('main_script', get_stylesheet_directory_uri() . '/assets/js/main.js', [], "1.7", true);
+            wp_enqueue_script('main_script', get_stylesheet_directory_uri() . '/assets/js/main.js', [], "1.8", true);
         }
     }
 }
@@ -325,4 +347,69 @@ function rsvp_get_services(int $limit = -1)
     $result = new WP_Query($args);
 
     return $result;
+}
+
+function rsvp_register_nav_menus() {
+    register_nav_menus([
+        'header' => 'Header Menu',
+        'footer' => 'Footer Menu',
+        'offset' => 'Offset Menu',
+    ]);
+}
+
+add_action( 'after_setup_theme', 'rsvp_register_nav_menus', 0 );
+
+function get_wp_menu_tree($menu_location = 'primary')
+{
+    $locations = get_nav_menu_locations();
+
+    if (!isset($locations[$menu_location])) {
+        return [];
+    }
+
+    $menu_id = $locations[$menu_location];
+    $items   = wp_get_nav_menu_items($menu_id);
+
+    $menu_tree = [];
+    $children  = [];
+
+    // Group children by parent
+    foreach ($items as $item) {
+        $parent_id = intval($item->menu_item_parent);
+
+        if ($parent_id === 0) {
+            $menu_tree[$item->ID] = [
+                'id'       => $item->ID,
+                'title'    => $item->title,
+                'url'      => $item->url,
+                'object'   => $item->object,
+                'target'   => $item->target,
+                'children' => []
+            ];
+        } else {
+            $children[$parent_id][] = [
+                'id'       => $item->ID,
+                'title'    => $item->title,
+                'url'      => $item->url,
+                'object'   => $item->object,
+                'target'   => $item->target,
+                'parent'   => $parent_id,
+                'children' => []
+            ];
+        }
+    }
+
+    // Assign nested children recursively
+    $add_children = function (&$parents) use (&$children, &$add_children) {
+        foreach ($parents as &$parent) {
+            if (!empty($children[$parent['id']])) {
+                $parent['children'] = $children[$parent['id']];
+                $add_children($parent['children']);
+            }
+        }
+    };
+
+    $add_children($menu_tree);
+
+    return array_values($menu_tree);
 }
