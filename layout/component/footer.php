@@ -13,9 +13,9 @@ $footer_menus = get_wp_menu_tree('footer');
                                 <img class="img-logo" height="25px" src="<?= get_stylesheet_directory_uri() . "/assets/img/R.S.V.P Logo.png" ?>" />
                                 <!-- <span class="logo fw-normal text-light">R.S.V.P</span> -->
                             </div>
-                            <div class="col-md-9">
+                            <!-- <div class="col-md-9">
                                 <h5 class="fw-normal">Don’t miss out. Subscribe to news from R.S.V.P</h5>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="mb-5 d-none">
                             <a href="#" class="h2 me-2">
