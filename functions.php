@@ -332,7 +332,12 @@ function rsvp_get_services(int $limit = -1)
     $args = [
         'posts_per_page' => $limit,
         // 'orderby' => 'ID',
-        'meta_key'  => 'position',
+        'meta_query' => [
+            [
+                'key'     => 'position',
+                'compare' => 'EXISTS',
+            ],
+        ],
         'orderby'   => 'meta_value_num',
         'order' => 'ASC',
         'post_type' => 'post',
