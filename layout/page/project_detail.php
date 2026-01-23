@@ -41,10 +41,10 @@
                             <p class="mb-0">Client</p>
                             <h5 class="fw-normal"><?= get_post()->post_title ?></h5>
                         </div>
-                        <div class="text-end">
+                        <!-- <div class="text-end">
                             <p class="mb-0">YEAR</p>
                             <h5 class="fw-normal"><?= carbon_get_post_meta( get_the_ID(), 'project_year' ) ?></h5>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="d-flex justify-content-between m-2 mb-4">
                         <div class="text-start">

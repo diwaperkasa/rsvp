@@ -32,7 +32,7 @@
                                 <img src="<?= wp_get_attachment_url($thumbnail ? $thumbnail[0] : 0) ?>" alt="...">
                             </div>
                             <h5 class="card-title mt-3 mb-0 fw-normal"><?= $post->post_title ?></h5>
-                            <p class="card-text"><?= carbon_get_post_meta( $post->ID, 'project_year' ) ?></p>
+                            <!-- <p class="card-text"><?= carbon_get_post_meta( $post->ID, 'project_year' ) ?></p> -->
                         </div>
                     </div>
                 </a>
