@@ -201,7 +201,7 @@
                                                 <img src="<?= wp_get_attachment_url($thumbnail ? $thumbnail[0] : 0) ?>" alt="<?= $project->post_title ?>">
                                             </div>
                                             <h5 class="card-title mt-3 mb-0 fw-normal"><?= $project->post_title ?></h5>
-                                            <p class="card-text"><?= carbon_get_post_meta($project->ID, 'project_year') ?></p>
+                                            <!-- <p class="card-text"><?= carbon_get_post_meta($project->ID, 'project_year') ?></p> -->
                                         </div>
                                     </div>
                                 </div>
