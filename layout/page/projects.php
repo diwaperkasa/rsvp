@@ -14,6 +14,7 @@
         </h1>
         <div class="row align-items-center justify-content-center">
             <?php foreach ($result->get_posts() as $key => $post): ?>
+                <?php $thumbnail = carbon_get_post_meta($post->ID, 'project_thumbnail'); ?>
                 <div class="<?= ($key % 2 == 0) ? "col-md-3" : "col-md-4" ?>">
                     <a href="<?= get_permalink($post) ?>">
                         <div class="card rounded-0  border-0">
