@@ -1,6 +1,6 @@
 <?php
-    $prevPost = rsvp_get_prev_post();
-    $nextPost = rsvp_get_next_post();
+    $prevPost = get_previous_post(true);
+    $nextPost->ID = get_next_post();
     $thumbnail = carbon_get_post_meta(get_the_ID(), 'project_thumbnail');
 ?>
 
@@ -48,7 +48,7 @@
                     </div>
                     <div class="d-flex justify-content-between m-2 mb-4">
                         <div class="text-start">
-                            <a href="<?= get_permalink($prevPost) ?>">
+                            <a href="<?= get_permalink($prevPost->ID) ?>">
                             <span class="fw-lighter">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 42" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                                     <path d="M20 30 L8 16 20 2" />
@@ -58,7 +58,7 @@
                             </a>
                         </div>
                         <div class="text-end">
-                            <a href="<?= get_permalink($nextPost) ?>">
+                            <a href="<?= get_permalink($nextPost->ID) ?>">
                             <span class="fw-lighter">
                                 NEXT
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 42" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
