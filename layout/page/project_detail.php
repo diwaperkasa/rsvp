@@ -1,6 +1,6 @@
 <?php
     $prevPost = get_previous_post(true);
-    $nextPost->ID = get_next_post();
+    $nextPost->ID = get_next_post(true);
     $thumbnail = carbon_get_post_meta(get_the_ID(), 'project_thumbnail');
 ?>
 
